@@ -1,13 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/header/';
+import Container from 'react-bootstrap/Container';
+import TestComponent from './components/testComponent/TestComponent';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
+    <Container>
+      <header>
+        <Header />
       </header>
-    </div>
+
+      <TestComponent />
+    </Container>
   );
 }
 
