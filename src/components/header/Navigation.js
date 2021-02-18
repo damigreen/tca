@@ -15,21 +15,26 @@ const Navigation = () => {
                 <li>Contact</li>
             </ul> */}
 
-            <Nav>
+            <Nav className="justify-content-end" defaultActiveKey as="ul">
                 <Nav.Item>
-                    <Nav.Link>About</Nav.Link>
+                    <Nav.Link href="/home">
+                        <img src />LOGO
+                    </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link>Services</Nav.Link>
+                    <Nav.Link  href="/about">About</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link>Work</Nav.Link>
+                    <Nav.Link eventKey="services">Services</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link>Careers</Nav.Link>
+                    <Nav.Link eventKey="work">Work</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link>Contact</Nav.Link>
+                    <Nav.Link eventKey="careers">Careers</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="contact">Contact</Nav.Link>
                 </Nav.Item>
             </Nav>
         </div>
