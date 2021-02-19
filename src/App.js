@@ -5,7 +5,7 @@ import TestComponent from './components/testComponent/TestComponent';
 import styled from 'styled-components';
 
 const AppWrapper = styled.div`
-  background-color: blue;
+  /* background-color: blue; */
 `
 
 
