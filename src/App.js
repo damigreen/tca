@@ -29,6 +29,9 @@ function App() {
           <section>
             <About />
           </section>
+          <section>
+            <Services />
+          </section>
         </MainWrapper>
       <Container>
         <TestComponent />
