@@ -9,6 +9,11 @@ const AboutHeader = styled.div`
   border: 1px solid brown;
 `
 
+const HeaderIntro = styled.div`
+  border: 1px solid black;
+  background-color: green;
+`
+
 
 const About = () => {
 
@@ -16,8 +21,7 @@ const About = () => {
         <AboutSection>
             <AboutHeader>
                 <h1>WHO WE ARE</h1>
-                // <h1>DISCOVER </h1>
-                <h3>We help fast-track businesses to their digital goals through unique branding, marketing and advertising.</h3>
+                <h6>We help fast-track businesses to their digital goals through unique branding, marketing and advertising.</h6>
             </AboutHeader>
       </AboutSection>
 
