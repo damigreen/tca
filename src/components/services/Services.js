@@ -4,15 +4,20 @@ import {
     Styled_ServicesWrap,
     ServicesBox,
     ServicesHeader,
-    
+    ServicesIntro,
+
 } from './ServicesStyle'
 
 const Services = () => {
 
     return (
         <div>
-            <h1>Services</h1>
+            {/* <h1>Services</h1> */}
             <Styled_ServicesWrap>
+
+                <ServicesIntro>
+                    The Creative Agency equip your business with the right digital solutions and help you to achieve your goals
+                </ServicesIntro>
                 <ServicesBox>
                     <ServicesHeader>Branding</ServicesHeader>
                     <div>
