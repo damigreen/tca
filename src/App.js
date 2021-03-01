@@ -1,10 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 import Header from './components/header/';
 import Container from 'react-bootstrap/Container';
 import Services from './components/services/';
 import About from './components/about/';
 import TestComponent from './components/testComponent/TestComponent';
-import styled from 'styled-components';
+import Footer from './components/footer/'
 
 
 const AppWrapper = styled.div`
@@ -33,9 +34,12 @@ function App() {
             <Services />
           </section>
         </MainWrapper>
-      <Container>
+        <footer>
+          <Footer />
+        </footer>
+      {/* <Container>
         <TestComponent />
-      </Container>
+      </Container> */}
     </AppWrapper>
   );
 }
