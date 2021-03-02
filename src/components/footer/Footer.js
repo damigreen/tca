@@ -11,12 +11,17 @@ import {
     FooterLocationMapIcon,
     FooterColumn,
     FooterColumnSub,
+    FooterSubFormWrap,
+    FooterSubForm,
+    FooterSubField,
+    FooterSubInput,
 } from './FooterStyled';
 
 
 
 const Footer = () => {
-    const locationIcon = '../../../icons/icons8-location-16.png'
+    const locationIcon = '../../../icons/globe2.svg';
+    const emailSubmitIcon = '../../../icons/check-circle.svg';
 
     return (
         <FooterWrapper>
@@ -62,11 +67,22 @@ const Footer = () => {
 
                     <FooterColumn>
                         <FooterColumnSub>
-                            <FooterSubForm>
-                                <form>
+                            <FooterSubFormWrap>
+                                <FooterSubForm>
                                     <label for="email">Subscribe to our newsletter</label>
-                                </form>
-                            </FooterSubForm>
+
+                                    <FooterSubField>
+                                        <input type="email" name="email" placeholder="EMAIL" />
+                                        <button type="submit">
+                                            <div>
+                                                <img src={emailSubmitIcon} alt="email submit icon" />
+                                            </div>
+                                        </button>
+                                        <p>You may unsubscribe from our monthly newsletter at any time.</p>
+                                    </FooterSubField>
+                                </FooterSubForm>
+                                
+                            </FooterSubFormWrap>
                         </FooterColumnSub>
                     </FooterColumn>
 
