@@ -4,7 +4,6 @@ export const FooterWrapper = styled.section`
     display: flex;
     /* background-color: #024959; */
     background-color: #011a1f;
-    border: 1px solid green;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -18,6 +17,17 @@ export const FooterRow = styled.div`
     width: 100%;
     max-width: 90rem;
     margin-left: 1.97rem;
+`
+
+export const FooterCompanyLogo = styled.div`
+    display: inline-block;
+    padding-top: 0.589rem;
+    padding-bottom: 1.1872rem;
+`
+
+export const FooterIconsWrap =  styled.div`
+    border: 1px solid red;
+    color: #FFFFFF;
 `
 
 export const FooterNavItems = styled.div`
@@ -107,7 +117,6 @@ export const FooterLocationMapIcon = styled.div`
 export const FooterColumn = styled.div`
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
 `   
 export const FooterColumnSub = styled.div`
     display: flex;
@@ -145,7 +154,13 @@ export const FooterSubForm = styled.div`
 
 export const FooterSubField = styled.div`
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    width: 90%;
+        
+        div {
+            display: flex;
+            flex-direction: row;
+        }
 
         input {
             border-width: 2px 0 2px 2px;
@@ -157,7 +172,7 @@ export const FooterSubField = styled.div`
             line-height: 1rem;
             letter-spacing: 0.10625rem;
             padding: 0.9375rem 1.25rem;
-            width: 100%;
+            width: 90%;
             background-color: inherit;
         }
 
@@ -174,6 +189,7 @@ export const FooterSubField = styled.div`
             transition: all 250ms ease 0s;
             background-color: inherit;
 
+
                 img {
                     color: red;
                     background-color: none;
@@ -182,8 +198,103 @@ export const FooterSubField = styled.div`
         }
 
         p {
+            margin-top: 1.5478rem;
             display: block;
-            width: 100%;
+            width: 80%;
             color: rgb(176, 176, 176);
         }
+`
+
+export const FooterMessage = styled.div`
+    color: #FFFFFF;
+
+     h1{
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+     p {
+        margin-top: 1.354rem;
+        font-size: 12px;
+        font-weight: 400;
+        color: #F29F05;
+    }
+`
+
+export const FooterSocialIconsWrap = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.9rem;
+    width: 90%;
+    /* width: 100%; */
+    /* border-top: 1px solid #4F4F4F; */
+    border-bottom: 1px solid #4F4F4F;
+    height: 70px;
+    align-items: center;
+
+        a {
+            position: relative;
+            width: 1.4rem;
+            height: 1.4rem;   
+        }
+
+        a:first-child {
+            margin-left: 0px;
+            background-color: #000000;
+        }
+
+        a:nth-child(2) {
+            background-color: #000000;
+            /* margin-left: 20px; */
+        }
+
+        a:nth-child(3) {
+            background-color: #000000;
+            /* margin-left: 20px; */
+        }
+
+        a:nth-child(4) {
+            /* background-color: #000000; */
+            /* margin-left: 20px; */
+        }
+
+        a:nth-child(5) {
+            background-color: #000000;
+            /* margin-left: 20px; */
+        }
+`
+
+export const FooterItemsClass = styled.div`
+    color: #FFFFFF;
+`
+export const FooterItemServices = styled.div`
+`
+
+export const CompanyBox = styled.div`
+    border: 1px solid aqua;
+`
+
+export const ServicesBox = styled.div`
+    border: 1px solid brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+        p {
+            position: relative;
+            top: 50px;
+            border: 1px solid brown;
+            height: inherit;
+            align-self: center;
+        }
+
+        div {
+            border: 1px solid yellow;
+        }
+`
+
+export const ProductsBox = styled.div`
+    border: 1px solid purple;
 `
