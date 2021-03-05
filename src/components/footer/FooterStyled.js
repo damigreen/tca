@@ -229,7 +229,7 @@ export const FooterSocialIconsWrap = styled.div`
     width: 90%;
     /* width: 100%; */
     /* border-top: 1px solid #4F4F4F; */
-    border-bottom: 1px solid #4F4F4F;
+    /* border-bottom: 1px solid #4F4F4F; */
     height: 70px;
     align-items: center;
 
@@ -267,34 +267,150 @@ export const FooterSocialIconsWrap = styled.div`
 
 export const FooterItemsClass = styled.div`
     color: #FFFFFF;
+    width: 90%;
 `
 export const FooterItemServices = styled.div`
+    
+`
+
+export const CompanyBoxWrap = styled.div`
+    margin: 0;
 `
 
 export const CompanyBox = styled.div`
-    border: 1px solid aqua;
-`
-
-export const ServicesBox = styled.div`
-    border: 1px solid brown;
+    /* border: 1px solid aqua; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-        p {
-            position: relative;
-            top: 50px;
-            border: 1px solid brown;
-            height: inherit;
-            align-self: center;
-        }
+    height: 45px;
+    border-bottom: 1px solid #4F4F4F;
+    border-top: 1px solid #4F4F4F;
 
         div {
-            border: 1px solid yellow;
+            background-color: inherit;
+        }
+
+        button {
+            background-color: inherit;
+            color: #F29F05;
+            border:none;
         }
 `
 
+export const CompanySubBox = styled.div`
+    font-size: 12px;
+    /* color: #8c8c8c; */
+    color: #d9d9d9;
+
+        .company-sub-box {
+            display: none;
+            text-align: left;
+            margin-top: 0.8456rem;
+            margin-left: 1.25rem;
+            margin-bottom: 0.3456rem;
+            border-bottom: white;
+            padding-bottom: 0.45rem;
+        }   
+
+        p {
+            margin-bottom: 0.12rem;
+            padding: 0px;
+            margin-top: 0.2rem;
+            padding-bottom: 0.21rem;
+        }
+`
+
+export const ServiceBoxWrap = styled.div`
+    margin: 0;
+`
+
+export const ServicesBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    border-bottom: 1px solid #4F4F4F;
+    border-top: 1px solid #4F4F4F;
+
+        div {
+            background-color: inherit;
+        }
+
+        button {
+            background-color: inherit;
+            color: #F29F05;
+            border:none;
+        }
+`
+
+export const ServicesSubBox = styled.div`
+    font-size: 12px;
+    color: #d9d9d9;
+    /* color: #4D4D4D; */
+
+        .services-sub-box {
+            display: none;
+            text-align: left;
+            margin-top: 0.8456rem;
+            margin-left: 1.25rem;
+            margin-bottom: 0.3456rem;
+            border-bottom: white;
+            padding-bottom: 0.45rem;
+        }
+
+        p {
+            margin-bottom: 0.12rem;
+            padding: 0px;
+            margin-top: 0.2rem;
+            padding-bottom: 0.21rem;
+        }
+`
+
+export const ProductBoxWrap = styled.div`
+    margin: 0;
+`
+
 export const ProductsBox = styled.div`
-    border: 1px solid purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    border-bottom: 1px solid #4F4F4F;
+    border-top: 1px solid #4F4F4F;
+
+        div {
+            background-color: inherit;
+        }
+
+        button {
+            background-color: inherit;
+            color: #F29F05;
+            border:none;
+        }
+`
+export const ProductsSubBox = styled.div`
+    font-size: 12px;
+    color: #d9d9d9;
+    /* color: #444444; */
+
+        .products-sub-box {
+            display: none;
+            text-align: left;
+            margin-top: 0.8456rem;
+            margin-left: 1.25rem;
+            margin-bottom: 0.3456rem;
+            border-bottom: white;
+            padding-bottom: 0.45rem;
+        }
+
+        p {
+            margin-bottom: 0.12rem;
+            padding: 0px;
+            padding-bottom: 0.21rem;
+            margin-top: 0.2rem;
+        }
+
 `
