@@ -37,9 +37,9 @@ function App() {
         <footer>
           <Footer />
         </footer>
-      {/* <Container>
+      <Container>
         <TestComponent />
-      </Container> */}
+      </Container>
     </AppWrapper>
   );
 }
