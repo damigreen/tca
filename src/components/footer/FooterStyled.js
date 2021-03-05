@@ -390,27 +390,42 @@ export const ProductsBox = styled.div`
             color: #F29F05;
             border:none;
         }
-`
-export const ProductsSubBox = styled.div`
-    font-size: 12px;
-    color: #d9d9d9;
-    /* color: #444444; */
 
-        .products-sub-box {
-            display: none;
-            text-align: left;
-            margin-top: 0.8456rem;
-            margin-left: 1.25rem;
-            margin-bottom: 0.3456rem;
-            border-bottom: white;
-            padding-bottom: 0.45rem;
+        .plusWidget {
+            background-color: red
         }
 
-        p {
+        .minusWidget {
+            background-color: red;      
+            display: none;
+        }
+`
+export const ProductsSubBox = styled.div    `
+    font-size: 12px;
+    color: #d9d9d9;
+    /* color: #444444; */   
+
+        .products-sub-box { 
+            display: none;
+            text-align: left    ;
+            margin-top: 0.8456rem;
+            margin-left: 1.25rem    ;
+            margin-bottom: 0.3456rem;
+            border-bottom: white;   
+            padding-bottom: 0.45rem;
+            /* background-color: red; */
+        }
+
+            p {
             margin-bottom: 0.12rem;
             padding: 0px;
             padding-bottom: 0.21rem;
             margin-top: 0.2rem;
         }
 
+`
+
+export const FooterCopyrights = styled.div`
+    border: 1px solid red;
+    background-color: green;
 `
