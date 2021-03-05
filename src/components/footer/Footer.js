@@ -53,52 +53,142 @@ const Footer = () => {
 
     const expandCompanyWidget = () => {
         const widgetArea = document.querySelector('.company-sub-box');
-        // const style = window.getComputedStyle(widgetArea);
-        if (widgetArea) {
-            console.log(widgetArea.style.color);
-            widgetArea.style.display = 'block';
-        }
-        console.log("God is the Greatest---------------------------------------------------");
+        const widgetAreaStyle = window.getComputedStyle(widgetArea);
+        const isWidgetAreaDisplayed = widgetAreaStyle.display;
 
+        const plusButton = document.querySelector('.plusCompanyWidget');
+        const plusButtonDisplayed = window.getComputedStyle(plusButton).display;
+        
+        const minusButton = document.querySelector('.minusCompanyWidget');
+        const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
+        
+        
+        // if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none' ) {
+        if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none') {
+            widgetArea.style.display = 'block';
+            plusButton.style.display = 'none'
+            minusButton.style.display = 'inline-block';
+            
+            
+            return 0;
+        }
+        
+        console.log("God is the Greatest---------------------------------------------------");
         return 1;
     } 
+
+    const contractCompanyWidget = () => {
+        const widgetArea = document.querySelector('.company-sub-box');
+        const widgetAreaStyle = window.getComputedStyle(widgetArea);
+        const isWidgetAreaDisplayed = widgetAreaStyle.display;
+        
+        const minusButton = document.querySelector('.minusCompanyWidget');
+        const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
+
+        const plusButton = document.querySelector('.plusCompanyWidget');
+
+        if (isWidgetAreaDisplayed !== 'none' && minusButtonDisplayed !== 'none') {
+            widgetArea.style.display = 'none';
+            minusButton.style.display = 'none'
+            plusButton.style.display = 'inline-block'
+
+        }
+
+
+        return 1;
+    }
+
 
     const expandServicesWidget = () => {
         const widgetArea = document.querySelector('.services-sub-box');
-        if (widgetArea) {
-            widgetArea.style['display'] = 'block';
-        }
-        console.log("God is the Greatest---------------------------------------------------");
+        const widgetAreaStyle = window.getComputedStyle(widgetArea);
+        const isWidgetAreaDisplayed = widgetAreaStyle.display;
+
+        const plusButton = document.querySelector('.plusServicesWidget');
+        const plusButtonDisplayed = window.getComputedStyle(plusButton).display;
         
+        const minusButton = document.querySelector('.minusServicesWidget');
+        const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
+        
+        
+        // if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none' ) {
+        if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none') {
+            widgetArea.style.display = 'block';
+            plusButton.style.display = 'none'
+            minusButton.style.display = 'inline-block';
+            
+            
+            return 0;
+        }
+        
+        console.log("God is the Greatest---------------------------------------------------");
         return 1;
-    } 
+    }
+
+    const contractServicesWidget = () => {
+        const widgetArea = document.querySelector('.services-sub-box');
+        const widgetAreaStyle = window.getComputedStyle(widgetArea);
+        const isWidgetAreaDisplayed = widgetAreaStyle.display;
+        
+        const minusButton = document.querySelector('.minusServicesWidget');
+        const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
+
+        const plusButton = document.querySelector('.plusServicesWidget');
+
+        if (isWidgetAreaDisplayed !== 'none' && minusButtonDisplayed !== 'none') {
+            widgetArea.style.display = 'none';
+            minusButton.style.display = 'none'
+            plusButton.style.display = 'inline-block'
+
+        }
+
+
+        return 1;
+    }
 
     const expandProductsWidget = () => {
         const widgetArea = document.querySelector('.products-sub-box');
         const widgetAreaStyle = window.getComputedStyle(widgetArea);
-        
         const isWidgetAreaDisplayed = widgetAreaStyle.display;
 
-        if (isWidgetAreaDisplayed ==='none') {
+        const plusButton = document.querySelector('.plusProductsWidget');
+        const plusButtonDisplayed = window.getComputedStyle(plusButton).display;
+        
+        const minusButton = document.querySelector('.minusProductsWidget');
+        const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
+        
+        
+        // if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none' ) {
+        if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none') {
             widgetArea.style.display = 'block';
-
+            plusButton.style.display = 'none'
+            minusButton.style.display = 'inline-block';
+            
+            
             return 0;
         }
-
+        
         console.log("God is the Greatest---------------------------------------------------");
         return 1;
     } 
-
+    
     const contractProductsWidget = () => {
-        const widgetArea = document.querySelector('.product-sub-box');
-        // const plusButton = document.querySelector('.plusWidget');
-        // const plusButtonStyle = plusButton.style.display;
+        const widgetArea = document.querySelector('.products-sub-box');
+        const widgetAreaStyle = window.getComputedStyle(widgetArea);
+        const isWidgetAreaDisplayed = widgetAreaStyle.display;
+        
+        const minusButton = document.querySelector('.minusProductsWidget');
+        const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
 
-        // if (plusButton && !widgetArea)
-        // console.log(plusButtonStyle);
-            // if (widgetArea) {
-            //     widgetArea.style.display = 'block';
-            // }
+        const plusButton = document.querySelector('.plusProductsWidget');
+
+        if (isWidgetAreaDisplayed !== 'none' && minusButtonDisplayed !== 'none') {
+            widgetArea.style.display = 'none';
+            minusButton.style.display = 'none'
+            plusButton.style.display = 'inline-block'
+
+        }
+
 
         return 1;
     }
@@ -211,14 +301,13 @@ const Footer = () => {
                                 <div>Company</div>
 
                                 <div>
-                                    <button className="plusWidget" type="button" onClick={expandCompanyWidget}>
+                                    <button className="plusCompanyWidget" type="button" onClick={expandCompanyWidget}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                         </svg>
                                     </button>
-                                    
-                                    <button>
-                                        <svg className="minusWidget" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                    <button className="minusCompanyWidget" type="button" onClick={contractCompanyWidget}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                                             <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                                         </svg>
                                     </button>
@@ -236,15 +325,15 @@ const Footer = () => {
                         <ServiceBoxWrap>
                             <ServicesBox>
                                 <div>Services</div>
-                                <button className="plusWidget" type="button" onClick={expandServicesWidget}>
-                                    {/* <img alt="click to show full services button" src /> */}
+                                <button className="plusServicesWidget" type="button" onClick={expandServicesWidget}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
+                                </button>
+                                <button className="minusServicesWidget" type="button" onClick={contractServicesWidget}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                                     </svg>
-
                                 </button>
                             </ServicesBox>
                             <ServicesSubBox>
@@ -262,12 +351,12 @@ const Footer = () => {
                         <ProductBoxWrap>
                             <ProductsBox>
                                 <div>Products</div>
-                                <button className="plusWidget" type="button" onClick={expandProductsWidget}>
+                                <button className="plusProductsWidget" type="button" onClick={expandProductsWidget}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </button>
-                                <button className="minusWidget" type="button" onClick={contractProductsWidget}>
+                                <button className="minusProductsWidget" type="button" onClick={contractProductsWidget}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                                     </svg>
