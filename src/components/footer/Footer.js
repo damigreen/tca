@@ -20,9 +20,15 @@ import {
     FooterMessage,
     FooterItemsClass,
     FooterItemServices,
+    CompanyBoxWrap,
     CompanyBox,
+    CompanySubBox,
+    ServiceBoxWrap,
     ServicesBox,
+    ServicesSubBox,
+    ProductBoxWrap,
     ProductsBox,
+    ProductsSubBox
 } from './FooterStyled';
 
 
@@ -31,6 +37,54 @@ const Footer = () => {
     const locationIcon = '../../../icons/globe2.svg';
     const emailSubmitIcon = '../../../icons/check-circle.svg';
     const footerLogoImage = '../../../icons/footer-logo-icon.png'
+
+    /* 
+        * Implement footer widget 
+        Add an onclick handler to the expand button
+        on click, change the class of the sub-box of the footer elements
+        turn the '+' sign to '-' after click
+
+        On clicking the "-", hide the "sub-box" elements
+        turn the "-" sign to "+" sign
+        change the class of the display property to "show"
+     */
+
+
+    const expandCompanyWidget = () => {
+        const widgetArea = document.querySelector('.company-sub-box');
+        // const style = window.getComputedStyle(widgetArea);
+        if (widgetArea) {
+            console.log(widgetArea.style.color);
+            widgetArea.style.display = 'block';
+        }
+        console.log("God is the Greatest---------------------------------------------------");
+
+        return 1;
+    } 
+
+    const expandServicesWidget = () => {
+        const widgetArea = document.querySelector('.services-sub-box');
+        // const style = window.getComputedStyle(widgetArea);
+        if (widgetArea) {
+            console.log(widgetArea.style.color);
+            widgetArea.style.display = 'block';
+        }
+        console.log("God is the Greatest---------------------------------------------------");
+
+        return 1;
+    } 
+
+    const expandProductsWidget = () => {
+        const widgetArea = document.querySelector('.products-sub-box');
+        // const style = window.getComputedStyle(widgetArea);
+        if (widgetArea) {
+            console.log(widgetArea.style.color);
+            widgetArea.style.display = 'block';
+        }
+        console.log("God is the Greatest---------------------------------------------------");
+
+        return 1;
+    } 
 
     return (
         <FooterWrapper>
@@ -132,66 +186,81 @@ const Footer = () => {
                             <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="1.4rem" height="1.4rem">    <path d="M 9 4 C 6.24 4 4 6.24 4 9 L 4 41 C 4 43.76 6.24 46 9 46 L 41 46 C 43.76 46 46 43.76 46 41 L 46 9 C 46 6.24 43.76 4 41 4 L 9 4 z M 12 18 L 18.730469 18 C 19.460469 18 23.410156 17.950312 23.410156 21.570312 C 23.410156 23.490313 22.099766 24.139688 21.509766 24.429688 C 22.389766 24.709688 24 25.52 24 28 C 24 31.83 19.609531 32 19.019531 32 L 12 32 L 12 18 z M 29 18 L 36 18 L 36 20 L 29 20 L 29 18 z M 15 20.429688 L 15 23.710938 L 18.220703 23.710938 C 18.660703 23.710938 20.119141 23.47 20.119141 22 C 20.119141 20.53 18.219687 20.429688 17.929688 20.429688 L 15 20.429688 z M 32.730469 21 C 36.630469 21 37.689609 24.039766 37.849609 24.759766 C 37.999609 25.489766 38 26.13 38 27 L 30.099609 27 C 30.099609 27.87 30.560625 29.830078 32.890625 29.830078 C 33.510625 29.830078 33.969453 29.680625 34.439453 29.390625 C 34.899453 29.100625 35.060938 28.819297 35.210938 28.529297 L 37.839844 28.529297 C 37.379844 29.679297 36.760078 30.550859 35.830078 31.130859 C 34.900078 31.710859 33.820078 32 32.580078 32 C 31.800078 32 31.03 31.850547 30.25 31.560547 C 29.63 31.270547 29.010781 30.840156 28.550781 30.410156 C 28.090781 29.970156 27.780703 29.389922 27.470703 28.669922 C 27.160703 28.089922 27 27.22 27 26.5 C 27 25.78 27.290469 21 32.730469 21 z M 32.730469 23.029297 C 30.470469 23.029297 30.099609 25.199844 30.099609 25.339844 L 35.060547 25.339844 C 34.900547 24.619844 34.250469 23.029297 32.730469 23.029297 z M 15 25.710938 L 15 29.570312 L 18.351562 29.570312 C 18.640563 29.570312 20.679688 29.480937 20.679688 27.710938 C 20.679687 25.950937 19.077562 25.710938 18.351562 25.710938 L 15 25.710938 z"/></svg>
                         </a>
                 </FooterSocialIconsWrap>
+                
                 <FooterItemsClass>
                     <FooterItemServices>
-                        <CompanyBox>
-                            <p>Services</p>
-                            <div>
-                                {/* <img alt="click to show full services button" src /> */}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                </svg>
-                            </div>
-                        </CompanyBox>
-                        <div>
-                            <div>
-                                <p>Branding</p>
-                                <p>Digital Marketing</p>
-                                <p>Consultancy</p>
-                                <p>Web Design and Development</p>
-                                <p>Research and Business Analysis</p>
-                                <p>Publishing</p>
-                            </div>
-                        </div>
+                        <CompanyBoxWrap>
+                            <CompanyBox>
+                                <div>Company</div>
+                                <button className="plusWidget" type="button" onClick={expandCompanyWidget}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                    </svg>
 
-                        <ServicesBox>
-                            <p>Services</p>
-                            <div>
-                                {/* <img alt="click to show full services button" src /> */}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                </svg>
-                            </div>
-                        </ServicesBox>
-                        <div>
-                            <div>
-                                <p>Branding</p>
-                                <p>Digital Marketing</p>
-                                <p>Consultancy</p>
-                                <p>Web Design and Development</p>
-                                <p>Research and Business Analysis</p>
-                                <p>Publishing</p>
-                            </div>
-                        </div>
+                                    {/* <svg style={{display: "none"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"> */}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                    </svg>
+                                </button>
+                            </CompanyBox>
+                            <CompanySubBox>
+                                <div className="company-sub-box">
+                                    <p>About</p>
+                                    <p>Contact Us</p>
+                                </div>
+                            </CompanySubBox>
+                        </CompanyBoxWrap>
 
-                        <ProductsBox>
-                            <p>Products</p>
-                            <div>
-                                {/* <img alt="click to show full services button" src /> */}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                </svg>
-                            </div>
-                        </ProductsBox>
-                        <div>
-                            <div>
-                                <p>TCA Fashions</p>
-                                <p>TCA Foods</p>
-                                <p>TCA Mining</p>
-                            </div>
-                        </div>
+                        <ServiceBoxWrap>
+                            <ServicesBox>
+                                <div>Services</div>
+                                <button className="plusWidget" type="button" onClick={expandServicesWidget}>
+                                    {/* <img alt="click to show full services button" src /> */}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                    </svg>
+
+                                </button>
+                            </ServicesBox>
+                            <ServicesSubBox>
+                                <div className="services-sub-box">
+                                    <p>Branding</p>
+                                    <p>Digital Marketing</p>
+                                    <p>Consultancy</p>
+                                    <p>Web Design and Development</p>
+                                    <p>Research and Business Analysis</p>
+                                    <p>Publishing</p>
+                                </div>
+                            </ServicesSubBox>
+                        </ServiceBoxWrap>
+
+                        <ProductBoxWrap>
+                            <ProductsBox>
+                                <div>Products</div>
+                                <button className="plusWidget" type="button" onClick={expandProductsWidget}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                    </svg>
+                                </button>   
+                            </ProductsBox>
+                            <ProductsSubBox>
+                                <div className="products-sub-box">
+                                    <p>TCA Fashions</p>
+                                    <p>TCA Foods</p>
+                                    <p>TCA Mining</p>
+                                </div>
+                            </ProductsSubBox>
+
+                        </ProductBoxWrap>
                     </FooterItemServices>
                 </FooterItemsClass>
+                
             </FooterRow>
         </FooterWrapper>
     )
