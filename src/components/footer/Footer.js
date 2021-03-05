@@ -28,7 +28,8 @@ import {
     ServicesSubBox,
     ProductBoxWrap,
     ProductsBox,
-    ProductsSubBox
+    ProductsSubBox,
+    FooterCopyrights,
 } from './FooterStyled';
 
 
@@ -64,27 +65,43 @@ const Footer = () => {
 
     const expandServicesWidget = () => {
         const widgetArea = document.querySelector('.services-sub-box');
-        // const style = window.getComputedStyle(widgetArea);
         if (widgetArea) {
-            console.log(widgetArea.style.color);
-            widgetArea.style.display = 'block';
+            widgetArea.style['display'] = 'block';
         }
         console.log("God is the Greatest---------------------------------------------------");
-
+        
         return 1;
     } 
 
     const expandProductsWidget = () => {
         const widgetArea = document.querySelector('.products-sub-box');
-        // const style = window.getComputedStyle(widgetArea);
-        if (widgetArea) {
-            console.log(widgetArea.style.color);
-            widgetArea.style.display = 'block';
-        }
-        console.log("God is the Greatest---------------------------------------------------");
+        const widgetAreaStyle = window.getComputedStyle(widgetArea);
+        
+        const isWidgetAreaDisplayed = widgetAreaStyle.display;
 
+        if (isWidgetAreaDisplayed ==='none') {
+            widgetArea.style.display = 'block';
+
+            return 0;
+        }
+
+        console.log("God is the Greatest---------------------------------------------------");
         return 1;
     } 
+
+    const contractProductsWidget = () => {
+        const widgetArea = document.querySelector('.product-sub-box');
+        // const plusButton = document.querySelector('.plusWidget');
+        // const plusButtonStyle = plusButton.style.display;
+
+        // if (plusButton && !widgetArea)
+        // console.log(plusButtonStyle);
+            // if (widgetArea) {
+            //     widgetArea.style.display = 'block';
+            // }
+
+        return 1;
+    }
 
     return (
         <FooterWrapper>
@@ -192,16 +209,21 @@ const Footer = () => {
                         <CompanyBoxWrap>
                             <CompanyBox>
                                 <div>Company</div>
-                                <button className="plusWidget" type="button" onClick={expandCompanyWidget}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                    </svg>
 
-                                    {/* <svg style={{display: "none"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"> */}
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-                                    </svg>
-                                </button>
+                                <div>
+                                    <button className="plusWidget" type="button" onClick={expandCompanyWidget}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                        </svg>
+                                    </button>
+                                    
+                                    <button>
+                                        <svg className="minusWidget" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+
                             </CompanyBox>
                             <CompanySubBox>
                                 <div className="company-sub-box">
@@ -244,11 +266,14 @@ const Footer = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
+                                </button>
+                                <button className="minusWidget" type="button" onClick={contractProductsWidget}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                                     </svg>
-                                </button>   
+                                </button>
                             </ProductsBox>
+
                             <ProductsSubBox>
                                 <div className="products-sub-box">
                                     <p>TCA Fashions</p>
@@ -256,10 +281,16 @@ const Footer = () => {
                                     <p>TCA Mining</p>
                                 </div>
                             </ProductsSubBox>
-
                         </ProductBoxWrap>
+
                     </FooterItemServices>
                 </FooterItemsClass>
+                    <div>
+                        Copyrights The creative agency
+                    </div>
+                <FooterCopyrights>
+
+                </FooterCopyrights>
                 
             </FooterRow>
         </FooterWrapper>
