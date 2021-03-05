@@ -198,6 +198,8 @@ export const FooterSubField = styled.div`
         }
 
         p {
+            font-size: 0.89rem;
+            font-size: 14px;
             margin-top: 1.5478rem;
             display: block;
             width: 80%;
@@ -296,6 +298,14 @@ export const CompanyBox = styled.div`
             color: #F29F05;
             border:none;
         }
+
+        .plusCompanyWidget {
+        }
+
+        .minusCompanyWidget {
+            /* background-color: red;       */
+            display: none;
+        }
 `
 
 export const CompanySubBox = styled.div`
@@ -342,6 +352,14 @@ export const ServicesBox = styled.div`
             background-color: inherit;
             color: #F29F05;
             border:none;
+        }
+
+        .plusServicesWidget {
+        }
+
+        .minusServicesWidget {
+            /* background-color: red;       */
+            display: none;
         }
 `
 
@@ -391,12 +409,12 @@ export const ProductsBox = styled.div`
             border:none;
         }
 
-        .plusWidget {
-            background-color: red
+        .plusProductsWidget {
+            /* background-color: red */
         }
 
-        .minusWidget {
-            background-color: red;      
+        .minusProductsWidget {
+            /* background-color: red;       */
             display: none;
         }
 `
