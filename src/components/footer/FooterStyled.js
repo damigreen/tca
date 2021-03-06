@@ -202,7 +202,7 @@ export const FooterSubField = styled.div`
             font-size: 14px;
             margin-top: 1.5478rem;
             display: block;
-            width: 80%;
+            width: 60%;
             color: rgb(176, 176, 176);
         }
 `
@@ -216,6 +216,7 @@ export const FooterMessage = styled.div`
     }
 
      p {
+        width: 60%;
         margin-top: 1.354rem;
         font-size: 12px;
         font-weight: 400;
@@ -444,6 +445,37 @@ export const ProductsSubBox = styled.div    `
 `
 
 export const FooterCopyrights = styled.div`
-    border: 1px solid red;
-    background-color: green;
+    width: 90%;
+    margin-bottom: 1.5rem;
+
+
+        div {
+            text-align: center;
+            color: #999999;
+            /* color: #f25f05; */
+
+
+            span {
+                font-size: 0.8456;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-left: 1.2rem;
+            }
+
+            a {
+                color: #999999;
+                padding: 0.4rem;
+                padding-left: 0.1459;
+
+                    svg {
+                        width: 10px;
+                        height: 10px;
+                    }
+            }
+
+        }
+
+
+
 `
