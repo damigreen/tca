@@ -23,8 +23,8 @@ const MainWrapper = styled.main`
 function App() {
   return (
     <AppWrapper>
-        <header>
-          <Header />
+        <header id="header">
+          <Header/>
         </header>
         <MainWrapper>
           <section>
