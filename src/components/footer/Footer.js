@@ -63,17 +63,47 @@ const Footer = () => {
         const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
         
         
-        // if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none' ) {
         if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none') {
             widgetArea.style.display = 'block';
             plusButton.style.display = 'none'
             minusButton.style.display = 'inline-block';
             
+            // when compaywidget is opened all other opened widget should be closed
+            // close productWidget
+            // close servicesWidget
+            // if the companyWidget is opened
+            // check other opened widget
+                // if others is opened
+                // change display to 'none'
+                // else if display is 'none'
+                // return
+                const servicesWidget = document.querySelector('.services-sub-box');
+                const isServicesWidgetOpened = window.getComputedStyle(servicesWidget).display !== 'none' ? true : false;
+                const openServicesWidgetButton = document.querySelector('.plusServicesWidget');
+                const closeServicesWidgetButton = document.querySelector('.minusServicesWidget');
+
+                
+                const productsWidget = document.querySelector('.products-sub-box');
+                const isProductsWidgetOpened = window.getComputedStyle(productsWidget).display !== 'none' ? true : false;
+                const openProductsWidgetButton = document.querySelector('.plusProductsWidget');
+                const closeProductsWidgetButton = document.querySelector('.minusProductsWidget');
+                
+                if (isServicesWidgetOpened || isProductsWidgetOpened) {
+                    servicesWidget.style.display = 'none';
+                    productsWidget.style.display = 'none';
+
+                    openServicesWidgetButton.style.display = 'inline-block'
+                    openProductsWidgetButton.style.display = 'inline-block';
+
+                    closeServicesWidgetButton.style.display = 'none'
+                    closeProductsWidgetButton.style.display = 'none'
+            }
+            
+            console.log("God is the Greatest---------------------------------------------------");
             
             return 0;
         }
-        
-        console.log("God is the Greatest---------------------------------------------------");
+
         return 1;
     } 
 
@@ -141,7 +171,6 @@ const Footer = () => {
             plusButton.style.display = 'inline-block'
 
         }
-
 
         return 1;
     }
@@ -378,7 +407,14 @@ const Footer = () => {
                         Copyrights The creative agency
                     </div>
                 <FooterCopyrights>
-
+                    <div>
+                        &#169; 2021 The Creative Agency <span>Back to top</span>
+                        <a href="#header">
+                            <svg href="#header" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </FooterCopyrights>
                 
             </FooterRow>
