@@ -1,3 +1,4 @@
+import { Box } from '@material-ui/core';
 import React from 'react';
 import {
     FooterWrapper,
@@ -39,19 +40,57 @@ const Footer = () => {
     const emailSubmitIcon = '../../../icons/check-circle.svg';
     const footerLogoImage = '../../../icons/footer-logo-icon.png'
 
-    /* 
-        * Implement footer widget 
-        Add an onclick handler to the expand button
-        on click, change the class of the sub-box of the footer elements
-        turn the '+' sign to '-' after click
 
-        On clicking the "-", hide the "sub-box" elements
-        turn the "-" sign to "+" sign
-        change the class of the display property to "show"
+    /*
+    * * TODO
+        Modify the errors in the function
      */
+    const expandWidget = (widgetClass, otherWidgetClass, openWidgetClass, otherOpenWidgetClass, closeWidgetClass, otherCloseWidgetClass, otherWidgetOneClass, otherOpenWidgetOneClass, otherCloseWidgetOneClass) => {
+        const widgetArea = document.querySelector(`.${widgetClass}`);
+        const widgetAreaStyle = window.getComputedStyle(widgetArea);
+        const isWidgetAreaDisplayed = widgetAreaStyle.display;
 
+        const openWidget = document.querySelector(`.${openWidgetClass}`);
+        const isOpenWidgetDisplayed = window.getComputedStyle(openWidget).display;
+
+        const closeWidget = document.querySelector(`${closeWidgetClass}`);
+
+        if (isWidgetAreaDisplayed === 'none' && isOpenWidgetDisplayed !== 'none') {
+            widgetArea.style.display = 'block';
+            openWidget.style.display = 'none';
+            closeWidget.style.display = 'inline-block';
+            
+            const closeWidgets = () => {
+                const widget = document.querySelector(`${otherWidgetClass}`);
+                const isWidgetOpened = window.getComputedStyle(widget).display;
+                const openWidgetButton = document.querySelector(`${otherOpenWidgetClass}`);
+                const closeWidgetButton = document.querySelector(`${otherCloseWidgetClass}`);
+
+                const widgetOne = document.querySelector(`${otherWidgetOneClass}`);
+                const isWidgetOneOpened = window.getComputedStyle(widget).display;
+                const openWidgetOneButton = document.querySelector(`${otherOpenWidgetOneClass}`);
+                const closeWidgetOneButton = document.querySelector(`${otherCloseWidgetOneClass}`);
+                
+                if (isWidgetOpened || isWidgetOneOpened) {
+                    widget.style.display = 'none';
+                    widgetOne.style.display = 'none';
+            
+                    openWidgetButton.style.display = 'inline-block'
+                    openWidgetOneButton.style.display = 'inline-block';
+            
+                    closeWidgetButton.style.display = 'none'
+                    closeWidgetOneButton.style.display = 'none'
+                }
+            }
+            closeWidgets();
+
+        }
+    }
 
     const expandCompanyWidget = () => {
+        // expandWidget('comapany-sub-box', 'service-sub-box', 'plusCompanyWidget', 'plusServicesWidget', 'minusCompanyWidget', 'minusServicesWidgetClass', 'product-sub-box', 'plusProductsWidget', 'minusProductsWidget');
+
+        
         const widgetArea = document.querySelector('.company-sub-box');
         const widgetAreaStyle = window.getComputedStyle(widgetArea);
         const isWidgetAreaDisplayed = widgetAreaStyle.display;
@@ -68,44 +107,35 @@ const Footer = () => {
             plusButton.style.display = 'none'
             minusButton.style.display = 'inline-block';
             
-            // when compaywidget is opened all other opened widget should be closed
-            // close productWidget
-            // close servicesWidget
-            // if the companyWidget is opened
-            // check other opened widget
-                // if others is opened
-                // change display to 'none'
-                // else if display is 'none'
-                // return
-                const servicesWidget = document.querySelector('.services-sub-box');
-                const isServicesWidgetOpened = window.getComputedStyle(servicesWidget).display !== 'none' ? true : false;
-                const openServicesWidgetButton = document.querySelector('.plusServicesWidget');
-                const closeServicesWidgetButton = document.querySelector('.minusServicesWidget');
+            const servicesWidget = document.querySelector('.services-sub-box');
+            const isServicesWidgetOpened = window.getComputedStyle(servicesWidget).display !== 'none' ? true : false;
+            const openServicesWidgetButton = document.querySelector('.plusServicesWidget');
+            const closeServicesWidgetButton = document.querySelector('.minusServicesWidget');
 
-                
-                const productsWidget = document.querySelector('.products-sub-box');
-                const isProductsWidgetOpened = window.getComputedStyle(productsWidget).display !== 'none' ? true : false;
-                const openProductsWidgetButton = document.querySelector('.plusProductsWidget');
-                const closeProductsWidgetButton = document.querySelector('.minusProductsWidget');
-                
-                if (isServicesWidgetOpened || isProductsWidgetOpened) {
-                    servicesWidget.style.display = 'none';
-                    productsWidget.style.display = 'none';
-
-                    openServicesWidgetButton.style.display = 'inline-block'
-                    openProductsWidgetButton.style.display = 'inline-block';
-
-                    closeServicesWidgetButton.style.display = 'none'
-                    closeProductsWidgetButton.style.display = 'none'
-            }
             
-            console.log("God is the Greatest---------------------------------------------------");
+            const productsWidget = document.querySelector('.products-sub-box');
+            const isProductsWidgetOpened = window.getComputedStyle(productsWidget).display !== 'none' ? true : false;
+            const openProductsWidgetButton = document.querySelector('.plusProductsWidget');
+            const closeProductsWidgetButton = document.querySelector('.minusProductsWidget');
             
-            return 0;
+            if (isServicesWidgetOpened || isProductsWidgetOpened) {
+                servicesWidget.style.display = 'none';
+                productsWidget.style.display = 'none';
+
+                openServicesWidgetButton.style.display = 'inline-block'
+                openProductsWidgetButton.style.display = 'inline-block';
+
+                closeServicesWidgetButton.style.display = 'none'
+                closeProductsWidgetButton.style.display = 'none'
         }
+            
+        console.log("God is the Greatest---------------------------------------------------");
+        
+        return 0;
+    }
 
         return 1;
-    } 
+    }
 
     const contractCompanyWidget = () => {
         const widgetArea = document.querySelector('.company-sub-box');
@@ -124,7 +154,6 @@ const Footer = () => {
 
         }
 
-
         return 1;
     }
 
@@ -141,17 +170,38 @@ const Footer = () => {
         const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
         
         
-        // if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none' ) {
         if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none') {
             widgetArea.style.display = 'block';
             plusButton.style.display = 'none'
             minusButton.style.display = 'inline-block';
             
+            const companyWidget = document.querySelector('.company-sub-box');
+            const isCompanyWidgetOpened = window.getComputedStyle(companyWidget).display !== 'none' ? true : false;
+            const openCompanyWidgetButton = document.querySelector('.plusCompanyWidget');
+            const closeCompanyWidgetButton = document.querySelector('.minusCompanyWidget');
+
+            
+            const productsWidget = document.querySelector('.products-sub-box');
+            const isProductsWidgetOpened = window.getComputedStyle(productsWidget).display !== 'none' ? true : false;
+            const openProductsWidgetButton = document.querySelector('.plusProductsWidget');
+            const closeProductsWidgetButton = document.querySelector('.minusProductsWidget');
+            
+            if (isCompanyWidgetOpened || isProductsWidgetOpened) {
+                companyWidget.style.display = 'none';
+                productsWidget.style.display = 'none';
+
+                openCompanyWidgetButton.style.display = 'inline-block'
+                openProductsWidgetButton.style.display = 'inline-block';
+
+                closeCompanyWidgetButton.style.display = 'none'
+                closeProductsWidgetButton.style.display = 'none'
+            }
+            
+            console.log("God is the Greatest---------------------------------------------------");
             
             return 0;
         }
-        
-        console.log("God is the Greatest---------------------------------------------------");
+
         return 1;
     }
 
@@ -174,6 +224,7 @@ const Footer = () => {
 
         return 1;
     }
+    
 
     const expandProductsWidget = () => {
         const widgetArea = document.querySelector('.products-sub-box');
@@ -187,18 +238,40 @@ const Footer = () => {
         const minusButtonDisplayed = window.getComputedStyle(minusButton).display;
         
         
-        // if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none' ) {
         if (isWidgetAreaDisplayed ==='none' && plusButtonDisplayed !== 'none') {
             widgetArea.style.display = 'block';
             plusButton.style.display = 'none'
             minusButton.style.display = 'inline-block';
             
+            const companyWidget = document.querySelector('.company-sub-box');
+            const isCompanyWidgetOpened = window.getComputedStyle(companyWidget).display !== 'none' ? true : false;
+            const openCompanyWidgetButton = document.querySelector('.plusCompanyWidget');
+            const closeCompanyWidgetButton = document.querySelector('.minusCompanyWidget');
+
+            
+            const servicesWidget = document.querySelector('.services-sub-box');
+            const isServicesWidgetOpened = window.getComputedStyle(servicesWidget).display !== 'none' ? true : false;
+            const openServicesWidgetButton = document.querySelector('.plusServicesWidget');
+            const closeProductsWidgetButton = document.querySelector('.minusServicesWidget');
+            
+            if (isCompanyWidgetOpened || isServicesWidgetOpened) {
+                companyWidget.style.display = 'none';
+                servicesWidget.style.display = 'none';
+
+                openCompanyWidgetButton.style.display = 'inline-block'
+                openServicesWidgetButton.style.display = 'inline-block';
+
+                closeCompanyWidgetButton.style.display = 'none'
+                closeProductsWidgetButton.style.display = 'none'
+            }
+            
+            console.log("God is the Greatest---------------------------------------------------");
             
             return 0;
         }
-        
-        console.log("God is the Greatest---------------------------------------------------");
+
         return 1;
+  
     } 
     
     const contractProductsWidget = () => {
