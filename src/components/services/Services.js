@@ -2,8 +2,22 @@ import React from "react";
 // import "./Services.sass";
 import { 
     ServicesWrap,
+    ServicesHeaderWrap,
+    ServicesIntroMain,
     ServicesIntro,
-
+    ServicesRow,
+    BrandingBox,
+    BrandingHeader,
+    WebDevBox,
+    WebDevHeader,
+    ConsultBox,
+    ConsultHeader,
+    ScalabilityBox,
+    ScalabilityHeader,
+    DigitalMarketingBox,
+    DigitalMarketingHeader,
+    PublishingBox,
+    PublishingHeader,
 } from './ServicesStyle'
 
 const Services = () => {
@@ -22,8 +36,7 @@ const Services = () => {
                     </ServicesIntro>
                 </ServicesHeaderWrap>
 
-                <ServicesBodyWrap>
-
+                <ServicesRow>
                     <BrandingBox>
                         <BrandingHeader>Branding</BrandingHeader>
                         <div>
@@ -72,7 +85,7 @@ const Services = () => {
                             <img alt="Publishing image for publishing" />
                         </div>
                     </PublishingBox>
-                </ServicesBodyWrap>
+                </ServicesRow>
             </ServicesWrap>
         </div>
     )
