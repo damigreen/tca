@@ -1,18 +1,84 @@
 import styled from 'styled-components'
 
-export const Styled_ServicesWrap = styled.div`
-    /* display: inline-block; */
+export const ServicesWrap = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 `
+
+export const ServicesHeaderWrap = styled.div`
+    border: 1px solid green;
+`
+
+export const ServicesIntroMain = styled.div`
+    background-color: blue;
+`
+
 export const ServicesIntro = styled.div`
     border: 1px solid green;
 `
 
-export const ServicesBox = styled.div`
+export const ServicesRow = styled.div`
     border: 1px solid red;
+
+    .branding {
+        background-color: red;
+    }
+    .web-dev {
+        background-color: green;
+    }
+
 `
+
+export const BrandingBox = styled.div`
+    border: 1px solid green;
+`
+
+export const BrandingHeader = styled.div`
+    border: 1px solid green;
+`
+
+export const WebDevBox = styled.div`
+    border: 1px solid green;
+`
+
+export const WebDevHeader = styled.div`
+    border: 1px solid green;
+`
+
+export const ConsultBox = styled.div`
+    border: 1px solid green;
+`
+
+export const ConsultHeader = styled.div`
+    border: 1px solid green;
+`
+
+export const ScalabilityBox = styled.div`
+    border: 1px solid green;
+`
+
+export const ScalabilityHeader = styled.div`
+    border: 1px solid green;
+`
+
+export const DigitalMarketingBox = styled.div`
+    border: 1px solid green;
+`
+
+export const DigitalMarketingHeader = styled.div`
+    border: 1px solid green;
+`
+
+export const PublishingBox = styled.div`
+    border: 1px solid green;
+`
+
+export const PublishingHeader = styled.div`
+    border: 1px solid green;
+`
+
+
 
 export const ServicesHeader = styled.h4`
     /* border: 1px solid green; */
