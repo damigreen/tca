@@ -6,14 +6,18 @@ export const HeaderStyled = styled.h1`
     text-align: center;
 `
 
-export const FlexColWrap = styled.div`
+export const headerSecStyled = `
+    font-weight: 500;
+`
+
+export const flexColWrap = `
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 `
 
-export const FlexRowWrap =  styled.div`
+export const flexRowWrap =  `
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,6 +25,6 @@ export const FlexRowWrap =  styled.div`
 
 `
 
-export const BorderStyle = styled.div`
+export const borderStyle = `
     border: 2px solid black;
 `
