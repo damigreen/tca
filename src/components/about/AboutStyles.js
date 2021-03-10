@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import {
   HeaderStyled,
-  FlexWrap,
+  FlexColWrap,
   BorderStyle,
  } from '../../AppStyled';
 
 
 export const AboutSection = styled.div`
+
 `
 
-export const AboutHeaderWrap = styled(FlexWrap)`
+export const AboutHeaderWrap = styled(FlexColWrap)`
   margin: 0;
   padding: 0;
 `
