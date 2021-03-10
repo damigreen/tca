@@ -1,7 +1,44 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import {
-    FlexColWrap,
+    flexColWrap,
+    flexRowWrap,
+    borderStyle,
+    headerSecStyled,
 } from 'AppStyled'
+
+
+const serviceImageL = `
+    width: auto;
+    height: auto;
+    margin-left: 1.4rem;
+    margin-right: 0.7rem;
+    align-self: flex-start;
+    `
+    
+const serviceImageR = `
+    ${borderStyle};
+    width: auto;
+    height: auto;
+    margin-left: 0.7rem;
+    margin-right: 1.4rem;
+    align-self: flex-start;
+`
+
+const servicesBodyR = `
+    width: 60%;
+    margin-right: 0.7rem;
+    text-align: left;
+    padding-left: 0.6rem;
+    `
+    
+const servicesBodyL = `
+    width: 60%;
+    margin-right: 0.7rem;
+    margin-left: 1.4rem;
+    text-align: left;
+    padding-left: 0.6rem;
+
+`
 
 export const ServicesWrap = styled.div`
     display: flex;
@@ -9,22 +46,56 @@ export const ServicesWrap = styled.div`
     flex-wrap: wrap;
 `
 
-export const ServicesRow = styled(FlexColWrap)`
-    border: 1px solid red;
+export const ServicesRow = styled.div`
+    ${flexColWrap}
     
 `
 
 export const BrandingBox = styled.div`
-    border: 1px solid green;
+    ${flexRowWrap};
+    margin-top: 1.4rem;
+
+        .services-image {
+            ${serviceImageL};
+            ${borderStyle};
+
+        }
+
+        .services-body {
+            ${servicesBodyR};
+
+                h4 {
+                    ${headerSecStyled}
+                }
+
+                div {
+                    /* background: red; */
+                }
+        }
 `
 
-export const BrandingHeader = styled.div`
-`
 
-export const BrandingBody = styled.div`
-`
 
 export const WebDevBox = styled.div`
+    ${flexRowWrap};
+    margin-top: 1.4rem;
+    text-align: left;
+
+    .services-image {
+        ${serviceImageR};
+    }
+
+    .services-body {
+        ${servicesBodyL}
+
+            h4 {
+                ${headerSecStyled};
+            }
+            div {
+                p
+            }
+    }
+
 `
 
 export const WebDevHeader = styled.div`

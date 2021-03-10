@@ -4,6 +4,7 @@ import {
     ServicesWrap,
     ServicesRow,
     BrandingBox,
+    // BrandingImage,
     BrandingHeader,
     BrandingBody,
     WebDevBox,
@@ -25,21 +26,28 @@ const Services = () => {
             <ServicesWrap>
                 <ServicesRow>
                     <BrandingBox>
-                        <BrandingHeader>Branding</BrandingHeader>
-                        <BrandingBody>
-                            Our branding service helps handle all the hassle in-between transforming an idea into a scalable product then getting it to the marketplace to make profit.
-                             <img alt="Branding image for branding" />
-                        </BrandingBody>
+                        <div className="services-image">
+                            <img alt="Branding image for branding" />
+                        </div>
+
+                        <div className="services-body">
+                            <h4>Branding</h4>
+                            <div>Our branding service helps handle all the hassle in-between transforming an idea into a scalable product then getting it to the marketplace to make profit.</div>
+                        </div>
                     </BrandingBox>
 
-                    <WebDevBox className="web-dev">
-                        <WebDevHeader>Web Design and Development</WebDevHeader>
-                        <div>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <WebDevBox>
+
+                        <div className="services-body">
+                            <h4>Web Design and Development</h4>
+                            <div>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                        <div className="services-image">
                             <img alt="WebDev image for web design and development" />
                         </div>
                     </WebDevBox>
-
 
                     <ConsultBox>
                         <ConsultHeader>Consultancy</ConsultHeader>
