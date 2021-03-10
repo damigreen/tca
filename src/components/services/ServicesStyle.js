@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import {
+    FlexColWrap,
+} from 'AppStyled'
 
 export const ServicesWrap = styled.div`
     display: flex;
@@ -6,16 +9,9 @@ export const ServicesWrap = styled.div`
     flex-wrap: wrap;
 `
 
-export const ServicesRow = styled.div`
+export const ServicesRow = styled(FlexColWrap)`
     border: 1px solid red;
-
-    .branding {
-        background-color: red;
-    }
-    .web-dev {
-        background-color: green;
-    }
-
+    
 `
 
 export const BrandingBox = styled.div`
@@ -23,6 +19,9 @@ export const BrandingBox = styled.div`
 `
 
 export const BrandingHeader = styled.div`
+`
+
+export const BrandingBody = styled.div`
 `
 
 export const WebDevBox = styled.div`

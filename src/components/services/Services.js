@@ -5,6 +5,7 @@ import {
     ServicesRow,
     BrandingBox,
     BrandingHeader,
+    BrandingBody,
     WebDevBox,
     WebDevHeader,
     ConsultBox,
@@ -25,10 +26,10 @@ const Services = () => {
                 <ServicesRow>
                     <BrandingBox>
                         <BrandingHeader>Branding</BrandingHeader>
-                        <div>
+                        <BrandingBody>
                             Our branding service helps handle all the hassle in-between transforming an idea into a scalable product then getting it to the marketplace to make profit.
-                            <img alt="Branding image for branding" />
-                        </div>
+                             <img alt="Branding image for branding" />
+                        </BrandingBody>
                     </BrandingBox>
 
                     <WebDevBox className="web-dev">
