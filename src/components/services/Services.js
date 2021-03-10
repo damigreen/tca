@@ -2,9 +2,6 @@ import React from "react";
 // import "./Services.sass";
 import { 
     ServicesWrap,
-    ServicesHeaderWrap,
-    ServicesIntroMain,
-    ServicesIntro,
     ServicesRow,
     BrandingBox,
     BrandingHeader,
@@ -21,21 +18,10 @@ import {
 } from './ServicesStyle'
 
 const Services = () => {
-    const sampleImage = '';
 
     return (
         <div>
             <ServicesWrap>
-                <ServicesHeaderWrap>
-                    <ServicesIntroMain>
-                        Discover and Engage More Audience 
-                    </ServicesIntroMain>
-
-                    <ServicesIntro>
-                        We help fast-track businesses to their digital goals through unique branding, marketing and advertising.
-                    </ServicesIntro>
-                </ServicesHeaderWrap>
-
                 <ServicesRow>
                     <BrandingBox>
                         <BrandingHeader>Branding</BrandingHeader>
