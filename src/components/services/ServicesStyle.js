@@ -91,35 +91,97 @@ export const WebDevBox = styled.div`
             h4 {
                 ${headerSecStyled};
             }
-            div {
-                p
+            div {   
             }
     }
 
 `
 
-export const WebDevHeader = styled.div`
-`
 
 export const ConsultBox = styled.div`
-`
+    ${flexRowWrap};
+    margin-top: 1.4rem;
 
-export const ConsultHeader = styled.div`
+        .services-image {
+            ${serviceImageL};
+            ${borderStyle};
+
+        }
+
+        .services-body {
+            ${servicesBodyR};
+
+                h4 {
+                    ${headerSecStyled}
+                }
+
+                div {
+                    /* background: red; */
+                }
+        }
 `
 
 export const ScalabilityBox = styled.div`
-`
+    ${flexRowWrap};
+    margin-top: 1.4rem;
+    text-align: left;
 
-export const ScalabilityHeader = styled.div`
+    .services-image {
+        ${serviceImageR};
+    }
+
+    .services-body {
+        ${servicesBodyL}
+
+            h4 {
+                ${headerSecStyled};
+            }
+            div {   
+            }
+    }
 `
 
 export const DigitalMarketingBox = styled.div`
-`
+    ${flexRowWrap};
+    margin-top: 1.4rem;
 
-export const DigitalMarketingHeader = styled.div`
+        .services-image {
+            ${serviceImageL};
+            ${borderStyle};
+
+        }
+
+        .services-body {
+            ${servicesBodyR};
+
+                h4 {
+                    ${headerSecStyled}
+                }
+
+                div {
+                    /* background: red; */
+                }
+        }
 `
 
 export const PublishingBox = styled.div`
+    ${flexRowWrap};
+    margin-top: 1.4rem;
+    text-align: left;
+
+    .services-image {
+        ${serviceImageR};
+    }
+
+    .services-body {
+        ${servicesBodyL}
+
+            h4 {
+                ${headerSecStyled};
+            }
+            div {   
+            }
+    }
 `
 
 export const PublishingHeader = styled.div`
