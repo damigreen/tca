@@ -20,6 +20,7 @@ import {
 const Services = () => {
     const brandingImage = '../illustrations/branding-mobile.png';
     const webDevImage = '../illustrations/web-dev-mobile.png'
+    const consultancyImage = '../illustrations/consultancy-mobile.png'
 
     return (
         <div>
@@ -54,11 +55,12 @@ const Services = () => {
                     </WebDevBox>
 
                     <ConsultBox>
+                        <h4>Consultancy</h4>
                         <div className="services-image">
-                            <img alt="Consult image for consultancy"  />
+                            <img src={consultancyImage} alt="Consult image for consultancy"  />
                         </div>
                         <div className="services-body">
-                            <h4>Consultancy</h4>
+                            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
                             <div>An appointment for our consultancy service provides clients with timely professional advice to all the questions they need answered regarding all aspects of their business.</div>
                             <ButtonServices>LEARN MORE</ButtonServices>
                         </div>

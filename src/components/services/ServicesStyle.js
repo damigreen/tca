@@ -37,6 +37,7 @@ const servicesBody = `
 
 const servicesHeaderSecondary = `
     width: 75%;
+    margin-bottom: 0.983rem;
 `
 
 export const ButtonServices = styled.button`
