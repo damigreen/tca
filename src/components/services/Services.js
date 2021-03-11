@@ -23,6 +23,7 @@ const Services = () => {
     const consultancyImage = '../illustrations/consultancy-mobile.png';
     const scalabilityImage = '../illustrations/scalability-mobile.png';
     const digitalMarketImage = '../illustrations/digital-market-mobile.png';
+    const publishingImage = '../illustrations/publishing-mobile.png';
 
     return (
         <div>
@@ -98,15 +99,17 @@ const Services = () => {
                     </DigitalMarketingBox>
 
                     <PublishingBox>
+                        <h4>Publishing</h4>
+                        <div className="services-image">
+                            <img src={publishingImage} alt="Publishing image for publishing" />
+                        </div>
+
                         <div className="services-body">
-                            <h4>Publishing</h4>
+                            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
                             <div>
                                 We write reviews for products, brands and individual clients to be published on our platform’s blog or other respected media outlets eg: Medium, Native Mag or the client’s choice of media house.
                             </div>
                             <ButtonServices>LEARN MORE</ButtonServices>
-                        </div>
-                        <div className="services-image">
-                            <img alt="Publishing image for publishing" />
                         </div>
                     </PublishingBox>
                 </ServicesRow>

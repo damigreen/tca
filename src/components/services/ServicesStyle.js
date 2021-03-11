@@ -186,22 +186,28 @@ export const DigitalMarketingBox = styled.div`
 `
 
 export const PublishingBox = styled.div`
-    ${flexRowWrap};
-    margin-top: 1.4rem;
-    text-align: left;
+    ${flexColWrap};
+
+    h4 {
+        ${servicesHeader}
+        margin-top: 1.4rem;
+        margin-bottom: 1.234rem;
+    }
 
     .services-image {
+        ${servicesImage};
     }
 
     .services-body {
+        ${servicesBody};
 
-            h4 {
-                ${headerSecStyled};
-            }
-            div {   
-            }
+        h3 {
+            ${servicesHeaderSecondary};
+        }
+
+        button {
+            margin-top: 2rem;
+            border: 2px solid #027353;
+        }
     }
-`
-
-export const PublishingHeader = styled.div`
 `
