@@ -22,6 +22,7 @@ const Services = () => {
     const webDevImage = '../illustrations/web-dev-mobile.png';
     const consultancyImage = '../illustrations/consultancy-mobile.png';
     const scalabilityImage = '../illustrations/scalability-mobile.png';
+    const digitalMarketImage = '../illustrations/digital-market-mobile.png';
 
     return (
         <div>
@@ -84,7 +85,7 @@ const Services = () => {
                     <DigitalMarketingBox>
                         <h4>Digital Marketing</h4>
                         <div className="services-image">
-                            <img alt="DigitalMarketing image for digital marketing" />
+                            <img src={digitalMarketImage} alt="DigitalMarketing image for digital marketing" />
                         </div>
 
                         <div className="services-body">

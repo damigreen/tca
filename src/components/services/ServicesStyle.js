@@ -134,49 +134,55 @@ export const ConsultBox = styled.div`
 export const ScalabilityBox = styled.div`
     ${flexColWrap};
 
-h4 {
-    ${servicesHeader}
-    margin-top: 1.4rem;
-    margin-bottom: 1.234rem;
-}
-
-.services-image {
-    ${servicesImage};
-}
-
-.services-body {
-    ${servicesBody};
-
-    h3 {
-        ${servicesHeaderSecondary};
+    h4 {
+        ${servicesHeader}
+        margin-top: 1.4rem;
+        margin-bottom: 1.234rem;
     }
 
-    button {
-        margin-top: 2rem;
-        border: 2px solid #027353;
+    .services-image {
+        ${servicesImage};
     }
-}
+
+    .services-body {
+        ${servicesBody};
+
+        h3 {
+            ${servicesHeaderSecondary};
+        }
+
+        button {
+            margin-top: 2rem;
+            border: 2px solid #027353;
+        }
+    }
 `
 
 export const DigitalMarketingBox = styled.div`
-    ${flexRowWrap};
-    margin-top: 1.4rem;
+    ${flexColWrap};
 
-        .services-image {
-            ${borderStyle};
+    h4 {
+        ${servicesHeader}
+        margin-top: 1.4rem;
+        margin-bottom: 1.234rem;
+    }
 
+    .services-image {
+        ${servicesImage};
+    }
+
+    .services-body {
+        ${servicesBody};
+
+        h3 {
+            ${servicesHeaderSecondary};
         }
 
-        .services-body {
-
-                h4 {
-                    ${headerSecStyled}
-                }
-
-                div {
-                    /* background: red; */
-                }
+        button {
+            margin-top: 2rem;
+            border: 2px solid #027353;
         }
+    }
 `
 
 export const PublishingBox = styled.div`
