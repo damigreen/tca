@@ -10,25 +10,28 @@ import {
     ScalabilityBox,
     DigitalMarketingBox,
     PublishingBox,
+    ButtonServices,
 } from './ServicesStyle'
 
 import {
-    ButtonServices
+    // ButtonServices
 } from 'AppStyled';
 
 const Services = () => {
+    const brandingImage = '../illustrations/branding-mobile.png';
 
     return (
         <div>
             <ServicesWrap>
                 <ServicesRow>
                     <BrandingBox>
+                        <h4>Branding</h4>
                         <div className="services-image">
-                            <img alt="Branding image for branding" />
+                            <img src={brandingImage} alt="Branding image for branding" />
                         </div>
 
                         <div className="services-body">
-                            <h4>Branding</h4>
+                            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
                             <div>Our branding service helps handle all the hassle in-between transforming an idea into a scalable product then getting it to the marketplace to make profit.</div>
                             <ButtonServices>LEARN MORE</ButtonServices>
                         </div>

@@ -7,39 +7,6 @@ import {
 } from 'AppStyled'
 
 
-const serviceImageL = `
-    width: auto;
-    height: auto;
-    margin-left: 1.4rem;
-    margin-right: 0.7rem;
-    align-self: flex-start;
-`
-    
-const serviceImageR = `
-    ${borderStyle};
-    width: auto;
-    height: auto;
-    margin-left: 0.7rem;
-    margin-right: 1.4rem;
-    align-self: flex-start;
-`
-
-const servicesBodyR = `
-    width: 60%;
-    margin-right: 0.7rem;
-    text-align: left;
-    padding-left: 0.6rem;
-    `
-    
-const servicesBodyL = `
-    width: 60%;
-    margin-right: 0.7rem;
-    margin-left: 1.4rem;
-    text-align: left;
-    padding-left: 0.6rem;
-
-`
-
 export const ServicesWrap = styled.div`
     display: flex;
     flex-direction: row;
@@ -47,35 +14,62 @@ export const ServicesWrap = styled.div`
 `
 
 export const ServicesRow = styled.div`
-    ${flexColWrap}
-    
+    margin: 0 auto;
+    width: 95%;
+    ${flexColWrap};
 `
 
+const servicesHeader = `
+    color: #023E73;
+    font-size: 18px;
+`
+
+const servicesImage = `
+    margin-bottom: 1.8973rem;
+    width: auto;
+    height: auto;
+`
+
+const servicesBody = `
+    text-align: left;
+    padding: 1rem;
+`
+
+const servicesHeaderSecondary = `
+    width: 75%;
+`
+
+export const ButtonServices = styled.button`
+    margin-top: 2rem;
+    border: 2px solid #027353;
+`
+
+
 export const BrandingBox = styled.div`
-    ${flexRowWrap};
+    ${flexColWrap};
+
+h4 {
+    ${servicesHeader}
     margin-top: 1.4rem;
+    margin-bottom: 1.234rem;
+}
 
-    .services-image {
-        ${serviceImageL};
-        ${borderStyle};
+.services-image {
+    ${servicesImage};
+}
+
+.services-body {
+    ${servicesBody};
+
+    h3 {
+        ${servicesHeaderSecondary};
     }
 
-    .services-body {
-        ${servicesBodyR};
-
-        h4 {
-            ${headerSecStyled}
-        }
-
-        div {
-            /* background: red; */
-        }
-
-        button {
-            margin-top: 2rem;
-            border: 2px solid #027353;
-        }
+    button {
+        margin-top: 2rem;
+        border: 2px solid #027353;
     }
+}
 `
 
 
@@ -86,11 +80,9 @@ export const WebDevBox = styled.div`
     text-align: left;
 
     .services-image {
-        ${serviceImageR};
     }
 
     .services-body {
-        ${servicesBodyL}
 
             h4 {
                 ${headerSecStyled};
@@ -107,13 +99,11 @@ export const ConsultBox = styled.div`
     margin-top: 1.4rem;
 
         .services-image {
-            ${serviceImageL};
             ${borderStyle};
 
         }
 
         .services-body {
-            ${servicesBodyR};
 
                 h4 {
                     ${headerSecStyled}
@@ -131,11 +121,9 @@ export const ScalabilityBox = styled.div`
     text-align: left;
 
     .services-image {
-        ${serviceImageR};
     }
 
     .services-body {
-        ${servicesBodyL}
 
             h4 {
                 ${headerSecStyled};
@@ -150,13 +138,11 @@ export const DigitalMarketingBox = styled.div`
     margin-top: 1.4rem;
 
         .services-image {
-            ${serviceImageL};
             ${borderStyle};
 
         }
 
         .services-body {
-            ${servicesBodyR};
 
                 h4 {
                     ${headerSecStyled}
@@ -174,11 +160,9 @@ export const PublishingBox = styled.div`
     text-align: left;
 
     .services-image {
-        ${serviceImageR};
     }
 
     .services-body {
-        ${servicesBodyL}
 
             h4 {
                 ${headerSecStyled};
