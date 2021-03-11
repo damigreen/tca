@@ -13,7 +13,7 @@ const serviceImageL = `
     margin-left: 1.4rem;
     margin-right: 0.7rem;
     align-self: flex-start;
-    `
+`
     
 const serviceImageR = `
     ${borderStyle};
@@ -55,23 +55,27 @@ export const BrandingBox = styled.div`
     ${flexRowWrap};
     margin-top: 1.4rem;
 
-        .services-image {
-            ${serviceImageL};
-            ${borderStyle};
+    .services-image {
+        ${serviceImageL};
+        ${borderStyle};
+    }
 
+    .services-body {
+        ${servicesBodyR};
+
+        h4 {
+            ${headerSecStyled}
         }
 
-        .services-body {
-            ${servicesBodyR};
-
-                h4 {
-                    ${headerSecStyled}
-                }
-
-                div {
-                    /* background: red; */
-                }
+        div {
+            /* background: red; */
         }
+
+        button {
+            margin-top: 2rem;
+            border: 2px solid #027353;
+        }
+    }
 `
 
 
