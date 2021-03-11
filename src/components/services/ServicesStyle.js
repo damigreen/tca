@@ -48,71 +48,86 @@ export const ButtonServices = styled.button`
 export const BrandingBox = styled.div`
     ${flexColWrap};
 
-h4 {
-    ${servicesHeader}
-    margin-top: 1.4rem;
-    margin-bottom: 1.234rem;
-}
-
-.services-image {
-    ${servicesImage};
-}
-
-.services-body {
-    ${servicesBody};
-
-    h3 {
-        ${servicesHeaderSecondary};
+    h4 {
+        ${servicesHeader}
+        margin-top: 1.4rem;
+        margin-bottom: 1.234rem;
     }
 
-    button {
-        margin-top: 2rem;
-        border: 2px solid #027353;
+    .services-image {
+        ${servicesImage};
     }
-}
+
+    .services-body {
+        ${servicesBody};
+
+        h3 {
+            ${servicesHeaderSecondary};
+        }
+
+        button {
+            margin-top: 2rem;
+            border: 2px solid #027353;
+        }
+    }
 `
 
 
 
 export const WebDevBox = styled.div`
-    ${flexRowWrap};
-    margin-top: 1.4rem;
-    text-align: left;
+    ${flexColWrap};
+
+    h4 {
+        ${servicesHeader}
+        margin-top: 1.4rem;
+        margin-bottom: 1.234rem;
+    }
 
     .services-image {
+        ${servicesImage};
     }
 
     .services-body {
+        ${servicesBody};
 
-            h4 {
-                ${headerSecStyled};
-            }
-            div {   
-            }
+        h3 {
+            ${servicesHeaderSecondary};
+        }
+
+        button {
+            margin-top: 2rem;
+            border: 2px solid #027353;
+        }
     }
 
 `
 
 
 export const ConsultBox = styled.div`
-    ${flexRowWrap};
-    margin-top: 1.4rem;
+    ${flexColWrap};
 
-        .services-image {
-            ${borderStyle};
+    h4 {
+        ${servicesHeader}
+        margin-top: 1.4rem;
+        margin-bottom: 1.234rem;
+    }
 
+    .services-image {
+        ${servicesImage};
+    }
+
+    .services-body {
+        ${servicesBody};
+
+        h3 {
+            ${servicesHeaderSecondary};
         }
 
-        .services-body {
-
-                h4 {
-                    ${headerSecStyled}
-                }
-
-                div {
-                    /* background: red; */
-                }
+        button {
+            margin-top: 2rem;
+            border: 2px solid #027353;
         }
+    }
 `
 
 export const ScalabilityBox = styled.div`

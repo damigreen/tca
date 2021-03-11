@@ -19,6 +19,7 @@ import {
 
 const Services = () => {
     const brandingImage = '../illustrations/branding-mobile.png';
+    const webDevImage = '../illustrations/web-dev-mobile.png'
 
     return (
         <div>
@@ -38,15 +39,17 @@ const Services = () => {
                     </BrandingBox>
 
                     <WebDevBox>
+                        <h4>Web Design and Development</h4>
+                        <div className="services-image">
+                            <img src={webDevImage} alt="WebDev image for web design and development" />
+                        </div>
+
                         <div className="services-body">
-                            <h4>Web Design and Development</h4>
+                            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
                             <div>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </div>
                             <ButtonServices>LEARN MORE</ButtonServices>
-                        </div>
-                        <div className="services-image">
-                            <img alt="WebDev image for web design and development" />
                         </div>
                     </WebDevBox>
 
