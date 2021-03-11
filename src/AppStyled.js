@@ -28,3 +28,9 @@ export const flexRowWrap =  `
 export const borderStyle = `
     border: 2px solid black;
 `
+
+    export const ButtonServices = styled.button`
+    margin-top: 2rem;
+    border: 2px solid #027353;
+`
+
