@@ -132,21 +132,30 @@ export const ConsultBox = styled.div`
 `
 
 export const ScalabilityBox = styled.div`
-    ${flexRowWrap};
+    ${flexColWrap};
+
+h4 {
+    ${servicesHeader}
     margin-top: 1.4rem;
-    text-align: left;
+    margin-bottom: 1.234rem;
+}
 
-    .services-image {
+.services-image {
+    ${servicesImage};
+}
+
+.services-body {
+    ${servicesBody};
+
+    h3 {
+        ${servicesHeaderSecondary};
     }
 
-    .services-body {
-
-            h4 {
-                ${headerSecStyled};
-            }
-            div {   
-            }
+    button {
+        margin-top: 2rem;
+        border: 2px solid #027353;
     }
+}
 `
 
 export const DigitalMarketingBox = styled.div`

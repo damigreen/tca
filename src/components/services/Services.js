@@ -19,8 +19,9 @@ import {
 
 const Services = () => {
     const brandingImage = '../illustrations/branding-mobile.png';
-    const webDevImage = '../illustrations/web-dev-mobile.png'
-    const consultancyImage = '../illustrations/consultancy-mobile.png'
+    const webDevImage = '../illustrations/web-dev-mobile.png';
+    const consultancyImage = '../illustrations/consultancy-mobile.png';
+    const scalabilityImage = '../illustrations/scalability-mobile.png';
 
     return (
         <div>
@@ -67,27 +68,29 @@ const Services = () => {
                     </ConsultBox>
 
                     <ScalabilityBox>
+                        <h4>Scalability</h4>
+                        <div className="services-image">
+                            <img src={scalabilityImage} alt="Scalability image for scalability" />
+                        </div>
                         <div className="services-body">
-                            <h4>Scalability</h4>
                             <div>
-                                We help scale your brand to break-even and make revenue. We take up the hassle of strategizing and positioning the brand to make profit.
+                                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                                <div>We help scale your brand to break-even and make revenue. We take up the hassle of strategizing and positioning the brand to make profit.</div>
                             </div>
                             <ButtonServices>LEARN MORE</ButtonServices>
-                        </div>
-                        <div className="services-image">
-                            <img alt="Scalability image for scalability" />
                         </div>
                     </ScalabilityBox>
 
                     <DigitalMarketingBox>
+                        <h4>Digital Marketing</h4>
                         <div className="services-image">
                             <img alt="DigitalMarketing image for digital marketing" />
                         </div>
 
                         <div className="services-body">
-                            <h4>Digital Marketing</h4>
                             <div>
-                                We assists clients in determining their strengths, weaknesses and uniqueness as a brand. The agency offers innovative & creative digital marketing methods to target audiences for already established brands/clients as well as brands/clients just starting out in their various fields.
+                                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                                <div>We assists clients in determining their strengths, weaknesses and uniqueness as a brand. The agency offers innovative & creative digital marketing methods to target audiences for already established brands/clients as well as brands/clients just starting out in their various fields.</div>
                             </div>
                             <ButtonServices>LEARN MORE</ButtonServices>
                         </div>
