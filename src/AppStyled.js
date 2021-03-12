@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const HeaderStyled = styled.h1`
-    font-size: 24px;
-    font-weight: 600;   
-    text-align: center;
-`
 
 export const headerSecStyled = `
     font-weight: 500;
@@ -28,6 +23,4 @@ export const flexRowWrap =  `
 export const borderStyle = `
     border: 2px solid black;
 `
-
-    
 

@@ -14,7 +14,6 @@ const AppWrapper = styled.div`
 `
 
 const MainWrapper = styled.main`
-  border: 1px solid red;
   text-align: center;
 
 `
