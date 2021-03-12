@@ -20,7 +20,10 @@ export const ServicesRow = styled.div`
 `
 
 const servicesHeader = `
-    color: #023E73;
+    // color: #023E73;
+    // color: #035080;
+    // color: #730E34;
+    // color: #0E4C73;
     font-size: 18px;
 `
 
