@@ -1,9 +1,15 @@
 import styled, { css } from 'styled-components';
 import {
-  HeaderStyled,
   flexColWrap,
   BorderStyle,
 } from '../../AppStyled';
+
+const aboutHeader = `
+    font-size: 24px;
+    font-weight: 600;   
+    text-align: center;
+    font-weight: 700;
+`
 
 
 export const AboutSection = styled.div`
@@ -16,12 +22,13 @@ export const AboutHeaderWrap = styled.div`
   padding: 0;
 `
 
-export const AboutHeader = styled(HeaderStyled)`
+export const AboutHeader = styled.h1`
+  ${aboutHeader};
   width: 85%;
   padding: 0.234rem;
-  margin-top: 1.5rem;
+  margin-top: 1.568rem;
   margin-bottom: 1.278rem;
-  color: #03658C;
+  color: #013440;
 `
 
 export const AboutSubHeader = styled.p`

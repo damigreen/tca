@@ -1,7 +1,7 @@
   import React from 'react';
 
 import {
-AboutSection,
+  AboutSection,
   AboutHeaderWrap,
   AboutHeader,
   AboutSubHeader,
