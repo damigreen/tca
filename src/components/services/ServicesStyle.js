@@ -34,6 +34,8 @@ const servicesImage = `
 `
 
 const servicesBody = `
+    background-color: #024959;
+    margin: 0 1.3rem;
     text-align: left;
     padding: 1rem;
 `
@@ -41,6 +43,7 @@ const servicesBody = `
 const servicesHeaderSecondary = `
     width: 75%;
     margin-bottom: 0.983rem;
+
 `
 
 export const ButtonServices = styled.button`
@@ -64,10 +67,13 @@ export const BrandingBox = styled.div`
 
     .services-body {
         ${servicesBody};
+        color: #ffffff;
+
 
         h3 {
             ${servicesHeaderSecondary};
         }
+
 
         button {
             margin-top: 2rem;
@@ -92,6 +98,7 @@ export const WebDevBox = styled.div`
     }
 
     .services-body {
+        color: #ffffff;
         ${servicesBody};
 
         h3 {
@@ -122,6 +129,8 @@ export const ConsultBox = styled.div`
 
     .services-body {
         ${servicesBody};
+        color: #ffffff;
+
 
         h3 {
             ${servicesHeaderSecondary};
@@ -145,9 +154,11 @@ export const ScalabilityBox = styled.div`
 
     .services-image {
         ${servicesImage};
+
     }
 
     .services-body {
+        color: #ffffff;
         ${servicesBody};
 
         h3 {
@@ -175,6 +186,7 @@ export const DigitalMarketingBox = styled.div`
     }
 
     .services-body {
+        color: #ffffff;
         ${servicesBody};
 
         h3 {
@@ -202,6 +214,7 @@ export const PublishingBox = styled.div`
     }
 
     .services-body {
+        color: #ffffff;
         ${servicesBody};
 
         h3 {
