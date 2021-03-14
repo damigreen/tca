@@ -16,34 +16,86 @@ export const ServicesWrap = styled.div`
 export const ServicesRow = styled.div`
     margin: 0 auto;
     width: 95%;
+    width: 90%;
     ${flexColWrap};
 `
 
 const servicesHeader = `
-    // color: #023E73;
-    // color: #035080;
-    // color: #730E34;
-    // color: #0E4C73;
+    display: none;
     font-size: 18px;
+    color: #E9ECE9;
+    color: #C5E7D3;
+    margin-top: 1.4rem;
+    margin-bottom: 1.234rem;
+`
+
+const servicesHeaderMobile = `
+    display: block;
+    letter-spacing: 0.145rem;
+    margin-top: 0.564rem;
+    margin-bottom: 0.79rem;
 `
 
 const servicesImage = `
+    margin-top: 2rem;
     margin-bottom: 1.8973rem;
     width: auto;
     height: auto;
 `
 
 const servicesBody = `
-    background-color: #024959;
+    // background-color: #024959;
+    // background: linear-gradient(to bottom, #024959 26%, #333300 100%);
+    background: linear-gradient(0deg, #09203f 0%, #537895 100%);
+    background:linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background:linear-gradient(0deg, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    background: linear-gradient(0deg, #243949 0%, #517fa4 100%);
     margin: 0 1.3rem;
     text-align: left;
     padding: 1rem;
+    margin-bottom: 7.5rem;
 `
 
 const servicesHeaderSecondary = `
     width: 75%;
     margin-bottom: 0.983rem;
+`
 
+const servicesBodyText = `
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 3.53rem;
+`
+
+const buttonServices = `
+    color: #f29f05;
+    border: none
+    font-size: 16px;
+    font-weight: 400;
+`
+
+const iconStyle = `
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    color: yellow
+    `
+    
+    const arrowStyle = `
+        color: yellow
+        border: 1px solid red;
+        position: absolute;
+        // top: 25px;
+        right: 3px
+        width: 90%;
+        height: 10px;
+        background-color: #fff;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        animation: arrow 700ms linear infinite;
 `
 
 export const ButtonServices = styled.button`
@@ -52,13 +104,12 @@ export const ButtonServices = styled.button`
 `
 
 
+
 export const BrandingBox = styled.div`
     ${flexColWrap};
 
     h4 {
-        ${servicesHeader}
-        margin-top: 1.4rem;
-        margin-bottom: 1.234rem;
+        ${servicesHeader};
     }
 
     .services-image {
@@ -69,15 +120,55 @@ export const BrandingBox = styled.div`
         ${servicesBody};
         color: #ffffff;
 
+        h4 {
+            ${servicesHeader};
+            ${servicesHeaderMobile};
+        }
 
         h3 {
             ${servicesHeaderSecondary};
+        }
+
+        div {
+            ${servicesBodyText};
         }
 
 
         button {
             margin-top: 2rem;
             border: 2px solid #027353;
+        }
+
+        .btn-services {
+            ${buttonServices};
+        }
+
+        .icon {
+            ${iconStyle};
+        }
+
+        .arrow {
+            ${arrowStyle};
+        }
+
+        .arrow::after, .arrow::before {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 10px;
+            right: -8px;
+            background-color: #fff;
+        }
+
+        .arrow::after {
+            top: -12px;
+            transform: rotate(45deg);
+        }
+
+        .arrow::before {
+            top: 12px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+            transform: rotate(-45deg);
         }
     }
 `
@@ -87,126 +178,281 @@ export const BrandingBox = styled.div`
 export const WebDevBox = styled.div`
     ${flexColWrap};
 
+h4 {
+    ${servicesHeader};
+}
+
+.services-image {
+    ${servicesImage};
+}
+
+.services-body {
+    ${servicesBody};
+    color: #ffffff;
+
     h4 {
-        ${servicesHeader}
-        margin-top: 1.4rem;
-        margin-bottom: 1.234rem;
+        ${servicesHeader};
+        ${servicesHeaderMobile};
     }
 
-    .services-image {
-        ${servicesImage};
+    h3 {
+        ${servicesHeaderSecondary};
     }
 
-    .services-body {
-        color: #ffffff;
-        ${servicesBody};
-
-        h3 {
-            ${servicesHeaderSecondary};
-        }
-
-        button {
-            margin-top: 2rem;
-            border: 2px solid #027353;
-        }
+    div {
+        ${servicesBodyText};
     }
 
+
+    button {
+        margin-top: 2rem;
+        border: 2px solid #027353;
+    }
+
+    .btn-services {
+        ${buttonServices};
+    }
+
+    .icon {
+        ${iconStyle};
+    }
+
+    .arrow {
+        ${arrowStyle};
+    }
+
+    .arrow::after, .arrow::before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        right: -8px;
+        background-color: #fff;
+    }
+
+    .arrow::after {
+        top: -12px;
+        transform: rotate(45deg);
+    }
+
+    .arrow::before {
+        top: 12px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        transform: rotate(-45deg);
+    }
+}
 `
 
 
 export const ConsultBox = styled.div`
     ${flexColWrap};
 
+h4 {
+    ${servicesHeader};
+}
+
+.services-image {
+    ${servicesImage};
+}
+
+.services-body {
+    ${servicesBody};
+    color: #ffffff;
+
     h4 {
-        ${servicesHeader}
-        margin-top: 1.4rem;
-        margin-bottom: 1.234rem;
+        ${servicesHeader};
+        ${servicesHeaderMobile};
     }
 
-    .services-image {
-        ${servicesImage};
+    h3 {
+        ${servicesHeaderSecondary};
     }
 
-    .services-body {
-        ${servicesBody};
-        color: #ffffff;
-
-
-        h3 {
-            ${servicesHeaderSecondary};
-        }
-
-        button {
-            margin-top: 2rem;
-            border: 2px solid #027353;
-        }
+    div {
+        ${servicesBodyText};
     }
+
+
+    button {
+        margin-top: 2rem;
+        border: 2px solid #027353;
+    }
+
+    .btn-services {
+        ${buttonServices};
+    }
+
+    .icon {
+        ${iconStyle};
+    }
+
+    .arrow {
+        ${arrowStyle};
+    }
+
+    .arrow::after, .arrow::before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        right: -8px;
+        background-color: #fff;
+    }
+
+    .arrow::after {
+        top: -12px;
+        transform: rotate(45deg);
+    }
+
+    .arrow::before {
+        top: 12px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        transform: rotate(-45deg);
+    }
+}
 `
 
 export const ScalabilityBox = styled.div`
-    ${flexColWrap};
+ ${flexColWrap};
+
+h4 {
+    ${servicesHeader};
+}
+
+.services-image {
+    ${servicesImage};
+}
+
+.services-body {
+    ${servicesBody};
+    color: #ffffff;
 
     h4 {
-        ${servicesHeader}
-        margin-top: 1.4rem;
-        margin-bottom: 1.234rem;
+        ${servicesHeader};
+        ${servicesHeaderMobile};
     }
 
-    .services-image {
-        ${servicesImage};
-
+    h3 {
+        ${servicesHeaderSecondary};
     }
 
-    .services-body {
-        color: #ffffff;
-        ${servicesBody};
-
-        h3 {
-            ${servicesHeaderSecondary};
-        }
-
-        button {
-            margin-top: 2rem;
-            border: 2px solid #027353;
-        }
+    div {
+        ${servicesBodyText};
     }
+
+
+    button {
+        margin-top: 2rem;
+        border: 2px solid #027353;
+    }
+
+    .btn-services {
+        ${buttonServices};
+    }
+
+    .icon {
+        ${iconStyle};
+    }
+
+    .arrow {
+        ${arrowStyle};
+    }
+
+    .arrow::after, .arrow::before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        right: -8px;
+        background-color: #fff;
+    }
+
+    .arrow::after {
+        top: -12px;
+        transform: rotate(45deg);
+    }
+
+    .arrow::before {
+        top: 12px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        transform: rotate(-45deg);
+    }
+}
 `
 
 export const DigitalMarketingBox = styled.div`
-    ${flexColWrap};
+ ${flexColWrap};
+
+h4 {
+    ${servicesHeader};
+}
+
+.services-image {
+    ${servicesImage};
+}
+
+.services-body {
+    ${servicesBody};
+    color: #ffffff;
 
     h4 {
-        ${servicesHeader}
-        margin-top: 1.4rem;
-        margin-bottom: 1.234rem;
+        ${servicesHeader};
+        ${servicesHeaderMobile};
     }
 
-    .services-image {
-        ${servicesImage};
+    h3 {
+        ${servicesHeaderSecondary};
     }
 
-    .services-body {
-        color: #ffffff;
-        ${servicesBody};
-
-        h3 {
-            ${servicesHeaderSecondary};
-        }
-
-        button {
-            margin-top: 2rem;
-            border: 2px solid #027353;
-        }
+    div {
+        ${servicesBodyText};
     }
+
+
+    button {
+        margin-top: 2rem;
+        border: 2px solid #027353;
+    }
+
+    .btn-services {
+        ${buttonServices};
+    }
+
+    .icon {
+        ${iconStyle};
+    }
+
+    .arrow {
+        ${arrowStyle};
+    }
+
+    .arrow::after, .arrow::before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        right: -8px;
+        background-color: #fff;
+    }
+
+    .arrow::after {
+        top: -12px;
+        transform: rotate(45deg);
+    }
+
+    .arrow::before {
+        top: 12px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        transform: rotate(-45deg);
+    }
+}
 `
 
 export const PublishingBox = styled.div`
     ${flexColWrap};
 
     h4 {
-        ${servicesHeader}
-        margin-top: 1.4rem;
-        margin-bottom: 1.234rem;
+        ${servicesHeader};
     }
 
     .services-image {
@@ -214,16 +460,58 @@ export const PublishingBox = styled.div`
     }
 
     .services-body {
-        color: #ffffff;
         ${servicesBody};
+        color: #ffffff;
+
+        h4 {
+            ${servicesHeader};
+            ${servicesHeaderMobile};
+        }
 
         h3 {
             ${servicesHeaderSecondary};
         }
 
+        div {
+            ${servicesBodyText};
+        }
+
+
         button {
             margin-top: 2rem;
             border: 2px solid #027353;
+        }
+
+        .btn-services {
+            ${buttonServices};
+        }
+
+        .icon {
+            ${iconStyle};
+        }
+
+        .arrow {
+            ${arrowStyle};
+        }
+
+        .arrow::after, .arrow::before {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 10px;
+            right: -8px;
+            background-color: #fff;
+        }
+
+        .arrow::after {
+            top: -12px;
+            transform: rotate(45deg);
+        }
+
+        .arrow::before {
+            top: 12px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+            transform: rotate(-45deg);
         }
     }
 `
