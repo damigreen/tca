@@ -15,7 +15,7 @@ const About = () => {
         <AboutSection>
           <AboutHeaderWrap>
             <AboutHeader>
-                Discover and Engage More Audience 
+                Discover and engage more audience 
             </AboutHeader>
 
             <AboutSubHeader>
