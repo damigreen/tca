@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const headerSecStyled = `
     font-weight: 500;
 `

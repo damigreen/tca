@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 import {
   flexColWrap,
-  BorderStyle,
   borderStyle,
 } from '../../AppStyled';
 
