@@ -5,11 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Services from './components/services/';
 import About from './components/about/';
 import TestComponent from './components/testComponent/TestComponent';
-import Footer from './components/footer/'
+import Footer from './components/footer/';
+import Portfolio from './components/portfolio/';
 
 
 const AppWrapper = styled.div`
-  /* background-color: blue; */
   display: block;
 `
 
@@ -29,8 +29,13 @@ function App() {
           <section>
             <About />
           </section>
+
           <section>
             <Services />
+          </section>
+
+          <section>
+            <Portfolio />
           </section>
         </MainWrapper>
         <footer>
