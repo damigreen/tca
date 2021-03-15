@@ -9,7 +9,14 @@ import {
 
 
 const Portfolio = () => {
-  const teamBereImage = '../projects/team-bere.png';
+  // const teamBereImage = '../projects/team-bere.png';
+  const teamBereImage = '../projects/team-bere-mobile.png';
+  // const teamBereImage = '../projects/team-bere-mobile.png';
+  // const teamBereImage = '../projects/team-bere-mobile.png';
+  // const teamBereImage = '../projects/team-bere-mobile.png';
+  // const teamBereImage = '../projects/team-bere-mobile.png';
+  // const teamBereImage = '../projects/team-bere-mobile.png';
+  // const teamBereImage = '../projects/team-bere-mobile.png';
     
   return (
     <PortfolioWrapper>

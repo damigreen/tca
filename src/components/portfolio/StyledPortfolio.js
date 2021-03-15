@@ -32,6 +32,7 @@ export const PortfolioRow = styled.div`
             margin-left: 1.176rem;
             margin-right: 1.176rem;
             margin-bottom: 3.9rem;
+            /* height: 500px; */
             
             a {
                 color: #333;
@@ -40,7 +41,6 @@ export const PortfolioRow = styled.div`
                     margin: 0 auto;
                     border: 1px solid red;
                     align-self: center;
-                    height: 230px;
 
                     img {
                         width: 100%;
