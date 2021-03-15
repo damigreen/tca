@@ -40,6 +40,7 @@ export const PortfolioRow = styled.div`
                     margin: 0 auto;
                     border: 1px solid red;
                     align-self: center;
+                    height: 230px;
 
                     img {
                         width: 100%;

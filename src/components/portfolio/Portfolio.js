@@ -2,13 +2,14 @@ import React from 'react';
 import {
   PortfolioWrapper,
   PortfolioRow,
-
 } from './StyledPortfolio';
 
 
 
+
+
 const Portfolio = () => {
-  const teamBereImage = '../projects/team-bere.png'
+  const teamBereImage = '../projects/team-bere.png';
     
   return (
     <PortfolioWrapper>
@@ -49,11 +50,71 @@ const Portfolio = () => {
               </a>
             </article>
 
+            <article>
+              <a className="project-link" href="#">
+                <div className="portfolio-img">
+                  <img src={teamBereImage} alt="team bere project image" />
+                </div>
+                <div>
+                  <h4 className="project-header">Team bere</h4>
+                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <a className="project-link" href="#">
+                <div className="portfolio-img">
+                  <img src={teamBereImage} alt="team bere project image" />
+                </div>
+                <div>
+                  <h4 className="project-header">Team bere</h4>
+                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <a className="project-link" href="#">
+                <div className="portfolio-img">
+                  <img src={teamBereImage} alt="team bere project image" />
+                </div>
+                <div>
+                  <h4 className="project-header">Team bere</h4>
+                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <a className="project-link" href="#">
+                <div className="portfolio-img">
+                  <img src={teamBereImage} alt="team bere project image" />
+                </div>
+                <div>
+                  <h4 className="project-header">Team bere</h4>
+                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <a className="project-link" href="#">
+                <div className="portfolio-img">
+                  <img src={teamBereImage} alt="team bere project image" />
+                </div>
+                <div>
+                  <h4 className="project-header">Team bere</h4>
+                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+              </a>
+            </article>
+
           </div>
         </div>
       </PortfolioRow>
         
-    </PortfolioWrapper>
+     </PortfolioWrapper>
   )
 }
 
