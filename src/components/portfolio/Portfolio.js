@@ -16,7 +16,8 @@ const Portfolio = () => {
   const allYouCanEat1 = '../projects/all-you-can-eat1-mobile.png';
   const nhb = '../projects/nhb-mobile.png';
   const nhb1 = '../projects/nhb1-mobile.png';
-    
+
+  
 
 
   return (
@@ -25,12 +26,12 @@ const Portfolio = () => {
         <div className="portfolio-content">
           <h1 className="portfolio-header">Our Projects</h1>
           <div className="portfolio-category">
-            <div>All</div>
-            <div>Branding</div>
-            <div>Web Development</div>
-            <div>Consultancy</div>
-            <div>Design</div>
-            <div>Portfolio</div>
+            <a href="#">All</a>
+            <a href="#">Branding</a>
+            <a href="#">Web Development</a>
+            <a href="#">Consultancy</a>
+            <a href="#">Design</a>
+            <a href="#">Portfolio</a>
           </div>
 
 
@@ -46,14 +47,14 @@ const Portfolio = () => {
                 </div>
               </a>
             </article>
-
+    
             <article>
               <a className="project-link" href="#">
                 <div className="portfolio-img">
                   <img src={allYouCanEat} alt="team bere project image" />
                 </div>
                 <div>
-                  <h4 className="project-header">Team bere</h4>
+                  <h4 className="project-header">All you can eat</h4>
                   <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
                 </div>
               </a>
@@ -65,7 +66,7 @@ const Portfolio = () => {
                   <img src={bolaCateringService} alt="team bere project image" />
                 </div>
                 <div>
-                  <h4 className="project-header">Team bere</h4>
+                  <h4 className="project-header">Bola catering services</h4>
                   <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
                 </div>
               </a>
@@ -77,7 +78,7 @@ const Portfolio = () => {
                   <img src={mercyfc} alt="team bere project image" />
                 </div>
                 <div>
-                  <h4 className="project-header">Team bere</h4>
+                  <h4 className="project-header">Mercy FC</h4>
                   <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
                 </div>
               </a>
@@ -89,7 +90,7 @@ const Portfolio = () => {
                   <img src={soccerMatch} alt="team bere project image" />
                 </div>
                 <div>
-                  <h4 className="project-header">Team bere</h4>
+                  <h4 className="project-header">Soccer Match</h4>
                   <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
                 </div>
               </a>
@@ -101,7 +102,7 @@ const Portfolio = () => {
                   <img src={nhb} alt="team bere project image" />
                 </div>
                 <div>
-                  <h4 className="project-header">Team bere</h4>
+                  <h4 className="project-header">NHB</h4>
                   <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
                 </div>
               </a>
@@ -113,7 +114,7 @@ const Portfolio = () => {
                   <img src={allYouCanEat1} alt="team bere project image" />
                 </div>
                 <div>
-                  <h4 className="project-header">Team bere</h4>
+                  <h4 className="project-header">All you can eat</h4>
                   <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
                 </div>
               </a>
@@ -125,7 +126,7 @@ const Portfolio = () => {
                   <img src={nhb1} alt="team bere project image" />
                 </div>
                 <div>
-                  <h4 className="project-header">Team bere</h4>
+                  <h4 className="project-header">NHB</h4>
                   <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
                 </div>
               </a>
