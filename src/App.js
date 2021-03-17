@@ -18,7 +18,6 @@ const MainWrapper = styled.main`
 
 `
 
-
 function App() {
   return (
     <AppWrapper>

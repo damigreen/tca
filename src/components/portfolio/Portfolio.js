@@ -7,17 +7,18 @@ import {
 
 
 
-
 const Portfolio = () => {
-  // const teamBereImage = '../projects/team-bere.png';
   const teamBereImage = '../projects/team-bere-mobile.png';
-  // const teamBereImage = '../projects/team-bere-mobile.png';
-  // const teamBereImage = '../projects/team-bere-mobile.png';
-  // const teamBereImage = '../projects/team-bere-mobile.png';
-  // const teamBereImage = '../projects/team-bere-mobile.png';
-  // const teamBereImage = '../projects/team-bere-mobile.png';
-  // const teamBereImage = '../projects/team-bere-mobile.png';
+  const allYouCanEat = '../projects/all-you-can-eat-mobile.png';
+  const bolaCateringService = '../projects/bola-catering-service-mobile.png';
+  const mercyfc = '../projects/mercyfc-mobile.png';
+  const soccerMatch = '../projects/soccer-match-mobile.png';
+  const allYouCanEat1 = '../projects/all-you-can-eat1-mobile.png';
+  const nhb = '../projects/nhb-mobile.png';
+  const nhb1 = '../projects/nhb1-mobile.png';
     
+
+
   return (
     <PortfolioWrapper>
       <PortfolioRow>
@@ -31,6 +32,7 @@ const Portfolio = () => {
             <div>Design</div>
             <div>Portfolio</div>
           </div>
+
 
           <div className="project-wrap">
             <article>
@@ -48,7 +50,7 @@ const Portfolio = () => {
             <article>
               <a className="project-link" href="#">
                 <div className="portfolio-img">
-                  <img src={teamBereImage} alt="team bere project image" />
+                  <img src={allYouCanEat} alt="team bere project image" />
                 </div>
                 <div>
                   <h4 className="project-header">Team bere</h4>
@@ -60,7 +62,7 @@ const Portfolio = () => {
             <article>
               <a className="project-link" href="#">
                 <div className="portfolio-img">
-                  <img src={teamBereImage} alt="team bere project image" />
+                  <img src={bolaCateringService} alt="team bere project image" />
                 </div>
                 <div>
                   <h4 className="project-header">Team bere</h4>
@@ -72,7 +74,7 @@ const Portfolio = () => {
             <article>
               <a className="project-link" href="#">
                 <div className="portfolio-img">
-                  <img src={teamBereImage} alt="team bere project image" />
+                  <img src={mercyfc} alt="team bere project image" />
                 </div>
                 <div>
                   <h4 className="project-header">Team bere</h4>
@@ -84,7 +86,7 @@ const Portfolio = () => {
             <article>
               <a className="project-link" href="#">
                 <div className="portfolio-img">
-                  <img src={teamBereImage} alt="team bere project image" />
+                  <img src={soccerMatch} alt="team bere project image" />
                 </div>
                 <div>
                   <h4 className="project-header">Team bere</h4>
@@ -96,7 +98,7 @@ const Portfolio = () => {
             <article>
               <a className="project-link" href="#">
                 <div className="portfolio-img">
-                  <img src={teamBereImage} alt="team bere project image" />
+                  <img src={nhb} alt="team bere project image" />
                 </div>
                 <div>
                   <h4 className="project-header">Team bere</h4>
@@ -108,7 +110,19 @@ const Portfolio = () => {
             <article>
               <a className="project-link" href="#">
                 <div className="portfolio-img">
-                  <img src={teamBereImage} alt="team bere project image" />
+                  <img src={allYouCanEat1} alt="team bere project image" />
+                </div>
+                <div>
+                  <h4 className="project-header">Team bere</h4>
+                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <a className="project-link" href="#">
+                <div className="portfolio-img">
+                  <img src={nhb1} alt="team bere project image" />
                 </div>
                 <div>
                   <h4 className="project-header">Team bere</h4>
