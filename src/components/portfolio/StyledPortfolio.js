@@ -41,9 +41,16 @@ export const PortfolioRow = styled.div`
             /* border: 1px solid #9bfdd9; */
             /* border: 1px solid #81c3fd; */
             /* border: 1px solid #029760; */
-            border: 1px solid #03658C;
+            /* border: 1px solid #03658C; */
+            /* border: 1px solid #f29f05; */
+            border: 1px solid #024959;
             text-transform: uppercase;
+            color: #333;
             /* background-color: #023e73; */
+        }
+
+        a:active {
+            background-color: red;
         }
     }
 
