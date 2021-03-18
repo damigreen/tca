@@ -14,18 +14,18 @@ import {
     ButtonServices,
 } from './ServicesStyle'
 
-import {
+import {    
     // ButtonServices
 } from 'AppStyled';
 
 const Services = () => {
-    const brandingImage = '../illustrations/branding-mobile.png';
-    const webDevImage = '../illustrations/web-dev-mobile.png';
-    const consultancyImage = '../illustrations/consultancy-mobile.png';
-    const scalabilityImage = '../illustrations/scalability-mobile.png';
-    const digitalMarketImage = '../illustrations/digital-market-mobile.png';
-    const publishingImage = '../illustrations/publishing-mobile.png';
-    const rightArrow = '../icons/icons8-right-arrow-50.png';
+    const brandingImage = '../icons/branding.png';
+    const webDevImage = '../icons/web-mobile-dev.png';
+    const scalabilityImage = '../icons/scalability.png';
+    const consultancyImage = '../icons/consultancy.png';
+    const digitalMarketImage = '../icons/digital-marketing.png';
+    const publishingImage = '../icons/publishing.png';
+    // const rightArrow = '../icons/icons8-right-arrow-50.png';
 
     return (
         <div>
@@ -34,7 +34,7 @@ const Services = () => {
                     <BrandingBox>
                         <h4>Branding</h4>
                         <div className="services-image">
-                            <img src={brandingImage} alt="Branding image for branding" />
+                            <img src={brandingImage} alt="services image for branding" />
                         </div>
 
                         <div className="services-body">
@@ -56,7 +56,7 @@ const Services = () => {
                     </BrandingBox>
 
                     <WebDevBox>
-                        <h4>Web Design and Development</h4>
+                        <h4>Web and Mobile App Development</h4>
                         <div className="services-image">
                             <img src={webDevImage} alt="WebDev image for web design and development" />
                         </div>
