@@ -1,5 +1,24 @@
 import styled from 'styled-components';
 
+
+export const AppWrapper = styled.div`
+  display: block;
+`
+
+export const MainWrapper = styled.main`
+  text-align: center;
+
+  /* #about {
+    background-color: #FFFAFF;
+  }
+
+  #services {
+    background-color: #C2C1C2;
+  } */
+
+`
+
+
 export const headerSecStyled = `
     font-weight: 500;
 `
@@ -22,4 +41,6 @@ export const flexRowWrap =  `
 export const borderStyle = `
     border: 2px solid black;
 `
+
+
 

@@ -16,6 +16,8 @@ export const AboutSection = styled.div`
   margin: 0 auto;
   width: 95%;
   width: 90%;
+  /* background-color: #F5F1EE; */
+  /* background-color: #FFFAFF; */
 `
 
 export const AboutHeaderWrap = styled.div`
