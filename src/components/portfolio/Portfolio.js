@@ -13,47 +13,59 @@ const Portfolio = () => {
       name: 'Team Bere',
       description: '',
       images: ['../projects/team-bere-mobile.png'],
-
+      categories:  ['branding', 'design', 'consultancy']
     },
     {
       name: 'All You Can Eat',
       description: '',
       images: ['../projects/all-you-can-eat-mobile.png'],
-
+      categories:  ['branding', 'portfolio', 'design']
     },
     {
       name: 'Bola Catering Services',
       description: '',
       images: ['../projects/bola-catering-service-mobile.png'],
-
+      categories:  ['branding', 'design']
     },
     {
       name: 'Mercy FC',
       description: '',
       images: ['../projects/mercyfc-mobile.png'],
-
+      categories: ['branding', 'consultancy', 'design']
     },
     {
       name: 'Soccer Match',
       description: '',
       images: ['../projects/soccer-match-mobile.png'],
-
+      categories: ['consultancy', 'design']
     },
     {
       name: 'Cupid Cakes',
       description: '',
       images: ['../projects/all-you-can-eat1-mobile.png'],
-
+      categories: ['branding', 'design']
     },
     {
       name: 'NHB',
-      description: '',
+      description: '', 
       images: ['../projects/nhb-mobile.png', '../projects/nhb1-mobile.png'],
-
+      categories: ['branding', 'consultancy']
+    },
+    {
+      name: 'Rayckan Herbal Healthcare',
+      description: '',
+      images: [],
+      categories: ['web development', 'branding', 'portfolio']
+    },
+    {
+      name: 'Blog Keep',
+      description: '',
+      images: [],
+      categories: ['web development', 'branding', 'design']
     },
   ]
-
-
+  
+  
   return (
     <PortfolioWrapper>
       <PortfolioRow>
