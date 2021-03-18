@@ -7,16 +7,12 @@ import About from './components/about/';
 import TestComponent from './components/testComponent/TestComponent';
 import Footer from './components/footer/';
 import Portfolio from './components/portfolio/';
+import {
+  AppWrapper,
+  MainWrapper,
+} from 'AppStyled'
 
 
-const AppWrapper = styled.div`
-  display: block;
-`
-
-const MainWrapper = styled.main`
-  text-align: center;
-
-`
 
 function App() {
   return (
@@ -25,15 +21,15 @@ function App() {
           <Header/>
         </header>
         <MainWrapper>
-          <section>
+          <section id="about">
             <About />
           </section>
 
-          <section>
+          <section id="services">
             <Services />
           </section>
 
-          <section>
+          <section id="portfolio">
             <Portfolio />
           </section>
         </MainWrapper>
