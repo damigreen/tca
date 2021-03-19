@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import styled from 'styled-components';
+import LoginForm from 'components/loginForm/';
 
 const NavWrap = styled.div`
     background-color: pink;
@@ -37,6 +38,12 @@ const Navigation = () => {
                     <Nav.Item>
                         <Nav.Link eventKey="contact">Contact</Nav.Link>
                     </Nav.Item>
+                    <Nav.Item>  
+                        <Nav.Link eventKey="login-form">Login</Nav.Link>
+                    </Nav.Item>
+                    {/* <Nav.Item>
+                        <Nav.Link eventKey="login-form">Login</Nav.Link>
+                    </Nav.Item> */}
                 </Nav>
 
             </NavWrap>
