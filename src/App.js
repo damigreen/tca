@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './components/header/';
+import Header from 'components/header/';
 import Container from 'react-bootstrap/Container';
-import Services from './components/services/';
-import About from './components/about/';
-import TestComponent from './components/testComponent/TestComponent';
-import Footer from './components/footer/';
-import Portfolio from './components/portfolio/';
+import Services from 'components/services/';
+import About from 'components/about/';
+import TestComponent from 'components/testComponent/TestComponent';
+import Footer from 'components/footer/';
+import Portfolio from 'components/portfolio/';
+import Contact from 'components/contact/';
 import {
   AppWrapper,
   MainWrapper,
@@ -32,7 +33,12 @@ function App() {
           <section id="portfolio">
             <Portfolio />
           </section>
+
+          <section>
+            <Contact />
+          </section>
         </MainWrapper>
+        
         <footer>
           <Footer />
         </footer>
