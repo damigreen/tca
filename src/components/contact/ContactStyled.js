@@ -1,3 +1,4 @@
+import { borderStyle } from 'AppStyled';
 import styled, { css } from 'styled-components';
 
 
@@ -9,19 +10,34 @@ const noIconBorder = `
 `
 
 export const ContactWrapper = styled.div`
-    /* background-color: #011b32; */
-    /* background-color: #d3d3d3; */
-    /* background-color: #cccccc; */
     background-color: #A1ACB3;
     border-top: 1px solid gray;
 `
+
+export const ContactIntro = styled.div`
+    padding: 20px;
+    text-align: left;
+    margin: 7px 5px;
+
+    h3.partner-heading {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 1.177rem;
+    }
+`
+
 export const ContactRow = styled.div`
     text-align: left;
-    padding:50px;
+    padding: 30px;
 
-    h1 {
+    h3 {
         text-align: center;
     }
+
 
     form {
         margin-top: 45px;
@@ -29,7 +45,6 @@ export const ContactRow = styled.div`
 
     .form-group {
         display: flex;
-
     }
 
     .form-icon {
@@ -69,6 +84,6 @@ export const ContactRow = styled.div`
     }
 
     .form-message {
-        /* ${noIconBorder} */
+        ${noIconBorder}
     }
 `
