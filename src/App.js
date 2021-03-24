@@ -15,6 +15,12 @@ import {
 
 
 
+/* 
+TODO
+  Make a glowing button
+  
+*/
+
 function App() {
   return (
     <AppWrapper>

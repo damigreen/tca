@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
 
+
+
+export const btnStyle = `
+  color: red;
+`
+
+
+
+
 export const AppWrapper = styled.div`
   display: block;
 `
@@ -17,7 +26,6 @@ export const MainWrapper = styled.main`
   } */
 
 `
-
 
 export const headerSecStyled = `
     font-weight: 500;
@@ -41,6 +49,5 @@ export const flexRowWrap =  `
 export const borderStyle = `
     border: 2px solid black;
 `
-
 
 
