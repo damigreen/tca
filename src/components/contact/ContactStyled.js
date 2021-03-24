@@ -10,14 +10,24 @@ const noIconBorder = `
 `
 
 export const ContactWrapper = styled.div`
-    background-color: #A1ACB3;
-    border-top: 1px solid gray;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #A1ACB3;
 `
 
 export const ContactIntro = styled.div`
-    padding: 20px;
+    padding: 20px 10px;
     text-align: left;
-    margin: 7px 5px;
+    margin: 7px 0;
+    /* background: #03658C; */
+    background: #024959;
+    color: #e6f7fe;
+    margin-bottom: 20px;
+
+    .contact-info {
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+    }
 
     h3.partner-heading {
         text-align: center;
@@ -27,15 +37,52 @@ export const ContactIntro = styled.div`
 
     p {
         font-size: 1.177rem;
+        text-align: center;
+        font-size: 22px;
+        padding: 5px;
+    }
+
+    .btn-secondary {
+        align-self: center;
+        background: #f29f05;
+        text-transform: uppercase;
+        color: #333;
+        border: none;
+        font-size: 1.09rem;
+        font-weight: 500;
+        margin: 18px 30px;
+        padding: 0.652rem;
+
+        /* border-color: $blue; */
+        border-color: blue;
+  /* color: #fff; */
+  /* box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue; */
+  box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 blue;
+  transition: all 150ms ease-in-out;
+  
+  &:hover {
+    /* box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue; */
+    box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px blue;
+  }
+}
+
     }
 `
 
 export const ContactRow = styled.div`
     text-align: left;
     padding: 30px;
+    margin-bottom: 4.983rem;
 
     h3 {
         text-align: center;
+    }
+
+    .horizontal-border {
+        margin: 0 auto;
+        border: 1px solid gray;
+        width: 20%;
+        margin-top: 25px;
     }
 
 
@@ -45,6 +92,7 @@ export const ContactRow = styled.div`
 
     .form-group {
         display: flex;
+        margin-top: 1.315rem;
     }
 
     .form-icon {
