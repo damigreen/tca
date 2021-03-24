@@ -5,7 +5,11 @@ import {
     ContactIntro,
     ContactRow,
 } from './ContactStyled';
-import Form from 'react-bootstrap/Form'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button'
+import {
+    btnStyle,
+} from 'AppStyled';
 
 
 const Contact = () => {
@@ -22,19 +26,22 @@ const Contact = () => {
         <ContactWrapper>
 
           <ContactIntro>
-            <div>
-              <h3 className="partner-heading">Partner with us</h3>
+            <div className="contact-info">
+              {/* <h3 className="partner-heading">Partner with us</h3> */}
               <p>
                 We assist our clients in planning, implementing and executing the roadmap necessary to bring
                 their ideas to life through our wealth of digital resources and research data.
               </p>
-              <p>We are here for you.<span></span> </p>
+              {/* <p>We are here for you.<span></span> </p> */}
+              <Button className="btn-secondary" variant="outline-success">partner with us</Button>
             </div>
           </ContactIntro>
 
 
+
           <ContactRow>
-            <h3>Let's talk</h3>
+            <h3>Get in Touch</h3>
+            <div className="horizontal-border"></div>
             <div>
               <Form>
                 <Form.Group className="form-group" controlId="formGroupName">
