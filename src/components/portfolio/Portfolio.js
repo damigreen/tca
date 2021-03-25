@@ -64,6 +64,24 @@ const Portfolio = () => {
       categories: ['web development', 'branding', 'design']
     },
   ]
+
+  const filterAll = () => {
+    //   portfolioList.map(port => {
+    //   const portCartegory = port.categories;
+    //   const brand = portCartegory.find(cat => cat === 'branding');
+    //   console.log(brand);
+    // })
+
+    const brandPort = () => {
+      return portfolioList.filter(portBrand => {
+        portBrand.categories.map(c => c === 'branding');
+      });
+    }
+
+    console.log(brandPort());
+
+    return 1;
+  }
   
   
   return (
@@ -72,12 +90,12 @@ const Portfolio = () => {
         <div className="portfolio-content">
           <h1 className="portfolio-header">Our Projects</h1>
           <div className="portfolio-category">
-            <a className="portfolio-categrory active" href>All</a>
-            <a className="portfolio-categrory" href>Branding</a>
-            <a className="portfolio-categrory" href>Web Development</a>
-            <a className="portfolio-categrory" href>Consultancy</a>
-            <a href>Design</a>
-            <a href>Portfolio</a>
+            <a className="portfolio-categrory active" href onClick={filterAll}>All</a>
+            <a className="portfolio-categrory" href onClick>Branding</a>
+            <a className="portfolio-categrory" href onClick>Web Development</a>
+            <a className="portfolio-categrory" href onClick>Consultancy</a>
+            <a className="portfolio-categrory" href onClick>Design</a>
+            <a className="portfolio-categrory" href onClick>Portfolio</a>
           </div>
 
 
