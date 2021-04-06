@@ -1,17 +1,11 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import styled from 'styled-components';
 import LoginForm from 'components/loginForm/';
-
-const NavWrap = styled.div`
-    background-color: pink;
-`
-
-const LogoBox = styled.div`
-    background-color: green;
-    float: left;
-`
+import {
+    NavWrap,
+    LogoBox,
+} from './HeaderStyled';
 
 
 const Navigation = () => {
