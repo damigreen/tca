@@ -1,19 +1,21 @@
 import React from 'react';
 import Navigation from './Navigation';
-import styled from 'styled-components';
+import {
+  HeaderWrap,
+  HeroImage
+} from './HeaderStyled';
 
-const HeaderWrap = styled.div`
-  height: 700px;
-  max-height: 768px;
-  background-color: grey;
-`
+
+// const heroImage = '../../../images/hero-image.png';
 
 
 function Header() {
   return (
     <HeaderWrap>
-      <Navigation />
-      <h1>Header</h1>
+      <HeroImage>
+        {/* <img className="hero- image" src={heroImage} alt="Hero image for the header" /> */}
+        <Navigation />
+      </HeroImage>
     </HeaderWrap>
   );
 }
