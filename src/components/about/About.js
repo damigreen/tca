@@ -1,12 +1,13 @@
-  import React from 'react';
-
+ import React from 'react';
 import {
   AboutSection,
   AboutHeaderWrap,
   AboutHeader,
   AboutSubHeader,
 } from './AboutStyles';
-
+import {
+  DividerLine,
+} from 'AppStyled';
 
 
 const About = () => {
@@ -22,6 +23,8 @@ const About = () => {
                 We help fast-track businesses to their digital goals through unique branding, marketing and advertising.
             </AboutSubHeader>
           </AboutHeaderWrap>
+          <DividerLine>
+          </DividerLine>
       </AboutSection>
 
     )

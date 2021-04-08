@@ -5,7 +5,6 @@ import {
 } from '../../AppStyled';
 
 const aboutHeader = `
-    font-size: 24px;
     font-weight: 600;   
     text-align: center;
     font-weight: 700;
@@ -28,10 +27,10 @@ export const AboutHeaderWrap = styled.div`
 
 export const AboutHeader = styled.h1`
   ${aboutHeader};
-  font-size: 40px;
+  font-size: 34px;
   line-height: 40px;
   font-weight: 400;
-  width: 85%;
+  width: 90%;
   padding: 0.234rem;
   margin-top: 2.568rem;
   margin-bottom: 1.108rem;
@@ -43,7 +42,7 @@ export const AboutSubHeader = styled.p`
   /* ${borderStyle}; */
   padding: 0 0 10px 10px;
   line-height: 24px;
-  font-weight: 500; 
-  margin-top: 1.6rem;
+  margin-top: 0.89277rem;
   margin-bottom: 2.9rem;
 `
+
