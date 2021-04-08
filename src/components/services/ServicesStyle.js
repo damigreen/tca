@@ -65,10 +65,14 @@ const servicesBodyText = `
 `
 
 const buttonServices = `
-    color: #f29f05;
-    border: none
+    color: #023E73;
+    border: 1px solid #02734A;
     font-size: 16px;
     font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+
 `
 
 const iconStyle = `

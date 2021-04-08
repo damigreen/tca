@@ -43,7 +43,7 @@ const Services = () => {
                             <h4>Branding</h4>
                             {/* <h3>Lorem Ipsum is simply dummy text of the printing</h3> */}
                             <div>Our branding service helps handle all the hassle in-between transforming an idea into a scalable product then getting it to the marketplace to make profit.</div>
-                            <p className="btn-services">Learn more</p>
+                            <Button href="#contact" variant="outline-primary" className="btn-services">Get started</Button>
                         </div>
                     </BrandingBox>
 
@@ -60,7 +60,7 @@ const Services = () => {
                                 Our websites are built specifically for your brand needs . We carry out keywords reasearch and perform the best SEO practices to make your website rank across all search engines
                             </div>
                             {/* <ButtonServices>LEARN MORE</ButtonServices> */}
-                            <p className="btn-services">Learn more</p>
+                            <Button variant="outline-primary" className="btn-services" href="#contact">Get started</Button>
                         </div>
                     </WebDevBox>
 
@@ -77,7 +77,7 @@ const Services = () => {
                                 <div>We assists clients in determining their strengths, weaknesses and uniqueness as a brand. The agency offers innovative & creative digital marketing methods to target audiences for already established brands/clients as well as brands/clients just starting out in their various fields.</div>
                             </div>
                             {/* <ButtonServices>LEARN MORE</ButtonServices> */}
-                            <p className="btn-services">Learn more</p>
+                            <Button href="#contact" variant="outline-primary" className="btn-services">Hire us</Button>
                         </div>
                     </DigitalMarketingBox>
 
@@ -91,7 +91,7 @@ const Services = () => {
                             {/* <h3>Lorem Ipsum is simply dummy text of the printing</h3> */}
                             <div>An appointment for our consultancy service provides clients with timely professional advice to all the questions they need answered regarding all aspects of their business.</div>
                             {/* <ButtonServices>LEARN MORE</ButtonServices> */}
-                            <p className="btn-services">Learn more</p>
+                            <Button href="#contact" variant="outline-primary" className="btn-services">Start conversation</Button>
                         </div>
                     </ConsultBox>
 
@@ -107,7 +107,7 @@ const Services = () => {
                                 <div>We help scale your brand to break-even and make revenue. We take up the hassle of strategizing and positioning the brand to make profit.</div>
                             </div>
                             {/* <ButtonServices>LEARN MORE</ButtonServices> */}
-                            <p className="btn-services">Learn more</p>
+                            <Button href="#contact" variant="outline-primary" className="btn-services">Learn more</Button>
                         </div>
                     </ScalabilityBox>
 
@@ -124,7 +124,7 @@ const Services = () => {
                                 We write reviews for products, brands and individual clients to be published on our platform’s blog or other respected media outlets eg: Medium, Native Mag or the client’s choice of media house.
                             </div>
                             {/* <ButtonServices>LEARN MORE</ButtonServices> */}
-                            <p className="btn-services">Learn more</p>
+                            <Button href="#contact" variant="outline-primary" className="btn-services">Learn more</Button>
                         </div>
                     </PublishingBox>
                 </ServicesRow>
