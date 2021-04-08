@@ -12,6 +12,12 @@ export const PortfolioWrapper = styled.div`
 `
 export const PortfolioRow = styled.div`
 
+    .portfolio-header {
+        color: #013440;
+        font-size: 34px;
+        margin-top: 50px;
+    }
+
     .portfolio-category {
         margin: 0 auto;
         width: 88.5%;
@@ -20,11 +26,11 @@ export const PortfolioRow = styled.div`
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 1.2rem;
-        margin-top: 2.14rem;
+        /* margin-top: 0.3rem; */
         /* color: #023e73; */
         /* color: white; */
         /* color: #03738c; */
-        padding-top: 2.434rem;
+        padding-top: 1.673rem;
 
 
         a {
@@ -38,11 +44,6 @@ export const PortfolioRow = styled.div`
             font-size: 14px;
             font-weight: 400;
             margin-top: 4.5px;
-            /* border: 1px solid #9bfdd9; */
-            /* border: 1px solid #81c3fd; */
-            /* border: 1px solid #029760; */
-            /* border: 1px solid #03658C; */
-            /* border: 1px solid #f29f05; */
             border: 1px solid #024959;
             text-transform: uppercase;
             color: #333;
@@ -85,7 +86,7 @@ export const PortfolioRow = styled.div`
                     font-size: 22px;
                     letter-spacing: 1px;
                     font-weight: 500;
-                    color: #4b4b4b;
+                    /* color: #4b4b4b; */
                 }
 
                 .project-text {
