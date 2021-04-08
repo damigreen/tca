@@ -21,8 +21,7 @@ export const NavWrap = styled.div`
   flex-wrap: nowrap;
   margin: 0 auto;
   height: 11vh;
-  width: 84%;
-  border: 1px solid red;
+  width: 94%;
 
   .nav-item {
     display: none;
@@ -34,7 +33,18 @@ export const NavWrap = styled.div`
 `
 
 export const LogoBox = styled.div`
-    height: 52;
-    width: 52;
-    float: left;
+  height: 52;
+  width: 52;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+
+  .logo-text {
+    border: 1px solid red;
+    height: 50px;
+  }
+
+  
 `
