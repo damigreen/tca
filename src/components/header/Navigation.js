@@ -16,6 +16,10 @@ const Navigation = () => {
             <NavWrap>
                 <LogoBox>
                     <img src={logoImage} />
+                    <div className="logo-text">
+                        <div>The Creative Agency</div>
+                        <div>bringing ideas to life</div>
+                    </div>
                 </LogoBox>
 
 
