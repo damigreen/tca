@@ -51,3 +51,13 @@ export const borderStyle = `
 `
 
 
+export const DividerLine = styled.div`
+  border: 0;
+  height: 15px;
+  margin: 0 auto;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  position: relative;
+  background: radial-gradient(ellipse at bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 70%);
+  width: 70% !important
+`
