@@ -40,7 +40,7 @@ function App() {
             <Portfolio />
           </section>
 
-          <section>
+          <section id="contact">
             <Contact />
           </section>
         </MainWrapper>
@@ -48,9 +48,9 @@ function App() {
         <footer>
           <Footer />
         </footer>
-      <Container>
+      {/* <Container>
         <TestComponent />
-      </Container>
+      </Container> */}
     </AppWrapper>
   );
 }
