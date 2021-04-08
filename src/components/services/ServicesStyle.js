@@ -18,14 +18,14 @@ export const ServicesRow = styled.div`
     width: 95%;
     width: 90%;
     ${flexColWrap};
+    margin-bottom: 50px;
 `
 
 const servicesHeader = `
     display: none;
     font-size: 18px;
-    color: #E9ECE9;
-    color: #C5E7D3;
-    margin-top: 1.4rem;
+    color: #03658C;
+    margin-top: 0.4rem;
     margin-bottom: 1.234rem;
 `
 
@@ -38,7 +38,7 @@ const servicesHeaderMobile = `
 
 const servicesImage = `
     margin-top: 2rem;
-    margin-bottom: 1.8973rem;
+    margin-bottom: 0.65353rem;
     width: auto;
     height: auto;
 `
@@ -46,7 +46,7 @@ const servicesImage = `
 const servicesBody = `
     margin: 0 1.3rem;
     text-align: left;
-    padding: 1rem;
+    // padding: 1rem;
     // margin-bottom: 7.5rem;
     color: #333;
     text-align: center;
