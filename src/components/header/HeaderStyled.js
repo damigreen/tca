@@ -42,8 +42,37 @@ export const LogoBox = styled.div`
   /* align-items: center; */
 
   .logo-text {
-    border: 1px solid red;
-    height: 50px;
+    /* border: 1px solid red; */
+    /* height: 50px; */
+    display: flex;
+    flex-direction: column;
+
+    div:first-child {
+      font-family: 'Bitter', serif;
+      font-size: 1.3rem;
+      padding: none;
+      margin-top: none;
+    }
+
+    div:nth-child(2) {
+      font-size: 0.8653rem;
+      padding: none;
+      margin: none;
+      color: #03658C;
+      font-family: 'Satisfy', cursive;
+      font-family: 'Spartan', sans-serif;
+      /* border: 1px solid green; */
+    }
+
+    span:first-child {
+      color: #03658C;
+    }
+    span:nth-child(2) {
+      color: #02735E;
+    }
+    span:nth-child(3) {
+      color: #F29f05;
+    }
   }
 
   

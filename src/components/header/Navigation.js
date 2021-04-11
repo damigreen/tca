@@ -17,7 +17,7 @@ const Navigation = () => {
                 <LogoBox>
                     <img src={logoImage} />
                     <div className="logo-text">
-                        <div>The Creative Agency</div>
+                        <div><span>The</span><span> Creative</span><span> Agency</span></div>
                         <div>bringing ideas to life</div>
                     </div>
                 </LogoBox>
