@@ -12,8 +12,10 @@ function Header() {
   return (
     <HeaderWrap>
         <Navigation />
-        <div className="hero-image">
-          <img className="hero" src={heroImage} />
+        <div className="filter">
+          <div className="hero-image">
+            <img className="hero" src={heroImage} />
+          </div>
         </div>
     </HeaderWrap>
   );

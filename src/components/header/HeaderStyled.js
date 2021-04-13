@@ -1,18 +1,37 @@
 import styled from 'styled-components';
 
-
+// Header Style
 export const HeaderWrap = styled.div`
     max-height: none;
     z-index: -82929292;
     clear: both;
 
+
+    .hero-image {
+      background-color: red;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
     .hero {
+      /* position: absolute; */
       max-width: 100%;
       height: auto;
       border: 0;
+      
     }
 `
 
+
+
+
+
+/* Navigation Style -----v 1.0.0
+* Damilola Faseun
+* 
+*/
 export const NavWrap = styled.div`
   display: flex;
   flex-direction: row;
@@ -73,7 +92,5 @@ export const LogoBox = styled.div`
     span:nth-child(3) {
       color: #F29f05;
     }
-  }
-
-  
+  }  
 `

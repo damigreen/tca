@@ -6,7 +6,6 @@ import {
 
 
 
-
 const Portfolio = () => {
   const portfolioList = [
     {
@@ -187,8 +186,6 @@ const Portfolio = () => {
                 </div>
               </a>
             </article>
-
-
           </div>
         </div>
       </PortfolioRow>
