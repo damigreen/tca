@@ -7,9 +7,6 @@ export const btnStyle = `
   color: red;
 `
 
-
-
-
 export const AppWrapper = styled.div`
   display: block;
 `
