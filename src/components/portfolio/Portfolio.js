@@ -12,76 +12,105 @@ const Portfolio = () => {
       name: 'Team Bere',
       description: '',
       images: ['../projects/team-bere-mobile.png'],
-      categories:  ['branding', 'design', 'consultancy']
+      categories:  ['branding', 'design', 'consultancy'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'All You Can Eat',
       description: '',
       images: ['../projects/all-you-can-eat-mobile.png'],
-      categories:  ['branding', 'portfolio', 'design']
+      categories:  ['branding', 'portfolio', 'design'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'Bola Catering Services',
       description: '',
       images: ['../projects/bola-catering-service-mobile.png'],
-      categories:  ['branding', 'design']
+      categories:  ['branding', 'design'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'Mercy FC',
       description: '',
       images: ['../projects/mercyfc-mobile.png'],
-      categories: ['branding', 'consultancy', 'design']
+      categories: ['branding', 'consultancy', 'design'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'Soccer Match',
       description: '',
       images: ['../projects/soccer-match-mobile.png'],
-      categories: ['consultancy', 'design']
+      categories: ['consultancy', 'design'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'Cupid Cakes',
       description: '',
       images: ['../projects/all-you-can-eat1-mobile.png'],
-      categories: ['branding', 'design']
+      categories: ['branding', 'design'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'NHB',
       description: '', 
       images: ['../projects/nhb-mobile.png', '../projects/nhb1-mobile.png'],
-      categories: ['branding', 'consultancy']
+      categories: ['branding', 'consultancy'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'Rayckan Herbal Healthcare',
       description: '',
       images: [],
-      categories: ['web development', 'branding', 'portfolio']
+      categories: ['web development', 'branding', 'portfolio'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
     {
       name: 'Blog Keep',
       description: '',
       images: [],
-      categories: ['web development', 'branding', 'design']
+      categories: ['web development', 'branding', 'design'],
+      description: 'is simply dummy text of the printing and typesetting industry.'
     },
   ]
 
   const filterAll = () => {
-    //   portfolioList.map(port => {
-    //   const portCartegory = port.categories;
-    //   const brand = portCartegory.find(cat => cat === 'branding');
-    //   console.log(brand);
-    // })
+      portfolioList.map(port => {
+      const portCartegory = port.categories;
+      const brand = portCartegory.find(cat => cat === 'portfolio') ? port : 'yes';
+      console.log(brand);
 
-    const brandPort = () => {
-      return portfolioList.filter(portBrand => {
-        portBrand.categories.map(c => c === 'branding');
-      });
-    }
-
-    console.log(brandPort());
-
-    return 1;
+      return (
+        <div>
+          {brand}
+        </div>
+      )
+    })    
   }
-  
+
+
+  const portfolioData = () => {
+    const x = portfolioList.map(port => {
+      const projectName = port.name;
+      const projectDesc = port.description;
+      const projectImage = port.images;
+      console.log(projectImage)
+
+        return (
+          <article>
+              <a className="project-link" href="#">
+                <div className="portfolio-img">
+                  <img src={projectImage[0]} alt="team bere project image"  />
+                </div>
+                <div>
+                  <h4 className="project-header">{projectName}</h4>
+                  <div className="project-text">{projectDesc}</div>
+                </div>
+              </a>
+            </article>
+        )
+    })
+    return x;
+  }
   
   return (
     <PortfolioWrapper>
@@ -99,93 +128,7 @@ const Portfolio = () => {
 
 
           <div className="project-wrap">
-            <article>
-              <a className="project-link" href="#">
-                <div className="portfolio-img">
-                  <img src={portfolioList[0].images[0]} alt="team bere project image"  />
-                </div>
-                <div>
-                  <h4 className="project-header">Team Bere</h4>
-                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
-                </div>
-              </a>
-            </article>
-    
-            <article>
-              <a className="project-link" href="#">
-                <div className="portfolio-img">
-                  <img src={portfolioList[1].images[0]} alt="All you can eat project image"  />
-                </div>
-                <div>
-                  <h4 className="project-header">All you can eat</h4>
-                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
-                </div>
-              </a>
-            </article>
-
-            <article>
-              <a className="project-link" href="#">
-                <div className="portfolio-img">
-                  <img src={portfolioList[2].images[0]} alt="Bola catering services project image"  />
-
-                </div>
-                <div>
-                  <h4 className="project-header">Bola catering services</h4>
-                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
-                </div>
-              </a>
-            </article>
-
-            <article>
-              <a className="project-link" href="#">
-                <div className="portfolio-img">
-                  <img src={portfolioList[3].images[0]} alt="Mercy FC project image"  />
-
-                </div>
-                <div>
-                  <h4 className="project-header">Mercy FC</h4>
-                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
-                </div>
-              </a>
-            </article>
-
-            <article>
-              <a className="project-link" href="#">
-                <div className="portfolio-img">
-                  <img src={portfolioList[4].images[0]} alt="Soccer match project image"  />
-
-                </div>
-                <div>
-                  <h4 className="project-header">Soccer Match</h4>
-                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
-                </div>
-              </a>
-            </article>
-
-            <article>
-              <a className="project-link" href="#">
-                <div className="portfolio-img">
-                  <img src={portfolioList[6].images[0]} alt="NHB project image"  />
-
-                </div>
-                <div>
-                  <h4 className="project-header">NHB</h4>
-                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
-                </div>
-              </a>
-            </article>
-
-            <article>
-              <a className="project-link" href="#">
-                <div className="portfolio-img">
-                  <img src={portfolioList[5].images[0]} alt="Cupid Cakes project image"  />
-                </div>
-                <div>
-                  <h4 className="project-header">Cupid Cakes</h4>
-                  <div className="project-text">is simply dummy text of the printing and typesetting industry.</div>
-                </div>
-              </a>
-            </article>
+            {portfolioData()}
           </div>
         </div>
       </PortfolioRow>
