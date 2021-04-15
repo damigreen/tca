@@ -40,17 +40,5 @@
     "images": ["../projects/nhb-mobile.png", "../projects/nhb1-mobile.png"],
     "categories": ["branding", "consultancy"],
     "description": "is simply dummy text of the printing and typesetting industry."
-  },
-  {
-    "name": "Rayckan Herbal Healthcare",
-    "images": [],
-    "categories": ["web development", "branding", "portfolio"],
-    "description": "is simply dummy text of the printing and typesetting industry."
-  },
-  {
-    "name": "Blog Keep",
-    "images": [],
-    "categories": ["web development", "branding", "design"],
-    "description": "is simply dummy text of the printing and typesetting industry."
   }
 ]

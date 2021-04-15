@@ -8,39 +8,50 @@ import {
 
 const Portfolio = () => {
   const [portfolioList, setPortfolioList] = useState([]);
+  const [portfolioListClone, setPortfolioListClone] = useState([]);
 
   const portfolioUrl = "../../../portfolioData.json"
+
 
   useEffect(() => {
     axios.get(portfolioUrl)
       .then(result => {
         setPortfolioList(result.data)
-        console.log(result);
+        setPortfolioListClone(result.data)
       });
   }, []);
-  
 
+  const filterAll = () => {
+    const el = document.querySelector('.active');
+    setPortfolioList(portfolioListClone);
+    return 1; 
+  }
 
-  const filterAll = (cat) => {
-      setPortfolioList(portfolioList);
-      let filteredList = [];
+  const filterCat = (cat) => {
+    if (portfolioList.length <= portfolioListClone.length) {
+      filterAll();
+    }
 
-      for (var i = 0; i < portfolioList.length; i++) {
-        const projectCategories = portfolioList[i].categories;
-        const catLen = projectCategories.length;
-        
-        for (var j = 0; j < catLen; j++) {
-          // if (projectCategories[j] === 'branding') {
-            console.log(cat);
-            if (projectCategories[j] === cat) {
-              filteredList.push(portfolioList[i]);
-              setPortfolioList(filteredList);
-          }
+    let filteredList = [];
+
+    for (var i = 0; i < portfolioList.length; i++) {
+      const projectCategories = portfolioList[i].categories;
+      const catLen = projectCategories.length;
+      
+      for (var j = 0; j < catLen; j++) {
+          console.log(cat);
+          if (projectCategories[j] === cat) {
+            filteredList.push(portfolioList[i]);
+            setPortfolioList(filteredList);
         }
+        // else {
+        //   setPortfolioList(portfolioList);
+        // }
       }
-      console.log(filteredList);
+    }
+    console.log(filteredList);
 
-    return 0;
+    return 1;
   }
 
 
@@ -73,14 +84,13 @@ const Portfolio = () => {
         <div className="portfolio-content">
           <h1 className="portfolio-header">Our Projects</h1>
           <div className="portfolio-category">
-            <a className="portfolio-categrory active" href onClick={() => filterAll('consultancy')}>All</a>
-            <a className="portfolio-categrory" href onClick={() => filterAll('branding')}>Branding</a>
-            <a className="portfolio-categrory" href onClick>Web Development</a>
-            <a className="portfolio-categrory" href onClick>Consultancy</a>
-            <a className="portfolio-categrory" href onClick>Design</a>
-            <a className="portfolio-categrory" href onClick>Portfolio</a>
+            <a className="portfolio-categrory active" href onClick={filterAll}>All</a>
+            <a className="portfolio-categrory" href onClick={() => filterCat('branding')}>Branding</a>
+            <a className="portfolio-categrory" href onClick={() => filterCat('development')}>Web Development</a>
+            <a className="portfolio-categrory" href onClick={() => filterCat('consultancy')}>Consultancy</a>
+            <a className="portfolio-categrory" href onClick={() => filterCat('design')}>Design</a>
+            <a className="portfolio-categrory" href onClick={() => filterCat('portfolio')}>Portfolio</a>
           </div>
-
 
           <div className="project-wrap">
             {portfolioData()}
