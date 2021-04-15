@@ -70,14 +70,47 @@ export const HeaderWrap = styled.div`
     }
 `
 
-
-
-
-
 /* Navigation Style -----v 1.0.0
 * Damilola Faseun
 * 
 */
+
+export const TopBar = styled.div`
+
+  .item-bar {
+    width: auto;
+    position: absolute;
+  }
+
+  .nav-item {
+    color: #fff;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .item-bar {
+      display: none;
+      overflow: visible !important;
+      position: absolute;
+      right: 12px;
+      top: 72px;
+      z-index:999999999;
+      width: 80%;
+    }
+
+    .nav-item {
+      height: auto;
+      background-color: #78B4A9;
+      border-bottom: 1px solid #e7e7e7;
+      color: #fff;
+  }
+
+  }
+`
+
 export const NavWrap = styled.div`
   display: flex;
   flex-direction: row;
@@ -88,12 +121,19 @@ export const NavWrap = styled.div`
   height: 11vh;
   width: 94%;
 
-  .nav-item {
-    display: none;
+  .filter-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* position: relative;
+    top: 110px;
+    right: 0; */
   }
 
-  .nav-filter {
 
+
+  .nav-filter {
+    display: block;
   }
 `
 
