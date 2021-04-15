@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Team Bere",
+    "images": ["../projects/team-bere-mobile.png"],
+    "categories":  ["branding", "design", "consultancy"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "All You Can Eat",
+    "images": ["../projects/all-you-can-eat-mobile.png"],
+    "categories":  ["branding", "portfolio", "design"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "Bola Catering Services",
+    "images": ["../projects/bola-catering-service-mobile.png"],
+    "categories":  ["branding", "design"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "Mercy FC",
+    "images": ["../projects/mercyfc-mobile.png"],
+    "categories": ["branding", "consultancy", "design"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "Soccer Match",
+    "images": ["../projects/soccer-match-mobile.png"],
+    "categories": ["consultancy", "design"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "Cupid Cakes",
+    "images": ["../projects/all-you-can-eat1-mobile.png"],
+    "categories": ["branding", "design"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "NHB",
+    "images": ["../projects/nhb-mobile.png", "../projects/nhb1-mobile.png"],
+    "categories": ["branding", "consultancy"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "Rayckan Herbal Healthcare",
+    "images": [],
+    "categories": ["web development", "branding", "portfolio"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "name": "Blog Keep",
+    "images": [],
+    "categories": ["web development", "branding", "design"],
+    "description": "is simply dummy text of the printing and typesetting industry."
+  }
+]
