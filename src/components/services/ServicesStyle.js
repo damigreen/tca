@@ -35,10 +35,11 @@ export const ServicesRow = styled.div`
     /* Large devices (laptops/desktops, 992px and up) */ 
     @media only screen and (min-width: 992px) {
         display: grid;
+        margin: 0 auto;
+        width: 70%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50% 50%;
         justify-content: center;
-        border: 1px solid red;
     }
 
 `
@@ -46,6 +47,7 @@ export const ServicesRow = styled.div`
 const servicesHeader = `
     display: none;
     font-size: 18px;
+    font-weignt: 900
     color: #03658C;
     margin-top: 0.4rem;
     margin-bottom: 1.234rem;
@@ -160,7 +162,7 @@ export const BrandingBox = styled.div`
             ${servicesBodyText};
             @media only screen and (min-width: 600px) {
                 height: auto;
-                max-height: 250px;
+                
             }
         }
 
@@ -237,7 +239,7 @@ export const WebDevBox = styled.div`
         ${servicesBodyText};
         @media only screen and (min-width: 600px) {
                 height: auto;
-                max-height: 250px;
+                
             }
     }
 
@@ -314,7 +316,7 @@ export const ConsultBox = styled.div`
 
         @media only screen and (min-width: 600px) {
                 height: auto;
-                max-height: 250px;
+                
             }
     }
 
@@ -392,7 +394,7 @@ export const ScalabilityBox = styled.div`
 
         @media only screen and (min-width: 600px) {
                 height: auto;
-                max-height: 250px;
+                
         }
     }
 
@@ -443,6 +445,9 @@ export const DigitalMarketingBox = styled.div`
         padding: 1.07726rem;
     }
 
+    @media only screen and (min-width: 992px) {
+        /* height: 700px; */
+    }
 
     .services-image {
         ${servicesImage};
@@ -454,6 +459,10 @@ export const DigitalMarketingBox = styled.div`
 
 .services-body {
     ${servicesBody};
+    @media only screen and (min-width: 992px) {
+        height: auto;
+    }
+
 
     h4 {
         ${servicesHeader};
@@ -469,8 +478,13 @@ export const DigitalMarketingBox = styled.div`
 
         @media only screen and (min-width: 600px) {
                 height: auto;
-                max-height: 250px;
+                
         }
+
+        @media only screen and (min-width: 992px) {
+        /* height: 700px; */
+    }
+
     }
 
 
@@ -545,7 +559,7 @@ export const PublishingBox = styled.div`
             ${servicesBodyText};
             @media only screen and (min-width: 600px) {
                 height: auto;
-                max-height: 250px;
+                
             }
         }
 
