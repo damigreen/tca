@@ -18,7 +18,6 @@ import {
     // ButtonServices
     DividerLine,
 } from 'AppStyled';
-import { Divider } from "@material-ui/core";
 
 const Services = () => {
     const brandingImage = '../icons/branding.png';
@@ -34,7 +33,6 @@ const Services = () => {
             <ServicesWrap>
                 <ServicesRow>
                     <BrandingBox>
-                        <h4>Branding</h4>
                         <div className="services-image">
                             <img src={brandingImage} alt="services image for branding" />
                         </div>
@@ -48,7 +46,6 @@ const Services = () => {
                     </BrandingBox>
 
                     <WebDevBox>
-                        <h4>Web and Mobile App Development</h4>
                         <div className="services-image">
                             <img src={webDevImage} alt="WebDev image for web design and development" />
                         </div>
@@ -65,7 +62,6 @@ const Services = () => {
                     </WebDevBox>
 
                     <DigitalMarketingBox>
-                        <h4>Digital Marketing</h4>
                         <div className="services-image">
                             <img src={digitalMarketImage} alt="DigitalMarketing image for digital marketing" />
                         </div>
@@ -82,7 +78,6 @@ const Services = () => {
                     </DigitalMarketingBox>
 
                     <ConsultBox>
-                        <h4>Consultancy</h4>
                         <div className="services-image">
                             <img src={consultancyImage} alt="Consult image for consultancy"  />
                         </div>
@@ -96,7 +91,6 @@ const Services = () => {
                     </ConsultBox>
 
                     <ScalabilityBox>
-                        <h4>Scalability</h4>
                         <div className="services-image">
                             <img src={scalabilityImage} alt="Scalability image for scalability" />
                         </div>
@@ -112,7 +106,6 @@ const Services = () => {
                     </ScalabilityBox>
 
                     <PublishingBox>
-                        <h4>Publishing</h4>
                         <div className="services-image">
                             <img src={publishingImage} alt="Publishing image for publishing" />
                         </div>

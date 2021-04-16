@@ -19,6 +19,28 @@ export const ServicesRow = styled.div`
     width: 90%;
     ${flexColWrap};
     margin-bottom: 50px;
+
+    @media only screen and (min-width: 600px) {
+        display: grid;
+        /* grid-template-columns: 50% 50%; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30% 30%;
+        /* column-gap: 10px; */
+        /* justify-items: stretch; */
+        justify-items: center;
+        align-items: stretch;
+        justify-content: stretch;
+    } 
+
+    /* Large devices (laptops/desktops, 992px and up) */ 
+    @media only screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        justify-content: center;
+        border: 1px solid red;
+    }
+
 `
 
 const servicesHeader = `
@@ -109,12 +131,17 @@ export const ButtonServices = styled.button`
 export const BrandingBox = styled.div`
     ${flexColWrap};
 
-    h4 {
-        ${servicesHeader};
+    @media only screen and (min-width: 600px) {
+        padding: 1.07726rem;
     }
+
 
     .services-image {
         ${servicesImage};
+
+        @media only screen and (min-width: 600px) {
+            height: 65px;
+        }
     }
 
     .services-body {
@@ -123,14 +150,18 @@ export const BrandingBox = styled.div`
         h4 {
             ${servicesHeader};
             ${servicesHeaderMobile};
-        }
 
-        h3 {
-            ${servicesHeaderSecondary};
+            @media only screen and (min-width: 600px) {
+                height: 50px;
+            }
         }
 
         div {
             ${servicesBodyText};
+            @media only screen and (min-width: 600px) {
+                height: auto;
+                max-height: 250px;
+            }
         }
 
 
@@ -178,12 +209,16 @@ export const BrandingBox = styled.div`
 export const WebDevBox = styled.div`
     ${flexColWrap};
 
-h4 {
-    ${servicesHeader};
-}
+    @media only screen and (min-width: 600px) {
+        padding: 1.07726rem;
+    }
 
 .services-image {
     ${servicesImage};
+
+    @media only screen and (min-width: 600px) {
+            height: 65px;
+        }
 }
 
 .services-body {
@@ -192,14 +227,18 @@ h4 {
     h4 {
         ${servicesHeader};
         ${servicesHeaderMobile};
-    }
 
-    h3 {
-        ${servicesHeaderSecondary};
+        @media only screen and (min-width: 600px) {
+            height: 50px;
+        }
     }
 
     div {
         ${servicesBodyText};
+        @media only screen and (min-width: 600px) {
+                height: auto;
+                max-height: 250px;
+            }
     }
 
 
@@ -246,13 +285,17 @@ h4 {
 export const ConsultBox = styled.div`
     ${flexColWrap};
 
-h4 {
-    ${servicesHeader};
-}
+    @media only screen and (min-width: 600px) {
+        padding: 1.07726rem;
+    }
 
-.services-image {
-    ${servicesImage};
-}
+    .services-image {
+        ${servicesImage};
+
+        @media only screen and (min-width: 600px) {
+            height: 65px;
+        }
+    }
 
 .services-body {
     ${servicesBody};
@@ -260,15 +303,21 @@ h4 {
     h4 {
         ${servicesHeader};
         ${servicesHeaderMobile};
-    }
 
-    h3 {
-        ${servicesHeaderSecondary};
+        @media only screen and (min-width: 600px) {
+                height: 50px;
+        }
     }
 
     div {
         ${servicesBodyText};
+
+        @media only screen and (min-width: 600px) {
+                height: auto;
+                max-height: 250px;
+            }
     }
+
 
 
     button {
@@ -311,15 +360,20 @@ h4 {
 `
 
 export const ScalabilityBox = styled.div`
- ${flexColWrap};
+    ${flexColWrap};
 
-h4 {
-    ${servicesHeader};
-}
+    @media only screen and (min-width: 600px) {
+        padding: 1.07726rem;
+    }
 
-.services-image {
-    ${servicesImage};
-}
+
+    .services-image {
+        ${servicesImage};
+
+        @media only screen and (min-width: 600px) {
+        height: 65px;
+    }
+    }
 
 .services-body {
     ${servicesBody};
@@ -327,14 +381,19 @@ h4 {
     h4 {
         ${servicesHeader};
         ${servicesHeaderMobile};
-    }
 
-    h3 {
-        ${servicesHeaderSecondary};
+        @media only screen and (min-width: 600px) {
+                height: 50px;
+        }
     }
 
     div {
         ${servicesBodyText};
+
+        @media only screen and (min-width: 600px) {
+                height: auto;
+                max-height: 250px;
+        }
     }
 
 
@@ -378,15 +437,20 @@ h4 {
 `
 
 export const DigitalMarketingBox = styled.div`
- ${flexColWrap};
+    ${flexColWrap};
 
-h4 {
-    ${servicesHeader};
-}
+    @media only screen and (min-width: 600px) {
+        padding: 1.07726rem;
+    }
 
-.services-image {
-    ${servicesImage};
-}
+
+    .services-image {
+        ${servicesImage};
+
+        @media only screen and (min-width: 600px) {
+        height: 65px;
+    }
+    }
 
 .services-body {
     ${servicesBody};
@@ -394,14 +458,19 @@ h4 {
     h4 {
         ${servicesHeader};
         ${servicesHeaderMobile};
-    }
 
-    h3 {
-        ${servicesHeaderSecondary};
+        @media only screen and (min-width: 600px) {
+                height: 50px;
+        }
     }
 
     div {
         ${servicesBodyText};
+
+        @media only screen and (min-width: 600px) {
+                height: auto;
+                max-height: 250px;
+        }
     }
 
 
@@ -447,12 +516,16 @@ h4 {
 export const PublishingBox = styled.div`
     ${flexColWrap};
 
-    h4 {
-        ${servicesHeader};
+    @media only screen and (min-width: 600px) {
+        padding: 1.07726rem;
     }
 
     .services-image {
         ${servicesImage};
+
+        @media only screen and (min-width: 600px) {
+            height: 65px;
+        }
     }
 
     .services-body {
@@ -461,14 +534,19 @@ export const PublishingBox = styled.div`
         h4 {
             ${servicesHeader};
             ${servicesHeaderMobile};
-        }
 
-        h3 {
-            ${servicesHeaderSecondary};
+            @media only screen and (min-width: 600px) {
+                height: 50px;
+            }
+
         }
 
         div {
             ${servicesBodyText};
+            @media only screen and (min-width: 600px) {
+                height: auto;
+                max-height: 250px;
+            }
         }
 
 
