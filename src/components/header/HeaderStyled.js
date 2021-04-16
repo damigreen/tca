@@ -58,6 +58,8 @@ export const HeaderWrap = styled.div`
           display: block;
           left: 18%;
           width: 9rem;
+          max-width: 100%;
+          height: auto;
           text-transform: uppercase;
           margin-top: 2rem;
           border: 1px solid #1B658C;
