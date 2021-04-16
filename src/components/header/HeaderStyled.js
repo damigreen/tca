@@ -15,6 +15,12 @@ export const HeaderWrap = styled.div`
       width: 100%;
       height: 100%;
 
+      .hero {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+
       .hero-text {
         /* font-size: 36px; */
         display: flex;
