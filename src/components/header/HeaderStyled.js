@@ -88,7 +88,7 @@ export const TopBar = styled.div`
     width: auto;
     position: absolute;
 
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 1032px) {
       width: auto;
       width: 66.6666666660%;
       right: 3%;
@@ -101,7 +101,7 @@ export const TopBar = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 1032px) {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -114,10 +114,20 @@ export const TopBar = styled.div`
 
   .nav-link {
     font-size: 16px;
-    color: #3B8877;
+    color: #333;
     padding: 12px 18px;
     text-transform: uppercase;
+
+    :hover, :active {
+      color: #ffffff;
+      background-color: #3B8877;
+    }
+
+    :visited {
+      background-color: #F2A02E;
+    }
   }
+
 
   @media only screen and (max-width: 767px) {
     .item-bar {
@@ -163,7 +173,7 @@ export const NavWrap = styled.div`
   .nav-filter {
     display: block;
 
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 1032px) {
       display: none;
     }
   }
