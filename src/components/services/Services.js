@@ -1,6 +1,6 @@
-import Header from "components/header";
 import React from "react";
 // import "./Services.sass";
+// import Header from "components/header";
 import Button from 'react-bootstrap/Button'
 import { 
     ServicesWrap,
@@ -11,11 +11,10 @@ import {
     ScalabilityBox,
     DigitalMarketingBox,
     PublishingBox,
-    ButtonServices,
+    // ButtonServices,
 } from './ServicesStyle'
 
 import {    
-    // ButtonServices
     DividerLine,
 } from 'AppStyled';
 

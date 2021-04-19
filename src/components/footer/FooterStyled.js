@@ -500,7 +500,8 @@ export const ProductsSubBox = styled.div    `
 
 export const FooterCopyrights = styled.div`
     width: 90%;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0.7rem;
+    padding: 1rem;
 
 
         div {
