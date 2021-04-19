@@ -27,7 +27,7 @@ const Navigation = () => {
     return (
         <TopBar className="top-bar">
             <NavWrap>
-                <LogoBox>
+                <LogoBox href="#">
                     <img src={logoImage} alt="Logo image for the header" />
                     <div className="logo-text">
                         <div><span>The</span><span> Creative</span><span> Agency</span></div>
@@ -48,23 +48,23 @@ const Navigation = () => {
             <div id="item-bar" className="item-bar">
                 <Nav className="nav-item flex-column" variant="pills" defaultActiveKey as="ul">
                     <Nav.Item>
-                        <Nav.Link className="nav-link" href="/about">About</Nav.Link>
+                        <Nav.Link className="nav-link" href="/#about">About</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link className="nav-link" eventKey="services">Services</Nav.Link>
+                        <Nav.Link href="/#services" className="nav-link" eventKey="services">Services</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link className="nav-link" eventKey="work">Work</Nav.Link>
+                        <Nav.Link href="/#portfolio" className="nav-link" eventKey="work">Work</Nav.Link>
                     </Nav.Item>
                     {/* <Nav.Item>
                         <Nav.Link eventKey="careers">Careers</Nav.Link>
                     </Nav.Item> */}
                     <Nav.Item>
-                        <Nav.Link className="nav-link" eventKey="contact">Contact</Nav.Link>
+                        <Nav.Link href="/#contact" className="nav-link" eventKey="contact">Contact</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>  
+                    {/* <Nav.Item>  
                         <Nav.Link className="nav-link" eventKey="login-form">Login</Nav.Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                 </Nav>
 
             </div>
