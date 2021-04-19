@@ -17,6 +17,7 @@ export const FooterRow = styled.div`
     width: 100%;
     max-width: 90rem;
     margin-left: 1.97rem;
+    border: 1px solid white;
 
     @media only screen and (min-width: 1032px) {
 
@@ -24,7 +25,7 @@ export const FooterRow = styled.div`
         flex-direction: row;
         margin: 0 auto;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 3rem 1rem;
     }
 `
@@ -289,6 +290,7 @@ export const FooterItemsClass = styled.div`
 
     @media only screen and (min-width: 1032px) {
         margin-left: 2rem;
+        width: 40%;
     }
 
     .widgetIcon {
@@ -529,7 +531,5 @@ export const FooterCopyrights = styled.div`
             }
 
         }
-
-
 
 `

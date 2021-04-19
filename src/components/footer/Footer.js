@@ -466,7 +466,7 @@ const Footer = () => {
                 </FooterItemsClass>
                 
             </FooterRow>
-            <FooterCopyrights>
+            {/* <FooterCopyrights>
                 <div>
                     &#169; 2021 The Creative Agency <span>Back to top</span>
                     <a href="#header">
@@ -475,7 +475,7 @@ const Footer = () => {
                         </svg>
                     </a>
                 </div>
-            </FooterCopyrights>
+            </FooterCopyrights> */}
         </FooterWrapper>
     )
 }
