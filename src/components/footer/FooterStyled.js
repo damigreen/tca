@@ -17,7 +17,6 @@ export const FooterRow = styled.div`
     width: 100%;
     max-width: 90rem;
     margin-left: 1.97rem;
-    border: 1px solid white;
 
     @media only screen and (min-width: 1032px) {
 
