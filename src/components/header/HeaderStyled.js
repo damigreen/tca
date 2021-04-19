@@ -8,7 +8,6 @@ export const HeaderWrap = styled.div`
 
 
     .hero-image {
-      background-color: red;
       position: relative;
       top: 0;
       left: 0;
