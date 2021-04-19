@@ -1,10 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import Header from 'components/header/';
-import Container from 'react-bootstrap/Container';
 import Services from 'components/services/';
 import About from 'components/about/';
-import TestComponent from 'components/testComponent/TestComponent';
 import Footer from 'components/footer/';
 import Portfolio from 'components/portfolio/';
 import Contact from 'components/contact/';
@@ -12,6 +9,9 @@ import {
   AppWrapper,
   MainWrapper,
 } from 'AppStyled'
+// import styled from 'styled-components';
+// import Container from 'react-bootstrap/Container';
+// import TestComponent from 'components/testComponent/TestComponent';
 
 
 

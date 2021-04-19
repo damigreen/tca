@@ -22,7 +22,7 @@ const Portfolio = () => {
   }, []);
 
   const filterAll = () => {
-    const el = document.querySelector('.active');
+    // const el = document.querySelector('.active');
     setPortfolioList(portfolioListClone);
     return 1; 
   }
@@ -63,7 +63,7 @@ const Portfolio = () => {
 
         return (
           <article>
-              <a className="project-link" href="#">
+              <a className="project-link" href="#portfolioLink">
                 <div className="portfolio-img">
                   <img src={projectImage[0]} alt="team bere project image"  />
                 </div>

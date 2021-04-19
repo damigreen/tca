@@ -1,5 +1,5 @@
-import { borderStyle } from 'AppStyled';
-import styled, { css } from 'styled-components';
+import { flexRowWrap } from 'AppStyled';
+import styled from 'styled-components';
 
 
 const noIconBorder = `
@@ -14,19 +14,35 @@ export const ContactWrapper = styled.div`
     border-bottom: 1px solid #A1ACB3;
 `
 
+export const ContactBox = styled.div`
+    display: block;
+
+    @media only screen and (min-width: 800px) {
+        ${flexRowWrap};
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 4rem 3rem;
+    }
+`
+
 export const ContactIntro = styled.div`
     padding: 20px 10px;
     text-align: left;
     margin: 7px 0;
-    /* background: #03658C; */
     background: #024959;
     color: #e6f7fe;
     margin-bottom: 20px;
 
+    @media only screen and (min-width: 800px) {
+        margin: 0;
+        width: 60%;
+    }
+
     .contact-info {
-        /* background: red; */
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     h3.partner-heading {
@@ -73,6 +89,13 @@ export const ContactRow = styled.div`
     text-align: left;
     padding: 30px;
     margin-bottom: 4.983rem;
+    margin-left: 1.12rem;
+    margin-right: 1.12rem;
+
+    @media only screen and (min-width: 800px) {
+        width: 40%;
+        background: #f5f5f5;
+    }
 
     h3 {
         text-align: center;

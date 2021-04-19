@@ -1,9 +1,6 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import {
     flexColWrap,
-    flexRowWrap,
-    borderStyle,
-    headerSecStyled,
 } from 'AppStyled'
 
 
@@ -11,6 +8,7 @@ export const ServicesWrap = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 8rem;
 `
 
 export const ServicesRow = styled.div`
@@ -76,11 +74,11 @@ const servicesBody = `
     text-align: center;
 `
 
-const servicesHeaderSecondary = `
-    margin: 0 auto;
-    width: 75%;
-    margin-bottom: 0.983rem;
-`
+// const servicesHeaderSecondary = `
+//     margin: 0 auto;
+//     width: 75%;
+//     margin-bottom: 0.983rem;
+// `
 
 const servicesBodyText = `
     font-size: 16px;

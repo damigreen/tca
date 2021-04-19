@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import {
   HeaderWrap,
-  HeroImage,
+  // HeroImage,
 } from './HeaderStyled';
 import Button from 'react-bootstrap/Button';
 
@@ -14,7 +14,7 @@ function Header() {
     <HeaderWrap>
         <Navigation />
           <div className="hero-image">
-            <img className="hero" src={heroImage} />
+            <img className="hero" src={heroImage} alt="Hero image for website" />
             <div className="hero-text">
               <h1>Your toolbox for bringing</h1>
               <h1>ideas to life</h1>

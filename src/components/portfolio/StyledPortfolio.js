@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {
-    borderStyle,
-    flexRowWrap,
+    // borderStyle,
+    // flexRowWrap,
     flexColWrap,
 } from 'AppStyled';
 
@@ -15,7 +15,9 @@ export const PortfolioRow = styled.div`
     .portfolio-header {
         color: #013440;
         font-size: 34px;
-        margin-top: 50px;
+        margin-top: 100px;
+        margin: 0 auto;
+        width: 80%;
     }
 
     .portfolio-category {
@@ -23,15 +25,17 @@ export const PortfolioRow = styled.div`
         width: 88.5%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        justify-self: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
         margin-bottom: 1.2rem;
-        /* margin-top: 0.3rem; */
-        /* color: #023e73; */
-        /* color: white; */
-        /* color: #03738c; */
         padding-top: 1.673rem;
 
+        
 
         a {
             display: flex;
@@ -58,10 +62,28 @@ export const PortfolioRow = styled.div`
     .project-wrap {
         ${flexColWrap};
 
+        @media only screen and (min-width: 600px) {
+            display: grid;  
+            /* grid-gap: 5px;   */
+            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 25% 25%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 35% 35%;
+            margin: 0 auto;
+            width: 75%;
+        }
+
         article {
             margin-left: 1.176rem;
             margin-right: 1.176rem;
             margin-bottom: 3.9rem;
+            box-shadow: rgb(0 0 0 / 10%) 0px 10px 19px 0px;
             
             a {
                 color: #333;
@@ -84,7 +106,8 @@ export const PortfolioRow = styled.div`
                     margin-left: 1.9rem;
                     padding: 1px 2px 1px 7px;
                     font-size: 1.39rem;
-                    font-size: 22px;
+                    font-weight: 900;
+                    font-size: 1.39rem;
                     letter-spacing: 1px;
                     font-weight: 500;
                     /* color: #4b4b4b; */
@@ -95,8 +118,9 @@ export const PortfolioRow = styled.div`
                     text-align: left;
                     padding: 1px 2px 1px 7px;
                     margin-left: 1.9rem;
-                    font-size: 1.39rem;
-                    font-size: 22px;
+                    font-size: 1.234rem;
+                    padding: 1rem 0.45rem;
+                    /* background-color: red; */
                 }
             }
         }

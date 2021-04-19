@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import LoginForm from 'components/loginForm/';
+// import NavDropdown from 'react-bootstrap/NavDropdown'
+// import LoginForm from 'components/loginForm/';
 import {
     NavWrap,
     LogoBox,
@@ -28,14 +28,14 @@ const Navigation = () => {
         <TopBar className="top-bar">
             <NavWrap>
                 <LogoBox>
-                    <img src={logoImage} />
+                    <img src={logoImage} alt="Logo image for the header" />
                     <div className="logo-text">
                         <div><span>The</span><span> Creative</span><span> Agency</span></div>
                         <div>bringing ideas to life</div>
                     </div>
                 </LogoBox>
 
-                    <a className="nav-filter" onClick={navExpand}>
+                    <a href="#item-bar" className="nav-filter" onClick={navExpand}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
                             <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
                         </svg>
@@ -45,7 +45,7 @@ const Navigation = () => {
 
             </NavWrap>
 
-            <div className="item-bar">
+            <div id="item-bar" className="item-bar">
                 <Nav className="nav-item flex-column" variant="pills" defaultActiveKey as="ul">
                     <Nav.Item>
                         <Nav.Link className="nav-link" href="/about">About</Nav.Link>

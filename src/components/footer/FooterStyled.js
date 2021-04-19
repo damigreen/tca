@@ -1,8 +1,7 @@
 import styled from 'styled-components';
+// import { flexRowWrap } from 'AppStyled'
 
 export const FooterWrapper = styled.section`
-    display: flex;
-    /* background-color: #024959; */
     background-color: #011a1f;
     width: 100%;
     margin-right: auto;
@@ -11,12 +10,23 @@ export const FooterWrapper = styled.section`
     padding-top: 1.875rem;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
+
 `
 
 export const FooterRow = styled.div`
     width: 100%;
     max-width: 90rem;
     margin-left: 1.97rem;
+
+    @media only screen and (min-width: 1032px) {
+
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-around;
+        padding: 3rem 1rem;
+    }
 `
 
 export const FooterCompanyLogo = styled.div`
@@ -59,6 +69,10 @@ export const FooterNavItem = styled.div`
 export const LocationStyled = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media only screen and (min-width: 1032px) {
+        margin-left: 2rem;
+    }
 `
 
 export const FooterLocation = styled.div`
@@ -271,6 +285,17 @@ export const FooterSocialIconsWrap = styled.div`
 export const FooterItemsClass = styled.div`
     color: #FFFFFF;
     width: 90%;
+
+
+    @media only screen and (min-width: 1032px) {
+        margin-left: 2rem;
+    }
+
+    .widgetIcon {
+        @media only screen and (min-width: 1032px) {
+            display: none;
+        }
+    }
 `
 export const FooterItemServices = styled.div`
     
@@ -290,6 +315,11 @@ export const CompanyBox = styled.div`
     border-bottom: 1px solid #4F4F4F;
     border-top: 1px solid #4F4F4F;
 
+    @media only screen and (min-width: 1032px) {
+        border: none;
+        margin: 0;
+    }
+
         div {
             background-color: inherit;
         }
@@ -306,6 +336,7 @@ export const CompanyBox = styled.div`
         .minusCompanyWidget {
             /* background-color: red;       */
             display: none;
+
         }
 `
 
@@ -322,6 +353,11 @@ export const CompanySubBox = styled.div`
             margin-bottom: 0.3456rem;
             border-bottom: white;
             padding-bottom: 0.45rem;
+
+            @media only screen and (min-width: 1032px) {
+                border: none;
+                display: inline-block;
+            }
         }   
 
         p {
@@ -344,6 +380,11 @@ export const ServicesBox = styled.div`
     height: 45px;
     border-bottom: 1px solid #4F4F4F;
     border-top: 1px solid #4F4F4F;
+
+    @media only screen and (min-width: 1032px) {
+        border: none;
+           /* margin: 0; */
+    }
 
         div {
             background-color: inherit;
@@ -377,6 +418,11 @@ export const ServicesSubBox = styled.div`
             margin-bottom: 0.3456rem;
             border-bottom: white;
             padding-bottom: 0.45rem;
+
+            @media only screen and (min-width: 1032px) {
+                border: none;
+                display: inline-block;
+            }
         }
 
         p {
@@ -400,6 +446,11 @@ export const ProductsBox = styled.div`
     border-bottom: 1px solid #4F4F4F;
     border-top: 1px solid #4F4F4F;
 
+    @media only screen and (min-width: 1032px) {
+        border: none;
+        margin: 0;
+    }
+
         div {
             background-color: inherit;
         }
@@ -422,20 +473,23 @@ export const ProductsBox = styled.div`
 export const ProductsSubBox = styled.div    `
     font-size: 12px;
     color: #d9d9d9;
-    /* color: #444444; */   
 
-        .products-sub-box { 
-            display: none;
-            text-align: left    ;
-            margin-top: 0.8456rem;
-            margin-left: 1.25rem    ;
-            margin-bottom: 0.3456rem;
-            border-bottom: white;   
-            padding-bottom: 0.45rem;
-            /* background-color: red; */
+    .products-sub-box { 
+        display: none;
+        text-align: left;
+        margin-top: 0.8456rem;
+        margin-left: 1.25rem    ;
+        margin-bottom: 0.3456rem;
+        border-bottom: white;   
+        padding-bottom: 0.45rem;
+
+        @media only screen and (min-width: 1032px) {
+            border: none; 
+            display: inline-block;
         }
+    }
 
-            p {
+        p {
             margin-bottom: 0.12rem;
             padding: 0px;
             padding-bottom: 0.21rem;
@@ -452,7 +506,6 @@ export const FooterCopyrights = styled.div`
         div {
             text-align: center;
             color: #999999;
-            /* color: #f25f05; */
 
 
             span {
