@@ -87,14 +87,36 @@ export const TopBar = styled.div`
   .item-bar {
     width: auto;
     position: absolute;
+
+    @media only screen and (min-width: 800px) {
+      width: auto;
+      width: 66.6666666660%;
+      right: 3%;
+      top: 26px;
+    }
   }
 
   .nav-item {
     color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 800px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0 15px;
+      width: auto;
+  
+    }
   }
 
   .nav-link {
-    color: #fff;
+    font-size: 16px;
+    color: #3B8877;
+    padding: 12px 18px;
+    text-transform: uppercase;
   }
 
   @media only screen and (max-width: 767px) {
@@ -113,8 +135,7 @@ export const TopBar = styled.div`
       background-color: #78B4A9;
       border-bottom: 1px solid #e7e7e7;
       color: #fff;
-  }
-
+    }
   }
 `
 
@@ -141,6 +162,10 @@ export const NavWrap = styled.div`
 
   .nav-filter {
     display: block;
+
+    @media only screen and (min-width: 800px) {
+      display: none;
+    }
   }
 `
 

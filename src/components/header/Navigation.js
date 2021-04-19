@@ -46,9 +46,11 @@ const Navigation = () => {
             </NavWrap>
 
             <div id="item-bar" className="item-bar">
-                <Nav className="nav-item flex-column" variant="pills" defaultActiveKey as="ul">
+                {/* <Nav className="nav-item flex-column" variant="pills" defaultActiveKey as="ul"> */}
+                <Nav  className="nav-item" variant="pills" defaultActiveKey as="ul">
+
                     <Nav.Item>
-                        <Nav.Link className="nav-link" href="/#about">About</Nav.Link>
+                        <Nav.Link  className="nav-link" href="/#about">About</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="/#services" className="nav-link" eventKey="services">Services</Nav.Link>
@@ -62,9 +64,9 @@ const Navigation = () => {
                     <Nav.Item>
                         <Nav.Link href="/#contact" className="nav-link" eventKey="contact">Contact</Nav.Link>
                     </Nav.Item>
-                    {/* <Nav.Item>  
+                    <Nav.Item>  
                         <Nav.Link className="nav-link" eventKey="login-form">Login</Nav.Link>
-                    </Nav.Item> */}
+                    </Nav.Item>
                 </Nav>
 
             </div>
