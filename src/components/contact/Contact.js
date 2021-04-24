@@ -88,6 +88,10 @@ const Contact = () => {
                         <Form.Group className="form-group" controlId="formGroupMessage">
                             <Form.Control { ...message.form } className="form-message" as="textarea" rows={5} type="text" placeholder="Enter your message..." />
                         </Form.Group>
+                        
+                        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: '1.25rem'}}>
+                            <Button style={{display: 'block', alignSelf: 'center', width: '100%'}} variant="primary">Submit</Button>
+                        </div>
                     </Form>
                     </div>
 

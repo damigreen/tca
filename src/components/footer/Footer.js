@@ -339,12 +339,12 @@ const Footer = () => {
                                     {/* <label for="email">Subscribe to our newsletter</label> */}
 
                                     <FooterSubField>
-                                        <div>
-                                            <input type="email" name="email" placeholder="EMAIL" />
+                                        <form>
+                                            <input className="sub-input" type="email" name="email" placeholder="EMAIL" />
                                             <button type="submit">
                                                     <img src={emailSubmitIcon} alt="email submit icon" />
                                             </button>
-                                        </div>
+                                        </form>
                                         <p>You may unsubscribe from our monthly newsletter at any time. Check out our <span><a href="#footer" style={{color: "#FFFFFF", textDecoration: "underline"}}>Privacy Policy</a></span> for more information on how we store and protect your data.</p>
                                     </FooterSubField>
                                 </FooterSubForm>

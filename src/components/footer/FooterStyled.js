@@ -17,6 +17,8 @@ export const FooterRow = styled.div`
     width: 100%;
     max-width: 90rem;
     margin-left: 1.97rem;
+    font-size: 16px;
+
 
     @media only screen and (min-width: 1032px) {
 
@@ -171,10 +173,16 @@ export const FooterSubField = styled.div`
     flex-direction: column;
     width: 90%;
         
-        div {
+        form {
             display: flex;
             flex-direction: row;
+
+            .sub-input {
+                color: white;
+                font-size: 16px;
+            }
         }
+
 
         input {
             border-width: 2px 0 2px 2px;
