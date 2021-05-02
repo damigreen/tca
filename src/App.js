@@ -5,6 +5,7 @@ import About from 'components/about/';
 import Footer from 'components/footer/';
 import Portfolio from 'components/portfolio/';
 import Contact from 'components/contact/';
+import Insights from 'components/insights/';
 import {
   AppWrapper,
   MainWrapper,
@@ -38,6 +39,10 @@ function App() {
 
           <section id="portfolio">
             <Portfolio />
+          </section>
+
+          <section>
+            <Insights />
           </section>
 
           <section id="contact">
