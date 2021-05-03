@@ -25,9 +25,12 @@ const Insights = () => {
             <a className="latest-link">
               <div className="image-wrapper">
                 <div className="latest-image">
-
                 </div>
               </div>
+
+                <p className="article-type">article</p>
+                <h3 className="article-title">Monthly Digest: Keeping up with TCA</h3>
+                <p className="article-author">By Abiola Yomi</p>
             </a>
           </div>
 
@@ -38,6 +41,10 @@ const Insights = () => {
                   
                 </div>
               </div>
+
+              <p className="article-type">article</p>
+                <h3 className="article-title">Monthly Digest: Keeping up with TCA</h3>
+                <p className="article-author">By Abiola Yomi</p>
             </a>
           </div>
 
@@ -48,6 +55,10 @@ const Insights = () => {
                   
                 </div>
               </div>
+
+              <p className="article-type">article</p>
+                <h3 className="article-title">Monthly Digest: Keeping up with TCA</h3>
+                <p className="article-author">By Abiola Yomi</p>
             </a>
           </div>
 
