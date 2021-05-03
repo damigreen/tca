@@ -8,8 +8,8 @@ import {
   MainHeader,
   PrimaryHeader,
 } from 'AppStyled';
-
-
+import InsightPage from './InsightPage';
+// import { Link } from 
 
 
 const Insights = () => {
@@ -63,6 +63,9 @@ const Insights = () => {
           </div>
 
         </InsightRow>
+
+
+        <InsightPage />
       </InsightWrapper>
 
     // </div>
