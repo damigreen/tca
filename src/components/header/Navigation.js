@@ -50,23 +50,23 @@ const Navigation = () => {
                 <Nav  className="nav-item" variant="pills" defaultActiveKey as="ul">
 
                     <Nav.Item>
-                        <Nav.Link  className="nav-link" href="/#about">About</Nav.Link>
+                        <Nav.Link  className="nav-link" href="/#about">ABOUT</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="/#services" className="nav-link" eventKey="services">Services</Nav.Link>
+                        <Nav.Link href="/#services" className="nav-link" eventKey="services">SERVICES</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="/#portfolio" className="nav-link" eventKey="work">Work</Nav.Link>
+                        <Nav.Link href="/#portfolio" className="nav-link" eventKey="work">WORK</Nav.Link>
                     </Nav.Item>
-                    {/* <Nav.Item>
-                        <Nav.Link eventKey="careers">Careers</Nav.Link>
-                    </Nav.Item> */}
+                    <Nav.Item>
+                        <Nav.Link eventKey="careers" className="nav-link" eventKey="insights">INSIGHTS</Nav.Link>
+                    </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="/#contact" className="nav-link" eventKey="contact">Contact</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>  
+                    {/* <Nav.Item>  
                         <Nav.Link className="nav-link" eventKey="login-form">Login</Nav.Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                 </Nav>
 
             </div>
