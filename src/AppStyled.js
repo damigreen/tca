@@ -60,10 +60,12 @@ export const DividerLine = styled.div`
 `
 
 export const MainHeader = styled.div`
+  margin-top: 30px;
+  font-size: 12px;
   text-transform: uppercase;
   line-height: 1.4;
   font-weight: 400;
-  margin-bottom: 1.69rem;
+  margin-bottom: 2.69rem;
   letter-spacing: 3px;
 `
 

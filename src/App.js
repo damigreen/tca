@@ -48,10 +48,6 @@ function App() {
             <Insights />
           </section>
 
-          <section>
-            <DividerLine />
-          </section>
-
           <section id="contact">
             <Contact />
           </section>
