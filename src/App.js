@@ -48,6 +48,7 @@ function App() {
             <Insights />
           </section>
 
+
           <section id="contact">
             <Contact />
           </section>
