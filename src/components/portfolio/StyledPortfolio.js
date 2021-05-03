@@ -8,7 +8,7 @@ import {
 
 export const PortfolioWrapper = styled.div`
     /* border: 1px solid red; */
-    margin-bottom: 34px;
+    margin-bottom: 120px;
 `
 export const PortfolioRow = styled.div`
     margin: 0 auto;
