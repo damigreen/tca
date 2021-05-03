@@ -7,14 +7,17 @@ import {
 export const InsightWrapper = styled.div`
   display: block;
   position: relative;
+  margin: 0 auto;
   width: 100%;
   max-width: 80rem;
-  margin: 0 auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  margin-top: 54px;
+  margin-bottom: 100px;
 
   @media (min-width: 1024px) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 4.5rem;
     padding-left: 4.5rem;
   }

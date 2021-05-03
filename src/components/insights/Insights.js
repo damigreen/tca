@@ -15,9 +15,9 @@ import {
 const Insights = () => {
 
   return (
-    <div>
+    // <div>
       <InsightWrapper>
-        <MainHeader>Insights</MainHeader>
+        {/* <MainHeader>Insights</MainHeader> */}
         <PrimaryHeader>Latest at TCA</PrimaryHeader>
 
         <InsightRow>
@@ -54,7 +54,7 @@ const Insights = () => {
         </InsightRow>
       </InsightWrapper>
 
-    </div>
+    // </div>
   )
 }
 
