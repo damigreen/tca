@@ -56,5 +56,21 @@ export const DividerLine = styled.div`
   margin-bottom: 30px !important;
   position: relative;
   background: radial-gradient(ellipse at bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 70%);
-  width: 70% !important
+  width: 70% !important;
 `
+
+export const MainHeader = styled.div`
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 1.69rem;
+  letter-spacing: 3px;
+`
+
+export const PrimaryHeader = styled.h2`
+  color: #113C48;
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 2.233rem;
+`
+
