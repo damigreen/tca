@@ -10,10 +10,9 @@ import {
   AppWrapper,
   MainWrapper,
 } from 'AppStyled'
-// import styled from 'styled-components';
-// import Container from 'react-bootstrap/Container';
-// import TestComponent from 'components/testComponent/TestComponent';
-
+import {
+  DividerLine
+} from 'AppStyled';
 
 
 /* 
@@ -42,7 +41,15 @@ function App() {
           </section>
 
           <section>
+            <DividerLine />
+          </section>
+          
+          <section>
             <Insights />
+          </section>
+
+          <section>
+            <DividerLine />
           </section>
 
           <section id="contact">
