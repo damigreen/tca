@@ -11,6 +11,16 @@ export const PortfolioWrapper = styled.div`
     margin-bottom: 34px;
 `
 export const PortfolioRow = styled.div`
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80rem;
+    padding: 0 2.5rem;
+
+    @media (min-width: 1024px) {
+    margin: 0 auto;
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
 
     .portfolio-header {
         color: #013440;
@@ -76,7 +86,7 @@ export const PortfolioRow = styled.div`
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 35% 35%;
             margin: 0 auto;
-            width: 75%;
+            /* width: 70%; */
         }
 
         article {
