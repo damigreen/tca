@@ -7,6 +7,7 @@ import {
     LogoBox,
     TopBar
 } from './HeaderStyled';
+import { Link } from 'react-router-dom';
 
 const logoImage = '../../../icons/footer-logo-icon.png'
 
@@ -59,7 +60,7 @@ const Navigation = () => {
                         <Nav.Link href="/#portfolio" className="nav-link" eventKey="work">WORK</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="careers" className="nav-link" eventKey="insights">INSIGHTS</Nav.Link>
+                        <Link to="/insights" className="nav-link">INSIGHTS</Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="/#contact" className="nav-link" eventKey="contact">Contact</Nav.Link>
