@@ -27,7 +27,7 @@ export const HeaderWrap = styled.div`
         font-weight: 900;
         text-align: left;
         position: absolute;
-        top: 40%;
+        top: 39%;
         /* left: 0%; */
         width: 100%;
         height: auto;
@@ -36,7 +36,8 @@ export const HeaderWrap = styled.div`
         h1 {
           /* margin: 0 auto; */
           /* width: 70%; */
-          font-size: 6vw;
+          font-size: 5vw;
+          /* font-size: 10vh; */
           position: relative;
           left: 18%;
           width: max-content;
@@ -52,8 +53,24 @@ export const HeaderWrap = styled.div`
           margin-top: 0.3rem;
         }
 
+        .btn-wrapper {
+          /* margin: 0 auto; */
+          display: block;
+          /* position: absolute;
+          top: 50%;
+          left: 90%; */
+          /* transform: translate(-50%, -50%); */
+          width: 100%;
+          height: auto;
+
+
+          @media only screen and (max-width: 968px) {
+          }
+
+        }
+
         .btn-header {
-          position: relative;
+          /* position: relative;
           display: block;
           left: 18%;
           width: 9rem;
@@ -62,7 +79,59 @@ export const HeaderWrap = styled.div`
           text-transform: uppercase;
           margin-top: 2rem;
           border: 1px solid #1B658C;
+          color: #fff; */
+
+          text-transform: uppercase;
+          width: auto;
+          padding: 0.75em 2em;
+          text-align: center;
+          text-decoration: none;
+          color: $color;
+          border: 2px solid $color;
+          font-size: 24px;
+          display: inline-block;
+          border-radius: 0.3em;
+          transition: all 0.2s ease-in-out;
+          position: relative;
+          overflow: hidden;
+          left: 18%;
+          margin-top: 2rem;
           color: #fff;
+          background-color: #34383c;
+
+          @media only screen and (max-width: 968px) {
+            /* width: 200px; */
+            font-size: 0.988rem;
+          }
+
+          @media only screen and (max-width: 468px) {
+            bottom: 1.22rem;
+            /* width: 200px; */
+            font-size: 0.788rem;
+          }
+
+          &:before {
+            content: "";
+            background-color: rgba(255,255,255,0.5);
+            height: 100%;
+            /* width: 3em; */
+            width: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -4.5em;
+            transform: skewX(-45deg) translateX(0);
+            transition: none;
+          }
+          &:hover {
+            background-color: $color;
+            color: #fff;
+            border-bottom: 4px solid darken($color, 10%);
+            &:before {
+              transform: skewX(-45deg) translateX(13.5em);
+            transition: all 0.5s ease-in-out;
+            }
+          }
         }
 
       }
@@ -92,7 +161,7 @@ export const TopBar = styled.div`
       width: auto;
       width: 66.6666666660%;
       right: 3%;
-      top: 26px;
+      top: 1.4rem;
     }
   }
 
@@ -158,6 +227,7 @@ export const NavWrap = styled.div`
   margin: 0 auto;
   height: 11vh;
   width: 94%;
+  /* margin-bottom: 3rem; */
 
   .filter-box {
     display: flex;
@@ -179,14 +249,14 @@ export const NavWrap = styled.div`
   }
 `
 
-export const LogoBox = styled.div`
+export const LogoBox = styled.a`
   height: 52;
-  width: 52;
+  width: 52;  
   float: left;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 
   .logo-text {
     /* border: 1px solid red; */

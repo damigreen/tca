@@ -18,7 +18,10 @@ function Header() {
             <div className="hero-text">
               <h1>Your toolbox for bringing</h1>
               <h1>ideas to life</h1>
-              <Button className="btn-header" variant="outline-secondary">get started</Button>
+              <div className="btn-wrapper">
+                <Button className="btn-header" variant="outline-secondary">get started</Button>
+
+              </div>
             </div>
           </div>
     </HeaderWrap>

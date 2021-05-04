@@ -15,7 +15,9 @@ import {
   DividerLine
 } from 'AppStyled';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import {
+  InsightPageSection,
+} from './components/insights/InsightStyled';
 
 
 /* 
@@ -62,16 +64,17 @@ function App() {
               </section>
 
               <section>
-                <Route exact path="/insights">
+                <Route exact path="/">
                   <Insights />
                 </Route>
               </section>
+              
+              <InsightPageSection>
+                <Route exact path="/insights/keeping-up-with-tca">
+                  <InsightPage />
+                </Route>
+              </InsightPageSection>
 
-              <section>
-                <Route path="/">
-                  <Insights />
-                </Route>
-              </section>
 
               <section id="contact">
                 <Route exact path="/">
