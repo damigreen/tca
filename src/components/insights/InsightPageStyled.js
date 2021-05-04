@@ -36,20 +36,32 @@ export const InsightRow  = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     height: 300px;
-    width: 100%;
+    width: 95%;
     margin-top: 2rem;
     background: url("../../../images/insight-image.jpeg");
     background-position: 50% 60%; 
     background-repeat: repeat-x;
     background-size: cover;
 
+    @media only screen and (min-width: 1200px) {
+      width: 100%;
+      max-width: 55%;
+      /* padding-left: 4.5rem;
+      padding-right: 4.5rem; */
+      padding: 3rem;
+    }
+
     .insight-hero-text {
       margin: 0 auto;
       width: 80%;
       text-align: center;
       font-size: 3vw;
+      font-size: 4vh;
       color: white;
+      font-weight: 600;
+      /* color: #F2A32E; */
     }
   }
 
