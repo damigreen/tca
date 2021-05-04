@@ -6,6 +6,7 @@ import Footer from 'components/footer/';
 import Portfolio from 'components/portfolio/';
 import Contact from 'components/contact/';
 import Insights from 'components/insights/';
+import InsightPage from 'components/insights/InsightPage';
 import {
   AppWrapper,
   MainWrapper,
@@ -13,6 +14,8 @@ import {
 import {
   DividerLine
 } from 'AppStyled';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 
 /* 
@@ -23,44 +26,70 @@ TODO
 
 function App() {
   return (
-    <AppWrapper>
-        <header id="header">
-          <Header/>
-        </header>
-        <MainWrapper>
-          <section id="about">
-            <About />
-          </section>
-
-          <section id="services">
-            <Services />
-          </section>
-
-          <section id="portfolio">
-            <Portfolio />
-          </section>
-
-          <section>
-            <DividerLine />
-          </section>
-          
-          <section>
-            <Insights />
-          </section>
+    <Router>
+      <Switch>
+        <AppWrapper>
+            <header id="header">
+              <Route exact path="/">
+                <Header />
+              </Route>
+            </header>
 
 
-          <section id="contact">
-            <Contact />
-          </section>
-        </MainWrapper>
-        
-        <footer>
-          <Footer />
-        </footer>
-      {/* <Container>
-        <TestComponent />
-      </Container> */}
-    </AppWrapper>
+            <MainWrapper>
+              <section id="about">
+                <Route exact path="/">
+                  <About />
+                </Route>
+              </section>
+
+              <section id="services">
+                <Route exact path="/">
+                  <Services />
+                </Route>
+              </section>
+
+              <section id="portfolio">
+                <Route exact path="/">
+                  <Portfolio />
+                </Route>
+              </section>
+
+              <section>
+                <Route exact path="/">
+                  <DividerLine />
+                </Route>
+              </section>
+
+              <section>
+                <Route exact path="/insights/keeping-up-with-tca">
+                  <InsightPage />
+                </Route>
+              </section>
+
+              <section>
+                <Route path="/">
+                  <Insights />
+                </Route>
+              </section>
+
+              <section id="contact">
+                <Route exact path="/">
+                  <Contact />
+                </Route>
+              </section>
+            </MainWrapper>
+            
+            <footer>
+                <Footer />
+            </footer>
+          {/* <Container>
+            <TestComponent />
+          </Container> */}
+        </AppWrapper>
+      </Switch>
+
+    </Router>
   );
 }
 
