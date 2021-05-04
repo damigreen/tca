@@ -5,9 +5,9 @@ import {
 } from '../../AppStyled';
 
 const aboutHeader = `
-    font-weight: 600;   
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
+    color: yellow;
 `
 
 
@@ -27,9 +27,9 @@ export const AboutHeaderWrap = styled.div`
 
 export const AboutHeader = styled.h1`
   ${aboutHeader};
-  font-size: 34px;
+  font-size: 2.5rem;
   line-height: 40px;
-  font-weight: 400;
+  font-weight: 600;
   width: 90%;
   padding: 0.234rem;
   margin-top: 2.568rem;

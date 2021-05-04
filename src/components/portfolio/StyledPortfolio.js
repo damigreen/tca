@@ -24,7 +24,8 @@ export const PortfolioRow = styled.div`
 
     .portfolio-header {
         color: #013440;
-        font-size: 34px;
+        font-size: 2.5rem;
+        font-weight: 600;
         margin-top: 100px;
         margin: 0 auto;
         width: 80%;

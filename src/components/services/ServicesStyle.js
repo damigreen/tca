@@ -44,8 +44,9 @@ export const ServicesRow = styled.div`
 
 const servicesHeader = `
     display: none;
-    font-size: 18px;
-    font-weignt: 900
+    // font-size: 18px;
+    font-size: 1.35rem;
+    font-weight: 600;
     color: #03658C;
     margin-top: 0.4rem;
     margin-bottom: 1.234rem;
