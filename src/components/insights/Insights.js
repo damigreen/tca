@@ -2,6 +2,8 @@ import React from 'react';
 import { 
   InsightRow,
   InsightWrapper,
+  InsightPattern,
+  InsightPageSection,
 } from "./InsightStyled";
 import {
   DividerLine,
@@ -9,19 +11,36 @@ import {
   PrimaryHeader,
 } from 'AppStyled';
 import InsightPage from './InsightPage';
+import { BrowserRouter as Router, Link, Route, } from 'react-router-dom';
+import Navigation from '../header/Navigation';
 
 
 const Insights = () => {
 
   return (
-    // <div>
+    <Router>
+      <Navigation />
+      <InsightPattern>
+        <div className="insight-gradient">
+          <div className="insight-main-heading">
+            <h1>Insights</h1>
+          </div>
+        </div>
+      </InsightPattern>
+
+
+      <InsightPageSection>
+        <Route exact path="/insights/keeping-up-with-tca">
+          <InsightPage />
+        </Route>
+      </InsightPageSection>
+
       <InsightWrapper>
-        {/* <MainHeader>Insights</MainHeader> */}
         <PrimaryHeader>Latest at TCA</PrimaryHeader>
 
         <InsightRow>
           <div className="latest-col">
-            <a className="latest-link">
+            <Link to="/insights/keeping-up-with-tca" className="latest-link">
               <div className="image-wrapper">
                 <div className="latest-image">
                 </div>
@@ -30,7 +49,7 @@ const Insights = () => {
                 <p className="article-type">article</p>
                 <h3 className="article-title">Monthly Digest: Keeping up with TCA</h3>
                 <p className="article-author">By Abiola Yomi</p>
-            </a>
+            </Link>
           </div>
 
           <div className="latest-col">
@@ -62,9 +81,10 @@ const Insights = () => {
           </div>
 
         </InsightRow>
+
       </InsightWrapper>
 
-    // </div>
+    </Router>
   )
 }
 
