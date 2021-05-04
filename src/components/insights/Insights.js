@@ -18,22 +18,13 @@ import Navigation from '../header/Navigation';
 const Insights = () => {
 
   return (
-    <Router>
-      <Navigation />
-      <InsightPattern>
-        <div className="insight-gradient">
-          <div className="insight-main-heading">
-            <h1>Insights</h1>
-          </div>
-        </div>
-      </InsightPattern>
-
-
-      <InsightPageSection>
+    <div>
+      
+      {/* <InsightPageSection>
         <Route exact path="/insights/keeping-up-with-tca">
           <InsightPage />
         </Route>
-      </InsightPageSection>
+      </InsightPageSection> */}
 
       <InsightWrapper>
         <PrimaryHeader>Latest at TCA</PrimaryHeader>
@@ -84,7 +75,7 @@ const Insights = () => {
 
       </InsightWrapper>
 
-    </Router>
+    </div>
   )
 }
 

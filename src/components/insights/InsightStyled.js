@@ -23,48 +23,6 @@ export const InsightWrapper = styled.div`
   }
 `
 
-export const InsightPattern = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100px;
-  max-height: 190px;
-  /* background: rgb(242,160,46); */
-  background: linear-gradient(90deg, rgba(242,160,46,1) 0%, rgba(49,115,95,0.908000700280112) 50%, rgba(61,136,166,1) 100%);
-  margin-top: 2rem;
-  z-index: 10;
-  opacity: 1;
-
-  @media only screen and (min-width: 1200px) {
-    height: 190px;
-  }
-
-
-  .insight-gradient {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left:0;
-    background-image: url('../../../patterns/pattern1.jpg');
-    opacity: 0.3;
-  }
-
-
-  .insight-main-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    opacity: 1;
-    z-index: 200;
-  }
-
-  h1 {
-    text-transform: uppercase;
-    align-self: center;
-  }
-
-`
 
 export const InsightPageSection = styled.section`
   margin-top: 2rem;

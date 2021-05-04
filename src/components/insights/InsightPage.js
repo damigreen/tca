@@ -2,6 +2,7 @@ import React from 'react';
 import {
   InsightPageWrapper,
   InsightRow,
+  InsightPattern,
 } from './InsightPageStyled';
 import Navigation from '../header/Navigation';
 import {
@@ -13,7 +14,7 @@ import {
   LinkedinShareButton,
   FacebookShareCount,
 } from "react-share";
-
+import Insights from './Insights';
 
 const InsightPage = () => {
   const subImage = "../../../images/insight-sub-image.jpeg";
@@ -23,6 +24,17 @@ const InsightPage = () => {
 
   return (
     <InsightPageWrapper>
+      <Navigation />
+      
+      <InsightPattern>
+        <div className="insight-gradient">
+          <div className="insight-main-heading">
+            <h1>Insights</h1>
+          </div>
+        </div>
+      </InsightPattern>
+
+
       <InsightRow>
         <div insight-bar>
           <div className="insight-hero">
@@ -97,6 +109,8 @@ const InsightPage = () => {
           </div>
         </div>
       </InsightRow>
+
+      <Insights />
 
     </InsightPageWrapper>
   )
