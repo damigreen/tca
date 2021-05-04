@@ -68,10 +68,8 @@ const Services = () => {
                         <div className="services-body">
                             <div>
                                 <h4>Digital Marketing</h4>
-                                {/* <h3>Lorem Ipsum is simply dummy text of the printing</h3> */}
-                                <div>We assists clients in determining their strengths, weaknesses and uniqueness as a brand. The agency offers innovative & creative digital marketing methods to target audiences for already established brands/clients as well as brands/clients just starting out in their various fields.</div>
+                                <div>We assists clients in determining their strengths, weaknesses and uniqueness as a brand. The agency offers innovative & creative digital marketing methods to target audiences for already established and new brands in their various fields.</div>
                             </div>
-                            {/* <ButtonServices>LEARN MORE</ButtonServices> */}
                             <Button href="#contact" variant="outline-primary" className="btn-services">Hire us</Button>
                         </div>
                     </DigitalMarketingBox>
