@@ -62,8 +62,8 @@ function App() {
               </section>
 
               <section>
-                <Route exact path="/insights/keeping-up-with-tca">
-                  <InsightPage />
+                <Route exact path="/insights">
+                  <Insights />
                 </Route>
               </section>
 

@@ -60,7 +60,7 @@ const Navigation = () => {
                         <Nav.Link href="/#portfolio" className="nav-link" eventKey="work">WORK</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Link to="/insights/keeping-up-with-tca" className="nav-link">INSIGHTS</Link>
+                        <Link to="/insights" className="nav-link">INSIGHTS</Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="/#contact" className="nav-link" eventKey="contact">Contact</Nav.Link>
