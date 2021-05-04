@@ -23,11 +23,10 @@ const InsightPage = () => {
 
   return (
     <InsightPageWrapper>
-      <Navigation />
       <InsightRow>
         <div insight-bar>
           <div className="insight-hero">
-            <h2 className="insight-hero-text">The Creative Agency Monthly Digest</h2>
+            <h2 className="insight-hero-text">The <span style={{backgroundColor: "#F2A32E", padding: '0 0.7rem'}}>Creative</span> Agency Monthly Digest</h2>
           </div>
         </div>
         <div className="insight-wrap">
