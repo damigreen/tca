@@ -43,14 +43,9 @@ const Contact = () => {
 
 
                 <ContactRow>
-                    <div className="work-illustration">
-                    </div>
-
-                    <div className="contact-box">
-
-                        <h3>Get in Touch</h3>
-                        <div className="horizontal-border"></div>
-                        <div>
+                    <h3>Get in Touch</h3>
+                    <div className="horizontal-border"></div>
+                    <div>
                         <Form>
                             <Form.Group className="form-group" controlId="formGroupName">
                                 <div className="form-icon">
@@ -98,9 +93,7 @@ const Contact = () => {
                                 <Button style={{backgroundColor: '#34383C', border: "1px solid #34383C", display: 'block', alignSelf: 'center', width: '100%', height: '6vh'}} variant="primary">Submit</Button>
                             </div>
                         </Form>
-                        </div>
                     </div>
-
                 </ContactRow>
             </ContactBox>
 
