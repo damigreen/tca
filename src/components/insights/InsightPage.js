@@ -3,11 +3,23 @@ import {
   InsightPageWrapper,
   InsightRow,
 } from './InsightPageStyled';
-import Navigation from '../header/Navigation'
+import Navigation from '../header/Navigation';
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  FacebookShareCount,
+} from "react-share";
 
 
 const InsightPage = () => {
   const subImage = "../../../images/insight-sub-image.jpeg";
+  const shareUrl = "https://thecreativeagency.netlify.app/insights/keeping-up-with-tca";
+  const title = "Keeping up with TCA: April";
+
 
   return (
     <InsightPageWrapper>
@@ -42,6 +54,46 @@ const InsightPage = () => {
               providing needed exposure/awareness to brands and businesses.
               The ‘TCA Data Gig-Away’ campaign is scheduled for 7th May, accompanied by an
               announcement via The Creative Agency’s social media platforms.
+            </div>
+          </div>
+
+          <div className="insight-footer">
+            <p className="insight-author">by Abiola Yomi</p>
+            <div className="insight-socials">
+              <a className="share-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                </svg>
+              </a>
+              <FacebookShareButton
+                url={shareUrl}
+                title={title}
+                className="share-icon"
+              >
+                <FacebookShareCount url={shareUrl}>
+                  {/* {shareCount => <span className="myShareCountWrapper">{shareCount}</span>} */}
+                  {shareCount => <span className="myShareCountWrapper">{console.log(shareCount)}</span>}
+                </FacebookShareCount>
+                <FacebookIcon size={20} round />
+              </FacebookShareButton>
+
+              <TwitterShareButton
+                url={shareUrl}
+                title={title}
+                className="share-icon"
+              >
+                <a className="twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                <TwitterIcon size={20} round/>
+              </TwitterShareButton>
+
+              <LinkedinShareButton
+                url={shareUrl}
+                title={title}
+                className="share-icon"
+              >
+                <a className="twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                <LinkedinIcon size={20} round />
+              </LinkedinShareButton>
             </div>
           </div>
         </div>

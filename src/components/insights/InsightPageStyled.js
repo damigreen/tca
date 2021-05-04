@@ -96,4 +96,35 @@ export const InsightRow  = styled.div`
     }
   }
 
+  .insight-footer {
+    display: flex;
+      /* justify-content: center; */
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0.75rem;
+
+    .insight-author {
+      font-size: 1.2rem;
+      color:#333;
+    }
+
+    .insight-socials{
+      display:  flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-left: 4rem;
+
+      .share-icon {
+        color: #333;
+        margin-bottom: 1.2rem;
+        margin-left: 1rem;
+
+        :hover {
+          color: blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 `
