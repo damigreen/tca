@@ -129,7 +129,7 @@ export const TopBar = styled.div`
   }
 
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1032px) {
     .item-bar {
       display: none;
       overflow: visible !important;
