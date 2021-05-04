@@ -28,7 +28,7 @@ const Navigation = () => {
     return (
         <TopBar className="top-bar">
             <NavWrap>
-                <LogoBox href="#">
+                <LogoBox href="/#">
                     <img src={logoImage} alt="Logo image for the header" />
                     <div className="logo-text">
                         <div><span>The</span><span> Creative</span><span> Agency</span></div>
@@ -60,7 +60,7 @@ const Navigation = () => {
                         <Nav.Link href="/#portfolio" className="nav-link" eventKey="work">WORK</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Link to="/insights" className="nav-link">INSIGHTS</Link>
+                        <Link to="/insights/keeping-up-with-tca" className="nav-link">INSIGHTS</Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="/#contact" className="nav-link" eventKey="contact">Contact</Nav.Link>
