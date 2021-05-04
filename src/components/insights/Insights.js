@@ -9,7 +9,6 @@ import {
   PrimaryHeader,
 } from 'AppStyled';
 import InsightPage from './InsightPage';
-// import { Link } from 
 
 
 const Insights = () => {
