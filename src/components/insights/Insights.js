@@ -62,9 +62,6 @@ const Insights = () => {
           </div>
 
         </InsightRow>
-
-
-        <InsightPage />
       </InsightWrapper>
 
     // </div>
