@@ -43,7 +43,7 @@ const Insights = () => {
             </Link>
           </div>
 
-          <div className="latest-col">
+          {/* <div className="latest-col">
             <a className="latest-link">
               <div className="image-wrapper">
                 <div className="latest-image">
@@ -69,7 +69,7 @@ const Insights = () => {
                 <h3 className="article-title">Monthly Digest: Keeping up with TCA</h3>
                 <p className="article-author">By Abiola Yomi</p>
             </a>
-          </div>
+          </div> */}
 
         </InsightRow>
 
