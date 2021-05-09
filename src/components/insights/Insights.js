@@ -20,13 +20,6 @@ const Insights = () => {
   // top
   return (
     <div>
-      
-      {/* <InsightPageSection>
-        <Route exact path="/insights/keeping-up-with-tca">
-          <InsightPage />
-        </Route>
-      </InsightPageSection> */}
-
       <InsightWrapper>
         <PrimaryHeader>Latest at TCA</PrimaryHeader>
 
