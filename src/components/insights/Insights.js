@@ -17,6 +17,7 @@ import Navigation from '../header/Navigation';
 
 const Insights = () => {
 
+  // top
   return (
     <div>
       
