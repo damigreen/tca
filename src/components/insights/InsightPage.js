@@ -52,7 +52,7 @@ const InsightPage = () => {
             You can visit our official Instagram account to catch up on how the brand’s official launch
             went down <a href="http://instagram.com/thecreativeagency_tca" target="_blank"><b>here</b></a>
 
-            <h2 className="insight-title">What is in the works currently at The CreativeAgency</h2>
+            <h2 className="insight-title">What is in the works currently at The Creative Agency</h2>
             <div className="insight-image">
               <img className="insight-image-responsive" src={subImage} alt="Image for section of the page"/>
             </div>
