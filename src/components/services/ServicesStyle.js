@@ -74,6 +74,7 @@ const servicesBody = `
     // margin-bottom: 7.5rem;
     color: #333;
     text-align: center;
+    min-height: 100%;
 `
 
 // const servicesHeaderSecondary = `
@@ -83,9 +84,11 @@ const servicesBody = `
 // `
 
 const servicesBodyText = `
-    font-size: 16px;
+    font-size: 1rem;
+    // color: gray;
     line-height: 24px;
     // margin-bottom: 3.53rem;
+    flex: 1;
 `
 
 const buttonServices = `
@@ -159,7 +162,7 @@ export const BrandingBox = styled.div`
             }
         }
 
-        div {
+        p {
             ${servicesBodyText};
             @media only screen and (min-width: 600px) {
                 height: auto;
@@ -238,7 +241,7 @@ export const WebDevBox = styled.div`
         }
     }
 
-    div {
+    p {
         ${servicesBodyText};
         @media only screen and (min-width: 600px) {
                 height: auto;
@@ -316,7 +319,7 @@ export const ConsultBox = styled.div`
         }
     }
 
-    div {
+    p {
         ${servicesBodyText};
 
         @media only screen and (min-width: 600px) {
@@ -396,7 +399,7 @@ export const ScalabilityBox = styled.div`
         }
     }
 
-    div {
+    p {
         ${servicesBodyText};
 
         @media only screen and (min-width: 600px) {
@@ -482,7 +485,7 @@ export const DigitalMarketingBox = styled.div`
         }
     }
 
-    div {
+    p {
         ${servicesBodyText};
 
         @media only screen and (min-width: 600px) {
@@ -566,7 +569,7 @@ export const PublishingBox = styled.div`
 
         }
 
-        div {
+        p {
             ${servicesBodyText};
             @media only screen and (min-width: 600px) {
                 height: auto;
