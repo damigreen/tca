@@ -96,7 +96,6 @@ const Portfolio = () => {
       const catLen = projectCategories.length;
       
       for (var j = 0; j < catLen; j++) {
-          console.log(cat);
           if (projectCategories[j] === cat) {
             filteredList.push(portfolioList[i]);
             setPortfolioList(filteredList);
@@ -107,7 +106,6 @@ const Portfolio = () => {
         }
       }
     }
-    console.log(filteredList);
 
     return 1;
   }
