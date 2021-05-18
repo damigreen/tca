@@ -16,6 +16,7 @@ export const ServicesRow = styled.div`
     width: 95%;
     width: 90%;
     ${flexColWrap};
+    justify-content: flex-start;
     margin-bottom: 50px;
 
     @media only screen and (min-width: 600px) {
@@ -27,7 +28,7 @@ export const ServicesRow = styled.div`
         /* justify-items: stretch; */
         justify-items: center;
         align-items: stretch;
-        justify-content: stretch;
+        justify-content: flex-start;
     } 
 
     /* Large devices (laptops/desktops, 992px and up) */ 
@@ -131,6 +132,7 @@ export const ButtonServices = styled.button`
 
 export const BrandingBox = styled.div`
     ${flexColWrap};
+    justify-content: flex-start;
 
     @media only screen and (min-width: 600px) {
         padding: 1.07726rem;
@@ -209,6 +211,8 @@ export const BrandingBox = styled.div`
 
 export const WebDevBox = styled.div`
     ${flexColWrap};
+    justify-content: flex-start;
+
 
     @media only screen and (min-width: 600px) {
         padding: 1.07726rem;
@@ -285,6 +289,8 @@ export const WebDevBox = styled.div`
 
 export const ConsultBox = styled.div`
     ${flexColWrap};
+    justify-content: flex-start;
+
 
     @media only screen and (min-width: 600px) {
         padding: 1.07726rem;
@@ -362,6 +368,8 @@ export const ConsultBox = styled.div`
 
 export const ScalabilityBox = styled.div`
     ${flexColWrap};
+    justify-content: flex-start;
+
 
     @media only screen and (min-width: 600px) {
         padding: 1.07726rem;
@@ -439,6 +447,8 @@ export const ScalabilityBox = styled.div`
 
 export const DigitalMarketingBox = styled.div`
     ${flexColWrap};
+    justify-content: flex-start;
+
 
     @media only screen and (min-width: 600px) {
         padding: 1.07726rem;
@@ -528,6 +538,8 @@ export const DigitalMarketingBox = styled.div`
 
 export const PublishingBox = styled.div`
     ${flexColWrap};
+    justify-content: flex-start;
+
 
     @media only screen and (min-width: 600px) {
         padding: 1.07726rem;
