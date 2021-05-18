@@ -51,7 +51,7 @@ function App() {
                 </Route>
               </section>
 
-              <section id="portfolio">
+              <section id="port">
                 <Route exact path="/">
                   <Portfolio />
                 </Route>
