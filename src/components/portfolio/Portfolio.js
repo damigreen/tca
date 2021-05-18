@@ -21,10 +21,67 @@ const Portfolio = () => {
       });
   }, []);
 
+  // if all is selected
+  // set the active class to color #1B658C
+  // if not selected, remove color i.e class is not active class=""
+    // if branding is selected
+    // set branding class to active
+    // change color of active to #1B658C
+  const setLinkState = () => {
+
+    const activeClass = (id) => {
+      if (id.className !== 'active') {
+        id.className = 'active';
+        id.style.backgroundColor = "#1B658C";
+        id.style.color = "#fff";  
+      } else {
+        id.style.backgroundColor = "#1B658C";
+        id.style.color = "#fff";
+      }
+    }
+
+    const removeActive = (ele) => {
+      const el = document.querySelector(`#${ele}`);
+      
+
+      if (el.className === 'active') {
+        el.className = "";
+        el.style.backgroundColor = '#fff';
+        el.style.color = "#333";
+      }
+    }
+
+    const setAllLink = (ele) => {
+        const activeEle = document.querySelector('.active');
+
+        if (activeEle) {
+          activeEle.className = "";
+          activeEle.style.backgroundColor = '#fff';
+          activeEle.style.color = "#333";
+        }
+
+        const all = document.querySelector(`#${ele}`);
+        activeClass(all);
+    }
+
+    const setOtherLinks = (id) => {
+      const ele = document.querySelector(`#${id}`);
+      activeClass(ele);
+
+    }
+
+    return {
+      setAllLink,
+      setOtherLinks,
+      removeActive,
+    }
+  }
+
   const filterAll = () => {
     // const el = document.querySelector('.active');
     setPortfolioList(portfolioListClone);
-    return 1; 
+    setLinkState().setAllLink('all');
+    return 1;
   }
 
   const filterCat = (cat) => {
@@ -43,10 +100,11 @@ const Portfolio = () => {
           if (projectCategories[j] === cat) {
             filteredList.push(portfolioList[i]);
             setPortfolioList(filteredList);
+            setLinkState().setOtherLinks(cat);
+          } else {
+            setLinkState().removeActive(projectCategories[j]);
+            setLinkState().removeActive('all');
         }
-        // else {
-        //   setPortfolioList(portfolioList);
-        // }
       }
     }
     console.log(filteredList);
@@ -84,12 +142,12 @@ const Portfolio = () => {
         <div className="portfolio-content">
           <h1 className="portfolio-header">Our Projects</h1>
           <div className="portfolio-category">
-            <a className="portfolio-categrory active" href onClick={filterAll}>All</a>
-            <a className="portfolio-categrory" href onClick={() => filterCat('branding')}>Branding</a>
-            <a className="portfolio-categrory" href onClick={() => filterCat('development')}>Web Development</a>
-            <a className="portfolio-categrory" href onClick={() => filterCat('consultancy')}>Consultancy</a>
-            <a className="portfolio-categrory" href onClick={() => filterCat('design')}>Design</a>
-            <a className="portfolio-categrory" href onClick={() => filterCat('portfolio')}>Portfolio</a>
+            <a className="active" id="all" href onClick={filterAll}>All</a>
+            <a className="filter" id="branding" href onClick={() => filterCat('branding')}>Branding</a>
+            <a className="filter" id="development"  href onClick={() => filterCat('development')}>Web Development</a>
+            <a className="filter" id="consultancy" href onClick={() => filterCat('consultancy')}>Consultancy</a>
+            <a className="filter" id="design" href onClick={() => filterCat('design')}>Design</a>
+            <a className="filter" id="portfolio" href onClick={() => filterCat('portfolio')}>Portfolio</a>
           </div>
 
           <div className="project-wrap">

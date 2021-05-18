@@ -62,31 +62,44 @@ export const PortfolioRow = styled.div`
             border: 1px solid #024959;
             text-transform: uppercase;
             color: #333;
+            cursor: pointer;
             /* background-color: #023e73; */
         }
 
         a:active {
-            background-color: red;
+            background-color: #1B658C;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #F2A02E;
+            text-decoration: none;
+        }
+
+        a:visited {
+            background-color: #1B658C;
+            /* background-color: black; */
+            text-decoration: none;
         }
     }
 
     .project-wrap {
         ${flexColWrap};
+        height: 100%;
 
         @media only screen and (min-width: 600px) {
             display: grid;  
-            /* grid-gap: 5px;   */
-            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-            /* grid-template-columns: 1fr 1fr 1fr; */
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 25% 25%;
+            grid-template-rows: auto auto;
+            height: auto;
         }
 
         @media only screen and (min-width: 1024px) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 35% 35%;
+            grid-template-rows: auto auto;
             margin: 0 auto;
+            height: auto;
             /* width: 70%; */
         }
 
