@@ -69,12 +69,23 @@ export const InsightRow = styled.div`
     @media only screen and (max-width: 1023px) {
     }
   }
+
+  .latest-image.april {
+    background: url('../../../images/insight-image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+
+  .latest-image.may {
+    background: url('../../../images/insight-image1.jpeg');
+    background-size: contain;
+  }
+
   .latest-image {
     width: 100%;
     height: 100%;
-    background: url('../../../images/insight-image.jpeg');
-    background-size: cover;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
   }
 
