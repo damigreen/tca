@@ -74,6 +74,16 @@ export const InsightRow  = styled.div`
     margin-bottom: 2rem;
   }
 
+  .april {
+    background: url("../../../images/insight-image.jpeg");
+    background-position: 50% 60%; 
+  }
+
+  .may {
+    background: url("../../../images/insight-image1.jpeg");
+    background-position: center 20%;
+  }
+
   .insight-hero {
     color: #fff;
     display: flex;
@@ -83,10 +93,9 @@ export const InsightRow  = styled.div`
     height: 300px;
     width: 95%;
     margin-top: 2rem;
-    background: url("../../../images/insight-image.jpeg");
-    background-position: 50% 60%; 
     background-repeat: repeat-x;
     background-size: cover;
+      /* background-repeat: no-repeat; */
 
     @media only screen and (min-width: 1200px) {
       width: 100%;
@@ -95,6 +104,7 @@ export const InsightRow  = styled.div`
       padding-right: 4.5rem; */
       padding: 3rem;
     }
+
 
     .insight-hero-text {
       margin: 0 auto;
@@ -107,6 +117,8 @@ export const InsightRow  = styled.div`
       /* color: #F2A32E; */
     }
   }
+
+
 
   .insight-wrap {
     margin-left: auto;

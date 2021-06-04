@@ -27,7 +27,7 @@ const InsightPage = () => {
       <Navigation />
       
       <InsightPattern>
-        <div className="insight-gradient">
+        <div className="insight-gradient bg-insights bg-april">
           <div className="insight-main-heading">
             <h1>Insights</h1>
           </div>
@@ -37,7 +37,7 @@ const InsightPage = () => {
 
       <InsightRow>
         <div insight-bar>
-          <div className="insight-hero">
+          <div className="insight-hero april">
             <h2 className="insight-hero-text">The <span style={{backgroundColor: "#F2A32E", padding: '0 0.7rem'}}>Creative</span> Agency Monthly Digest</h2>
           </div>
         </div>
