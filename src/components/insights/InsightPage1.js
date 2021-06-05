@@ -44,9 +44,7 @@ const InsightPage1 = () => {
         <div className="insight-wrap">
           <div className="insight-content">
             <h2 className="insight-title">Keeping up with TCA: May Digest</h2>
-            As we drew the curtains in April, May began with a bit of publicity towards our first major
-            Agency activity waxed since the stronger official with launch. a campaign Feeding tagged: off the momentum “TCA DATA gathered GIG-AWAY
-            in 🎉 April, (VOL The 1)” Creative which took place on the 7th of May, 2021.<br/><br/>
+            As we drew the curtains in April, May began with a bit of publicity towards our first major activity since the official launch. Feeding off the momentum gathered in April, The Creative Agency waxed stronger with a campaign tagged: “TCA DATA GIG-AWAY (VOL 1)” which took place on the 7th of May, 2021.<br/><br/>
             The campaign represents an appreciation of the support received since our official launch
             and our little way of giving value back to the public. Another objective here was to provide
             exposure and awareness to the products/services on offer by various brands, businesses &
