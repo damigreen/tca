@@ -43,7 +43,7 @@ const InsightPage = () => {
         </div>
         <div className="insight-wrap">
           <div className="insight-content">
-            <h2 className="insight-title">Keeping up with TCA: April</h2>
+            <h2 className="insight-title">Keeping up with TCA: April Digest</h2>
             The Creative Agency is a company with a mandate to fast-track creatives, brands & SMEs to their business goals through unique branding, marketing and advertising. The Creative Agency also referred to as TCA officially launched publicly on the 10th of April, 2021.
             While on the road to launch, TCA had a 10-Day countdown which kicked off 31st March and
             ran through April till the launch date stipulated 10th April.<br /><br /> The countdown created a lot of

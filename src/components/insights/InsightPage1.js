@@ -43,7 +43,7 @@ const InsightPage1 = () => {
         </div>
         <div className="insight-wrap">
           <div className="insight-content">
-            <h2 className="insight-title">Keeping up with TCA: May</h2>
+            <h2 className="insight-title">Keeping up with TCA: May Digest</h2>
             As we drew the curtains in April, May began with a bit of publicity towards our first major
             Agency activity waxed since the stronger official with launch. a campaign Feeding tagged: off the momentum “TCA DATA gathered GIG-AWAY
             in 🎉 April, (VOL The 1)” Creative which took place on the 7th of May, 2021.<br/><br/>
