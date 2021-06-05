@@ -26,7 +26,7 @@ const Insights = () => {
               </div>
 
                 <p className="article-type">article</p>
-                <h3 className="article-title">Monthly Digest: Keeping up with TCA: April</h3>
+                <h3 className="article-title">Keeping up with TCA: April Digest</h3>
                 <p className="article-author">By Abiola Yomi</p>
             </Link>
           </div>
@@ -39,7 +39,7 @@ const Insights = () => {
               </div>
 
               <p className="article-type">article</p>
-                <h3 className="article-title">Monthly Digest: Keeping up with TCA: May Digest</h3>
+                <h3 className="article-title">Keeping up with TCA: May Digest</h3>
                 <p className="article-author">By Abiola Yomi</p>
             </Link>
           </div>
