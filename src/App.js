@@ -8,6 +8,7 @@ import Contact from 'components/contact/';
 import Insights from 'components/insights/';
 import InsightPage from 'components/insights/InsightPage';
 import InsightPage1 from 'components/insights/InsightPage1';
+import InsightPage2 from 'components/insights/InsightPage2';
 import {
   AppWrapper,
   MainWrapper,
@@ -78,7 +79,12 @@ function App() {
                 <Route exact path="/insights/keeping-up-with-tca/may-digest">
                   <InsightPage1 />
                 </Route>
+
+              <Route exact path="/insights/keeping-up-with-tca/june-digest">
+                  <InsightPage2 />
+                </Route>
               </InsightPageSection>
+
 
 
               <section id="contact">

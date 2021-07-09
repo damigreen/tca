@@ -83,6 +83,14 @@ export const InsightRow = styled.div`
     background-size: contain;
   }
 
+  .latest-image.june {
+    background: url('../../../images/insight-image2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+  }
+
+
   .latest-image {
     width: 100%;
     height: 100%;

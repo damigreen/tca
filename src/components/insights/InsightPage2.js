@@ -16,10 +16,10 @@ import {
 } from "react-share";
 import Insights from './Insights';
 
-const InsightPage = () => {
-  const subImage = "../../../images/insight-sub-image.jpeg";
-  const shareUrl = "www.thecreativetca.com/insights/keeping-up-with-tca";
-  const title = "Keeping up with TCA: April";
+const InsightPage1 = () => {
+  const subImage = "../../../images/insight-sub-image2.jpeg";
+  const shareUrl = "www.thecreativetca.com/insights/keeping-up-with-tca/june-digest";
+  const title = "Keeping up with TCA: June Digest";
 
 
   return (
@@ -27,8 +27,8 @@ const InsightPage = () => {
       <Navigation />
       
       <InsightPattern>
-        <div className="insight-gradient bg-insights bg-april">
-          <div className="insight-main-heading">
+        <div className="insight-gradient bg-june">
+          <div className="insight-main-heading">                                                                                                                                                                                                  
             <h1>Insights</h1>
           </div>
         </div>
@@ -37,34 +37,25 @@ const InsightPage = () => {
 
       <InsightRow>
         <div insight-bar>
-          <div className="insight-hero april">
+          <div className="insight-hero june">
             <h2 className="insight-hero-text">The <span style={{backgroundColor: "#F2A32E", padding: '0 0.7rem'}}>Creative</span> Agency Monthly Digest</h2>
           </div>
         </div>
         <div className="insight-wrap">
           <div className="insight-content">
-            <h2 className="insight-title">Keeping up with TCA: April Digest</h2>
-            The Creative Agency is a company with a mandate to fast-track creatives, brands & SMEs to their business goals through unique branding, marketing and advertising. The Creative Agency also referred to as TCA officially launched publicly on the 10th of April, 2021.
-            While on the road to launch, TCA had a 10-Day countdown which kicked off 31st March and
-            ran through April till the launch date stipulated 10th April.<br /><br /> The countdown created a lot of
-            buzz on social media as it was widely anticipated and received. This course of events led to
-            the official launch of “The Creative Agency” brand.
-            You can visit our official Instagram account to catch up on how the brand’s official launch
-            went down <a href="http://instagram.com/thecreativeagency_tca" target="_blank"><b>here</b></a>
-
+            <h2 className="insight-title">Keeping up with TCA: June Digest</h2>
+            At The Creative Agency, the month of June played out as an interlude. With minimal
+            activity on the front end (social media), the brand nonetheless moved to its official domain
+            www.thecreativetca.com at the tail end of the month of June. <br />
             <h2 className="insight-title">What is in the works currently at The Creative Agency</h2>
             <div className="insight-image">
               <img className="insight-image-responsive" src={subImage} alt="Image for section of the page"/>
             </div>
             <div>
-              In appreciation of the support received since our official launch, we are set to unveil a campaign tagged: <b>“TCA DATA GIG-AWAY 🎉"</b> <br /><br />
-              The campaign is about appreciation & giving value back to the public. It is basically a data
-              giveaway, however, through this campaign, we intend to showcase brands and businesses
-              that will be partnering with us.
-              This way, we are bringing to fore, some of our services which includes marketing and
-              providing needed exposure/awareness to brands and businesses.
-              The ‘TCA Data Gig-Away’ campaign is scheduled for 7th May, accompanied by an
-              announcement via The Creative Agency’s social media platforms.
+            The adventure continues at the backend with tasks revolving around product development,
+            engagement models, market acquisition etc.
+            July signifies the second half of the year and the TCA team is optimistic for this second
+            phase as we bid to attain our resolutions and outstanding goals for the year 2021!
             </div>
           </div>
 
@@ -116,4 +107,4 @@ const InsightPage = () => {
   )
 }
 
-export default InsightPage;
+export default InsightPage1;

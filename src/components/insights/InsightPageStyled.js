@@ -84,6 +84,11 @@ export const InsightRow  = styled.div`
     background-position: center 20%;
   }
 
+  .june {
+    background: url("../../../images/insight-image2.jpeg");
+    background-position: center 20%;
+  }
+
   .insight-hero {
     color: #fff;
     display: flex;

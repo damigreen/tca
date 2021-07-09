@@ -44,20 +44,18 @@ const Insights = () => {
             </Link>
           </div>
 
-          {/* <div className="latest-col">
-            <a className="latest-link">
-              <div className="image-wrapper">
-                <div className="latest-image">
-                  
+          <div className="latest-col">
+            <Link to="/insights/keeping-up-with-tca/june-digest" className="latest-link">
+              <div className="image-wrapper img-june">
+                <div className="latest-image june">  
                 </div>
               </div>
 
               <p className="article-type">article</p>
-                <h3 className="article-title">Monthly Digest: Keeping up with TCA</h3>
+                <h3 className="article-title">Keeping up with TCA: May Digest</h3>
                 <p className="article-author">By Abiola Yomi</p>
-            </a>
-          </div> */}
-
+            </Link>
+          </div>
         </InsightRow>
 
       </InsightWrapper>

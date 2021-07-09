@@ -18,7 +18,7 @@ import Insights from './Insights';
 
 const InsightPage1 = () => {
   const subImage = "../../../images/insight-sub-image1.jpeg";
-  const shareUrl = "https://thecreativeagency.netlify.app/insights/keeping-up-with-tca/may-digest";
+  const shareUrl = "www.thecreativetca.com/insights/keeping-up-with-tca/may-digest";
   const title = "Keeping up with TCA: May Digest";
 
 
