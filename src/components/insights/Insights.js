@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import { 
   InsightRow,
   InsightWrapper,
@@ -10,6 +10,9 @@ import { BrowserRouter as Router, Link, Route, } from 'react-router-dom';
 
 
 const Insights = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
 
   // top
   return (
@@ -52,12 +55,11 @@ const Insights = () => {
               </div>
 
               <p className="article-type">article</p>
-                <h3 className="article-title">Keeping up with TCA: May Digest</h3>
+                <h3 className="article-title">Keeping up with TCA: June Digest</h3>
                 <p className="article-author">By Abiola Yomi</p>
             </Link>
           </div>
         </InsightRow>
-
       </InsightWrapper>
 
     </div>

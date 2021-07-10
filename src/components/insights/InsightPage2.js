@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import {
   InsightPageWrapper,
   InsightRow,
@@ -17,7 +17,12 @@ import {
 import Insights from './Insights';
 
 const InsightPage1 = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   const subImage = "../../../images/insight-sub-image2.jpeg";
+  const subImage2 = "../../../images/insight-sub-image2(2).jpeg";
   const shareUrl = "www.thecreativetca.com/insights/keeping-up-with-tca/june-digest";
   const title = "Keeping up with TCA: June Digest";
 
@@ -47,9 +52,12 @@ const InsightPage1 = () => {
             At The Creative Agency, the month of June played out as an interlude. With minimal
             activity on the front end (social media), the brand nonetheless moved to its official domain
             www.thecreativetca.com at the tail end of the month of June. <br />
-            <h2 className="insight-title">What is in the works currently at The Creative Agency</h2>
             <div className="insight-image">
               <img className="insight-image-responsive" src={subImage} alt="Image for section of the page"/>
+            </div>
+            <h2 className="insight-title">What is in the works currently at The Creative Agency</h2>
+            <div className="insight-image">
+              <img className="insight-image-responsive" src={subImage2} alt="Image for section of the page 2"/>
             </div>
             <div>
             The adventure continues at the backend with tasks revolving around product development,

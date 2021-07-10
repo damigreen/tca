@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import {
   InsightPageWrapper,
   InsightRow,
@@ -17,6 +17,9 @@ import {
 import Insights from './Insights';
 
 const InsightPage1 = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
   const subImage = "../../../images/insight-sub-image1.jpeg";
   const shareUrl = "www.thecreativetca.com/insights/keeping-up-with-tca/may-digest";
   const title = "Keeping up with TCA: May Digest";
