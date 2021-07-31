@@ -326,7 +326,7 @@ const Footer = () => {
 
                     <FooterColumn>
                         <FooterMessage>
-                            <h1>
+                            <h1 style={{fontSize: '4rem'}}>
                                 Don't Miss Out
                             </h1>
                             <p style={{color: 'brown'}}>
