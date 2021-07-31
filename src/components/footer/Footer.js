@@ -329,7 +329,7 @@ const Footer = () => {
                             <h1>
                                 Don't Miss Out
                             </h1>
-                            <p style={{color: 'brown'}}>
+                            <p>
                                 Sign up to our newsletter as we assist you on your digitization journey and to ensure the suceess of your business 
                             </p>
                         </FooterMessage>
