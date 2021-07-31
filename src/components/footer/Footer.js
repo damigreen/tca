@@ -325,6 +325,7 @@ const Footer = () => {
                     </FooterLocation> */}
 
                     <FooterColumn>
+                        <hr>yes</hr>
                         <FooterMessage>
                             <h1>
                                 Don't Miss Out
