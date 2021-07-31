@@ -326,7 +326,7 @@ const Footer = () => {
 
                     <FooterColumn>
                         <FooterMessage>
-                            <h1 style={{fontSize: '4rem'}}>
+                            <h1>
                                 Don't Miss Out
                             </h1>
                             <p style={{color: 'brown'}}>
@@ -334,14 +334,6 @@ const Footer = () => {
                             </p>
                         </FooterMessage>
 
-                        <FooterMessage>
-                            <h1>
-                                Don't Miss Out
-                            </h1>
-                            <p>
-                                Sign up to our newsletter as we assist you on your digitization journey and to ensure the suceess of your business 
-                            </p>
-                        </FooterMessage>
                         <FooterColumnSub>
                             <FooterSubFormWrap>
                                 <FooterSubForm>
